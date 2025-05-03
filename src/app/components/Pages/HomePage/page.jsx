@@ -20,19 +20,19 @@ function MainPage() {
           <img
             src="/HomePages/Home.png"
             alt="Main Background"
-            className="w-full h-[1000px]"
+            className="w-full h-[800px]"
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-start justify-center w-full h-full p-4 text-left md:p-10 animate__animated animate__fadeInLeft">
+        <div className="absolute top-0 left-0 flex flex-col items-start justify-center w-full h-full text-left animate__animated animate__fadeInLeft">
           <div className='flex gap-80 lg:px-28 xl:px-32'>
-            <div className="flex flex-col text-white gap-7 mt-15 ">
-              <Text size="text-4xl md:text-4xl lg:text-5xl xl:text-[100px] font-bold text-white text-gradient">
-                Accelerate Your App / H5 Game Growth kunj
+            <div className="flex flex-col mt-64 text-white gap-7 px-36 ">
+              <Text size="text-4xl md:text-4xl lg:text-5xl xl:text-[115px] font-bold text-white text-gradient text-start">
+                Accelerate Your App / H5 Game Growth
               </Text>
-              <Text size="text-4xl md:text-2xl lg:text-2xl xl:text-[30px] text-white font-medium">
+              <Text size="text-4xl md:text-2xl lg:text-2xl xl:text-[30px] text-white font-medium text-start" >
                 Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
               </Text>
-              <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[25px] text-[#ffffff] mt-[50px]'>
+              <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[25px] text-[#ffffff] '>
                 PUBLISHER
               </Text>
               <img
@@ -40,7 +40,7 @@ function MainPage() {
                 alt="Advertisers Icon"
               // className="w-32 h-32"
               />
-              <div className="flex justify-center divide-x divide-[#9387FF]  mt-[30px] mb-[30px]">
+              <div className="flex justify-center divide-x divide-[#9387FF]  mb-[100px]">
                 {/* Block 1 */}
                 <div className="flex flex-col w-full max-w-[300px] px-6 text-start space-y-2">
                   <Text className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] text-white mt-[50px]">
@@ -72,15 +72,12 @@ function MainPage() {
                 </div>
               </div>
 
-
-
-
             </div>
           </div>
         </div>
 
       </div>
-      <div className="relative mb-20">
+      <div className="relative">
         <div>
           <img
             src="/HomePages/Home2.png"
@@ -88,30 +85,52 @@ function MainPage() {
             className="w-full "
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-start justify-start w-full h-full p-4 text-left md:p-10 animate__animated animate__fadeInLeft">
-          <div className='flex gap-80 lg:px-28 xl:px-32'>
+        <div className="absolute top-0 left-0 flex flex-col items-start justify-start w-full h-full mt-32 text-left animate__animated animate__fadeInLeft">
+          <div className='flex flex-col justify-center gap-80 lg:px-28 xl:px-32'>
             <div className="flex flex-col text-white gap-7 ">
-
-
-              <Text className="text-4xl md:text-2xl lg:text-2xl xl:text-5xl font-bold text-white
-              leading-relaxed">
+              <Text className="px-40 text-4xl font-bold leading-relaxed text-white md:text-2xl lg:text-2xl xl:text-5xl">
                 Woxxin’s ecosystem of quality products
                 has helped more than half a billion
                 people work and play effectively, aiming
                 to serve 1 billion users by 2025
               </Text>
+            </div>
 
+            <div className='mt-4 contents'>
+            <Text size="text-4xl md:text-4xl lg:text-5xl xl:text-[115px] font-bold text-white text-gradient text-center">
+            1 Bil
+              </Text>
+            <img
+                src="/HomePages/Appimg.png"
+                alt="Advertisers Icon"
+              className=""
+              />
             </div>
           </div>
         </div>
-
       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <div className='lg:px-28 xl:px-32'>
         <div className='bg-[#efefef] pt-16 rounded-2xl'>
           <Text size={'text-xl md:text-4xl lg:text-5xl xl:text-[42px] p-4'}>
             Who can <span className='text-[#6C63FF]'>benefit from Woxxin</span> ad network
           </Text>
-
           <div className='flex flex-col gap-32 pb-10 mt-10 lg:flex-row lg:px-28 xl:px-40 lg:pb-32 xl:pb-32'>
             <div className='flex flex-col items-center text-center lg:items-start lg:text-start'>
               <img
