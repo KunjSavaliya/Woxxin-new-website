@@ -27,7 +27,7 @@ function MainPage() {
           <div className='flex gap-80 lg:px-28 xl:px-32'>
             <div className="flex flex-col text-white gap-7 mt-15 ">
               <Text size="text-4xl md:text-4xl lg:text-5xl xl:text-[100px] font-bold text-white text-gradient">
-                Accelerate Your App / H5 Game Growth
+                Accelerate Your App / H5 Game Growth kunj
               </Text>
               <Text size="text-4xl md:text-2xl lg:text-2xl xl:text-[30px] text-white font-medium">
                 Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
@@ -93,7 +93,7 @@ function MainPage() {
             <div className="flex flex-col text-white gap-7 ">
 
 
-              <Text className="text-4xl md:text-2xl lg:text-2xl xl:text-5xl font-bold text-white 
+              <Text className="text-4xl md:text-2xl lg:text-2xl xl:text-5xl font-bold text-white
               leading-relaxed">
                 Woxxin’s ecosystem of quality products
                 has helped more than half a billion
