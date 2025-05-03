@@ -37,6 +37,47 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .text2-gradient {
+    background: linear-gradient(#b9b8b8 13%, #c9c9c9 35%, #FFFFFF 60%, rgba(0, 0, 0, 0) 82.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .ActiveUser-gradient {
+    background: linear-gradient(
+      to bottom,
+      #6c63ff 20%,          /* vibrant blue-purple */
+      #3b35aa 40%,         /* darker blue to blend down */
+      rgba(0, 0, 0, 0.6) 100%  /* soft fade to black */
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  .text-gradient-mobileApp {
+   
+    background: linear-gradient(
+      to right,
+      #58cfff,
+      #c08bff,
+      #ff7ecf
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  
+  .text-gradient-mobileGames {
+   
+    background: linear-gradient(
+      to right,
+      #6C63FF,
+      #FF6A00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+  }
+  
+  
 }
 
 
