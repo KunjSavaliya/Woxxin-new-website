@@ -233,21 +233,21 @@ function MainPage() {
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInRight"> */}
 
               <div className="w-full md:w-2/5 mt-6 md:mt-0 ">
-                <ScrollAnimation animateIn="animate__animated animate__fadeInRight">
-                  <ul className="space-y-4">
-                    {[
-                      "Market Research",
-                      "Marketing Optimization",
-                      "Product Optimization",
-                      "Monetization/Subscription Optimization",
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start space-x-3">
-                        <span className="mt-2 h-2 w-2 rounded-full bg-[#AAB0C0] opacity-80"></span>
-                        <span className="text-sm sm:text-base md:text-lg lg:text-[20px]">{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </ScrollAnimation>
+                {/* <ScrollAnimation animateIn="animate__animated animate__fadeInRight"> */}
+                <ul className="space-y-4">
+                  {[
+                    "Market Research",
+                    "Marketing Optimization",
+                    "Product Optimization",
+                    "Monetization/Subscription Optimization",
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start space-x-3">
+                      <span className="mt-2 h-2 w-2 rounded-full bg-[#AAB0C0] opacity-80"></span>
+                      <span className="text-sm sm:text-base md:text-lg lg:text-[20px]">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+                {/* </ScrollAnimation> */}
               </div>
               {/* </ScrollAnimation> */}
             </div>
