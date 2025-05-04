@@ -132,8 +132,6 @@ function Navbar() {
               <p className="text-xl font-semibold">About us</p>
             </div>
             <div className="mb-5">
-
-
               <p
                 className="flex items-center justify-between block text-xl font-semibold cursor-pointer"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}

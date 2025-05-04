@@ -26,7 +26,7 @@ function MainPage() {
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left">
           <div className="flex gap-80 lg:px-16 xl:px-32">
-            <div className="flex flex-col mt-32 sm:mt-40 text-white gap-4 sm:gap-7 xl:gap-12 px-7 sm:px-12 md:px-24 lg:px-16 xl:px-36">
+            <div className="flex flex-col mt-32 sm:mt-40 text-white gap-4 sm:gap-7 xl:gap-12 p-3 sm:px-12 md:px-24 lg:px-16 xl:px-36">
 
               <ScrollAnimation animateIn="animate__animated animate__fadeInRight">
                 <Text className="text-5xl md:text-5xl lg:text-5xl xl:text-[95px] font-bold text-white text-gradient text-start ">
@@ -131,7 +131,7 @@ function MainPage() {
                 <img
                   src="/HomePages/Appimg.png"
                   alt="Advertisers Icon"
-                  className=""
+                  className=" w-full"
                 />
               </div>
             </div>
