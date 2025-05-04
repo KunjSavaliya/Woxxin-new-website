@@ -170,14 +170,14 @@ function MainPage() {
                 className="w-full mt-[-4px] h-[200px] sm:h-[250px] xl:h-[250px] lg:h-[250px] md:h-[200px]"
               />
             </div>
-            {/* <ScrollAnimation animateIn="animate__animated animate__fadeInUp"> */}
+            <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-            <div className=''>
-              <Text className="text-center text-xl mt-[-130px] font-extralight leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
-                Mobile Apps
-              </Text>
-            </div>
-            {/* </ScrollAnimation> */}
+              <div className=''>
+                <Text className="text-center text-5xl mt-[-130px] font-extralight leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
+                  Mobile Apps
+                </Text>
+              </div>
+            </ScrollAnimation>
 
             <div className='flex justify-center'>
               <img
@@ -197,10 +197,10 @@ function MainPage() {
             className="w-full "
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-center  justify-strat w-full h-full mt-2 text-left animate__animated animate__fadeInLeft">
+        <div className="absolute top-0 left-0 flex flex-col items-center  justify-strat w-full h-full  text-left ">
           <div className='lg:px-28 xl:px-32'>
-            <div className="flex flex-col text-white gap-7 animate__animated animate__fadeInUp">
-              <Text className="text-center  font-lighter leading-relaxed text-white text-[45px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
+            <div className="flex flex-col text-white gap-7">
+              <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
                 Mobile Games
               </Text>
             </div>
@@ -223,7 +223,7 @@ function MainPage() {
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
 
               <div className="w-full md:w-3/5 flex items-cente ">
-                <ScrollAnimation animateIn="animate__animated animate__fadeInLeft">
+                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
                   <Text className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
                     Enhancing Personalized App Experiences for Billions
                   </Text>
