@@ -131,10 +131,12 @@ function Navbar() {
             <div className="mb-5">
               <p className="text-xl font-semibold">About us</p>
             </div>
-            <div className="mb-5">
+            <div className="mb-5"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+
+            >
               <p
                 className="flex items-center justify-between block text-xl font-semibold cursor-pointer"
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
                 Ecosystem
                 {isDropdownOpen ? <HiChevronUp className="inline ml-1" /> : <HiChevronDown className="inline ml-1" />}

@@ -21,16 +21,16 @@ function MainPage() {
           <img
             src="/HomePages/Home.png"
             alt="Main Background"
-            className="w-full h-[159vh] sm:h-[150vh]  md:h-[120vh] lg:h-[79vh] xl:h-[800px]"
+            className="w-full h-[159vh] sm:h-[150vh]  md:h-[128vh] lg:h-[1000px] xl:h-[1000px]"
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left">
           <div className="flex gap-80 lg:px-16 xl:px-32">
-            <div className="flex flex-col mt-32 sm:mt-40 text-white gap-4 sm:gap-7 xl:gap-12 p-3 sm:px-12 md:px-24 lg:px-16 xl:px-36">
+            <div className="flex flex-col mt-32 sm:mt-40 text-white gap-12 sm:gap-7 xl:gap-12 p-3 sm:px-12 md:px-24 lg:px-16 xl:px-36">
 
               <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-                <Text className="text-5xl md:text-5xl lg:text-5xl xl:text-[95px] font-bold text-white text-gradient text-start ">
+                <Text className="text-[33px] md:text-5xl lg:text-5xl xl:text-[95px] font-bold text-white text-gradient text-start ">
                   Accelerate Your App / H5 Game Growth
                 </Text>
               </ScrollAnimation>
@@ -41,9 +41,15 @@ function MainPage() {
                 </Text>
               </ScrollAnimation>
               <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                <div>
+                  <img
+                    src="/HomePages/Google.png"
+                    alt="Main Background"
+                    className=""
+                  />
+                </div>
 
-
-                <Text className="text-xl md:text-2xl lg:text-3xl xl:text-[25px] text-[#ffffff]">
+                <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[25px] text-[#ffffff]">
                   PUBLISHER
                 </Text>
 
@@ -51,36 +57,36 @@ function MainPage() {
                 <img
                   src="/HomePages/line.png"
                   alt="Advertisers Icon"
-                  className="" />
+                  className="mt-10" />
 
                 {/* Stats Blocks with fadeInUp */}
-                <div className="flex flex-wrap md:flex-nowrap justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-[100px] ">
+                <div className="flex flex-wrap md:flex-nowrap gap-2 md:mt-12 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-[100px] ">
                   {/* Block 1 */}
-                  <div className="flex flex-col w-full md:w-auto max-w-[300px] px-6 py-6 text-start space-y-2">
-                    <Text className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
+                  <div className="flex flex-col w-full md:w-auto max-w-[300px] px-2 py-2 text-start space-y-2">
+                    <Text className="text-2xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
                       Top 20
                     </Text>
-                    <Text className="text-base md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
+                    <Text className="text-md sm:text-xl  md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
                       Global Google Play Publisher in Non-Game
                     </Text>
                   </div>
 
                   {/* Block 2 */}
-                  <div className="flex flex-col w-full md:w-auto max-w-[300px] px-6 py-6 text-start space-y-2">
-                    <Text className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
+                  <div className="flex flex-col w-full md:w-auto max-w-[300px]  px-2 py-2 text-start space-y-2">
+                    <Text className="text-2xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
                       Top 03
                     </Text>
-                    <Text className="text-base md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
+                    <Text className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
                       In Southeast Asia Non-Game segment
                     </Text>
                   </div>
 
                   {/* Block 3 */}
-                  <div className="flex flex-col w-full md:w-auto max-w-[300px] px-6 py-6 text-start space-y-2">
-                    <Text className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
+                  <div className="flex flex-col w-full md:w-auto max-w-[300px]  px-2 py-2 text-start space-y-2">
+                    <Text className="text-2xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
                       2022
                     </Text>
-                    <Text className="text-base md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
+                    <Text className="text-md md:text-xl sm:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
                       Outstanding Company in Business Development and Expansion by Google
                     </Text>
 
@@ -227,7 +233,7 @@ function MainPage() {
 
               <div className="w-full md:w-3/5 flex items-cente ">
                 <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-                  <Text className="text-xl sm:text-2xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
+                  <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
                     Enhancing Personalized App Experiences for Billions
                   </Text>
                 </ScrollAnimation>
@@ -247,7 +253,7 @@ function MainPage() {
                     ].map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <span className="mt-2 h-2 w-2 rounded-full bg-[#AAB0C0] opacity-80"></span>
-                        <span className="text-sm sm:text-base md:text-lg lg:text-[20px]">{item}</span>
+                        <span className="text-xl  md:text-lg lg:text-[20px]">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -265,7 +271,7 @@ function MainPage() {
             </div>
             <div className="mt-12">
               <div className="flex flex-col text-white gap-7 animate__animated animate__fadeInUp ">
-                <Text size='text-3xl md:text-2xl lg:text-3xl xl:text-[55px] text-[#ffffff] '>
+                <Text size='text-5xl xl:text-[55px] text-[#ffffff] '>
                   Your Future Career Opportunities
                 </Text>
               </div>
