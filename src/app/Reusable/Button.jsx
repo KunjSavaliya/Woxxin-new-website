@@ -7,7 +7,7 @@ const Button = ({ text, onClick, className, type = 'button', disabled = false, i
     <button
       type={type}
       onClick={onClick}
-      className={`flex items-center py-3 px-8 rounded font-bold ${className}`}
+      className={` items-center py-3 px-8 rounded font-bold ${className}`}
       disabled={disabled}
     >
       {text}
