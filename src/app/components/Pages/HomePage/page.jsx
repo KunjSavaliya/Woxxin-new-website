@@ -40,14 +40,15 @@ function MainPage() {
                   Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
                 </Text>
               </ScrollAnimation>
+              <div>
+                <img
+                  src="/HomePages/Google.png"
+                  alt="Main Background"
+                  className=""
+                />
+              </div>
               <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-                <div>
-                  <img
-                    src="/HomePages/Google.png"
-                    alt="Main Background"
-                    className=""
-                  />
-                </div>
+
 
                 <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[25px] text-[#ffffff]">
                   PUBLISHER
@@ -125,9 +126,9 @@ function MainPage() {
 
             <div className='mt-5 contents'>
               <div className='contents'>
-                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                <ScrollAnimation animateIn="animate__animated animate__bounceInUp">
 
-                  <div className='animate__animated animate__fadeInUp'>
+                  <div className=''>
                     <Text size="text-[45px] md:text-[65px] lg:text-[65px] xl:text-[115px] font-bold text-white text-gradient text-center text2-gradient">
                       1 Bil
                     </Text>
@@ -147,7 +148,7 @@ function MainPage() {
 
 
 
-              <div className='animate__animated animate__fadeInUp'>
+              <div className='animate__animated animate__bounceInUp'>
                 <Text size="text-center text-[45px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
                   50M+
                 </Text>
@@ -232,7 +233,7 @@ function MainPage() {
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
 
               <div className="w-full md:w-3/5 flex items-cente ">
-                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                   <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
                     Enhancing Personalized App Experiences for Billions
                   </Text>
@@ -242,7 +243,7 @@ function MainPage() {
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInRight"> */}
 
               <div className="w-full md:w-2/5 mt-6 md:mt-0 ">
-                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
                   <ul className="space-y-4">
                     {[
