@@ -26,7 +26,7 @@ function MainPage() {
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left">
           <div className="flex gap-80 lg:px-16 xl:px-32">
-            <div className="flex flex-col mt-32 sm:mt-40 text-white gap-12 sm:gap-7 xl:gap-12 p-3 sm:px-12 md:px-24 lg:px-16 xl:px-36">
+            <div className="flex flex-col gap-12 p-3 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-16 xl:px-36">
 
               <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
@@ -44,7 +44,7 @@ function MainPage() {
                 <img
                   src="/HomePages/Google.png"
                   alt="Main Background"
-                  className=""
+                  className="w-56"
                 />
               </div>
               <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
@@ -108,11 +108,11 @@ function MainPage() {
           <img
             src="/HomePages/Home2.png"
             alt="Main Background"
-            className="w-full mt-[-4px] xl:mt-0 h-[800px] sm:h-[750px] xl:h-full lg:h-full md:h-[1000px]"
+            className="w-full mt-[-4px] xl:mt-0 h-[800px] sm:h-[750px] xl:h-full lg:h-[1200px] md:h-[1000px]"
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start justify-start w-full h-full mt-32 text-left p">
-          <div className='flex flex-col  lg:gap-5 xl:gap-24 lg:px-28 xl:px-32'>
+          <div className='flex flex-col gap-5 lg:gap-5 xl:gap-24 lg:px-12 xl:px-32'>
             <div className="flex flex-col text-white gap-7 ">
 
               <Text size="text-2xl mt-[-100px] font-bold text-white p-8 text-start md:text-4xl lg:text-4xl xl:text-5xl  md:mt-[-100px] xl:mt-0 lg:mt-0 ">
@@ -138,17 +138,18 @@ function MainPage() {
                   </div>
                 </ScrollAnimation>
                 <img
-                  src="/HomePages/Appimg.png"
-                  alt="Advertisers Icon"
-                  className=" w-full"
-                />
+  src="/HomePages/Appimg.png"
+  alt="Advertisers Icon"
+  className="w-[80%] mx-auto"
+/>
+
               </div>
             </div>
-            <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+            <ScrollAnimation animateIn="animate__animated animate__bounceInUp">
 
 
 
-              <div className='animate__animated animate__bounceInUp'>
+              <div className=''>
                 <Text size="text-center text-[45px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
                   50M+
                 </Text>
@@ -170,14 +171,14 @@ function MainPage() {
             className="w-full mt-[-4px]  h-[500px] sm:h-[600px] md:h-[600px] lg:h-[1000px]"
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-center  justify-center w-full h-full  text-left animate__animated animate__fadeInLeft">
+        <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-left ">
 
           <div className='flex flex-col gap-5' >
             <div>
               <img
                 src="/HomePages/Section.png"
                 alt="Main Background"
-                className="w-full mt-[-4px] h-[200px] sm:h-[250px] xl:h-[250px] lg:h-[250px] md:h-[200px]"
+                className="w-full mt-[-4px] h-[200px] sm:h-[250px] xl:h-[250px] lg:h-[280px] md:h-[200px]"
               />
             </div>
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
@@ -207,7 +208,7 @@ function MainPage() {
             className="w-full "
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-center  justify-strat w-full h-full  text-left ">
+        <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left justify-strat ">
           <div className='lg:px-28 xl:px-32'>
             <div className="flex flex-col text-white gap-7">
               <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
@@ -222,17 +223,17 @@ function MainPage() {
           <img
             src="/HomePages/Home6.png"
             alt="Main Background"
-            className="w-full h-[900px] xl:h-[900px]"
+            className="w-full mt-[-4px] h-[1000px] xl:h-[800px]"
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-start mt-36 w-full h-full text-left animate__animated animate__fadeInLeft">
-          <div className='flex justify-around flex-col '>
+        <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
+          <div className='flex flex-col justify-around '>
             {/* <ScrollAnimation animateIn="animate__animated animate__fadeInUp"> */}
 
-            <div className="flex flex-col md:flex-row justify-between text-white gap-8 px-4 sm:px-6 md:px-12 lg:px-20 py-8">
+            <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20">
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
 
-              <div className="w-full md:w-3/5 flex items-cente ">
+              <div className="flex w-full md:w-3/5 items-cente ">
                 <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                   <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
                     Enhancing Personalized App Experiences for Billions
@@ -242,7 +243,7 @@ function MainPage() {
               {/* </ScrollAnimation> */}
               {/* <ScrollAnimation animateIn="animate__animated animate__fadeInRight"> */}
 
-              <div className="w-full md:w-2/5 mt-6 md:mt-0 ">
+              <div className="w-full mt-6 md:w-2/5 md:mt-0 ">
                 <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
                   <ul className="space-y-4">
@@ -263,24 +264,24 @@ function MainPage() {
               {/* </ScrollAnimation> */}
             </div>
             {/* </ScrollAnimation> */}
-            <div className="mt-12 flex justify-center">
+            <div className="flex justify-center mt-12">
               <Button
                 text="Discover Ecosystem"
                 iconColor="#6C63FF"
-                className="mt-5 text-white bg-transparent border border-[#5961F9]"
+                className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9]"
               />
             </div>
-            <div className="mt-12">
+            <div className="mt-10 sm:mt-12">
               <div className="flex flex-col text-white gap-7 animate__animated animate__fadeInUp ">
-                <Text size='text-5xl xl:text-[55px] text-[#ffffff] '>
+                <Text size='text-3xl xl:text-[55px] text-[#ffffff] '>
                   Your Future Career Opportunities
                 </Text>
               </div>
-              <div className="mt-12 flex justify-center">
+              <div className="flex justify-center mt-12">
                 <Button
                   text="Discover Ecosystem"
                   iconColor="#6C63FF"
-                  className="mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
+                  className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
                 />
               </div>
             </div>
