@@ -21,7 +21,7 @@ function MainPage() {
           <img
             src="/HomePages/Home.png"
             alt="Main Background"
-            className="w-full h-[159vh] sm:h-[150vh]  md:h-[128vh] lg:h-[1000px] xl:h-[1000px]"
+            className="w-full h-[160vh] xsm:h-[120vh] sm:h-[150vh]  md:h-[128vh] lg:h-[1000px] xl:h-[1000px]"
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left">
@@ -58,42 +58,39 @@ function MainPage() {
                 <img
                   src="/HomePages/line.png"
                   alt="Advertisers Icon"
-                  className="mt-10" />
+                  className="w-full mt-10" />
 
                 {/* Stats Blocks with fadeInUp */}
-                <div className="flex flex-wrap md:flex-nowrap gap-2 md:mt-12 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-[100px] ">
-                  {/* Block 1 */}
-                  <div className="flex flex-col w-full md:w-auto max-w-[300px] px-2 py-2 text-start space-y-2">
-                    <Text className="text-2xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
-                      Top 20
-                    </Text>
-                    <Text className="text-md sm:text-xl  md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
-                      Global Google Play Publisher in Non-Game
-                    </Text>
-                  </div>
+                <div className="flex flex-wrap md:flex-nowrap gap-4 md:mt-12 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-[100px]">
+  {/* Shared styling for all blocks */}
+  {[
+    {
+      title: "Top 20",
+      description: "Global Google Play Publisher in Non-Game",
+    },
+    {
+      title: "Top 03",
+      description: "In Southeast Asia Non-Game segment",
+    },
+    {
+      title: "2022",
+      description: "Outstanding Company in Business Development and Expansion by Google",
+    },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="flex flex-col w-full max-w-full px-4 py-4 space-y-2 sm:w-1/2 md:w-1/3 text-start"
+    >
+      <Text className="text-2xl md:text-3xl xl:text-[35px] text-white">
+        {item.title}
+      </Text>
+      <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
+        {item.description}
+      </Text>
+    </div>
+  ))}
+</div>
 
-                  {/* Block 2 */}
-                  <div className="flex flex-col w-full md:w-auto max-w-[300px]  px-2 py-2 text-start space-y-2">
-                    <Text className="text-2xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
-                      Top 03
-                    </Text>
-                    <Text className="text-md sm:text-xl md:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
-                      In Southeast Asia Non-Game segment
-                    </Text>
-                  </div>
-
-                  {/* Block 3 */}
-                  <div className="flex flex-col w-full md:w-auto max-w-[300px]  px-2 py-2 text-start space-y-2">
-                    <Text className="text-2xl md:text-2xl lg:text-3xl xl:text-[35px] text-white">
-                      2022
-                    </Text>
-                    <Text className="text-md md:text-xl sm:text-xl lg:text-xl xl:text-[20px] text-white font-medium break-words">
-                      Outstanding Company in Business Development and Expansion by Google
-                    </Text>
-
-                  </div>
-
-                </div>
               </ScrollAnimation>
 
             </div>
@@ -168,22 +165,16 @@ function MainPage() {
           <img
             src="/HomePages/HomeMobile.png"
             alt="Main Background"
-            className="w-full mt-[-4px]  h-[500px] sm:h-[600px] md:h-[600px] lg:h-[1000px]"
+            className="w-full mt-[-4px]  h-[500px] sm:h-[600px] md:h-[600px] lg:h-[600px] xl:h-[800px]"
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-left ">
 
           <div className='flex flex-col gap-5' >
-            <div>
-              <img
-                src="/HomePages/Section.png"
-                alt="Main Background"
-                className="w-full mt-[-4px] h-[200px] sm:h-[250px] xl:h-[250px] lg:h-[280px] md:h-[200px]"
-              />
-            </div>
+
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-              <div className=''>
+              <div className='mt-20'>
                 <Text className="text-center text-5xl mt-[-130px] font-extralight leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
                   Mobile Apps
                 </Text>
@@ -205,7 +196,7 @@ function MainPage() {
           <img
             src="/HomePages/Home5.png"
             alt="Main Background"
-            className="w-full "
+            className="w-full h-[50%] mt-[-4px]"
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left justify-strat ">
