@@ -54,7 +54,7 @@ body {
     position: relative;
   }
   .text-gradient-mobileApp {
-   
+
     background: linear-gradient(
       to right,
       #58cfff,
@@ -62,22 +62,45 @@ body {
       #ff7ecf
     );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
   }
-  
-  
+
+
   .text-gradient-mobileGames {
-   
+
     background: linear-gradient(
       to right,
       #6C63FF,
       #FF6A00
     );
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
   }
-  
-  
+  .text-gradient-mobiletext {
+
+    background: linear-gradient(
+      to right,
+      #F87BFF,
+      #FB92CF,
+      #FFDD9B,
+#C2F0B1
+,#2FD8FE
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-mobilePro {
+
+    background: linear-gradient(
+      to right,
+      #FFD6A8 20%,
+     #6C63FF
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 }
 
 

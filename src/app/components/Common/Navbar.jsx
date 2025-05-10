@@ -58,7 +58,7 @@ function Navbar() {
     localStorage.setItem('isOpen', isOpen);
   }, [isOpen]);
   const dropdownItems = [
-    { title: "Mobile Apps", navigate: '' },
+   { title: "Mobile Apps", navigate: '/components/Pages/Advertisers/MobileApp' },
     { title: "Mobile Games" },
     { title: "H5 Games / Quiz" },
     { title: "Video Ads" },
@@ -76,7 +76,7 @@ function Navbar() {
         <div>
           <img src="/logo.png" alt="logo" className="cursor-pointer w-28" onClick={() => router.push('/')} />
         </div>
-        <div className="  items-center hidden font-bold cursor-pointer lg:flex">
+        <div className="items-center hidden font-bold cursor-pointer lg:flex">
           <div className="flex gap-8 text-xl font-light">
             <p>About us</p>
             <div className="relative" ref={dropdownRef}>
@@ -91,7 +91,7 @@ function Navbar() {
                 <div className="absolute z-10 mt-5 bg-white border border-[#6C63FF] shadow-xl rounded-2xl p-6 w-52">
                   {dropdownItems.map((item, index) => (
                     <div key={index}>
-                      <div className="flex flex-col cursor-pointer hover:text-blue-500 text-black" onClick={() => {
+                      <div className="flex flex-col text-black cursor-pointer hover:text-blue-500" onClick={() => {
                         setSelectedItem(item);
                         setIsDropdownOpen(false);
                         handleNavigation(item.navigate)

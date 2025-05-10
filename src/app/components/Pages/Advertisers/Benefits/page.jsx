@@ -8,27 +8,27 @@ function page() {
   return (
     <div className='mt-3 md:mt-10 md:px-10 lg:px-12 xl:px-12'>
   <div className='flex flex-wrap gap-5 p-3 justify-evenly'>
-    <div className='flex flex-col items-center md:items-center md:justify-center lg:items-start lg:justify-start'> 
-      <Text 
-        size={'text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[45px] text-[#6C63FF] mt-10'} 
+    <div className='flex flex-col items-center md:items-center md:justify-center lg:items-start lg:justify-start'>
+      <Text
+        size={'text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[45px] text-[#6C63FF] mt-10'}
         className="max-w-md text-center md:max-w-lg lg:max-w-2xl xl:max-w-3xl md:text-center lg:text-left"
       >
         Woxxin for Advertisers
       </Text>
-      <Text 
-        size={'text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[45px] text-[#373435] mt-10'} 
+      <Text
+        size={'text-2xl sm:text-4xl md:text-4xl lg:text-5xl xl:text-[45px] text-[#373435] mt-10'}
         className="max-w-md font-normal text-center md:max-w-2xl lg:max-w-2xl xl:max-w-3xl md:text-center lg:text-left"
       >
         Experience a Superlative Output of Your Marketing
       </Text>
-      <Text 
-        size={'text-xl xl:text-[25px] text-[#373435] mt-10'} 
+      <Text
+        size={'text-xl xl:text-[25px] text-[#373435] mt-10'}
         className="max-w-md font-normal text-center md:max-w-2xl lg:max-w-2xl xl:max-w-3xl md:text-center lg:text-left"
       >
         A game-changing advertising network provides media buyers and affiliates with exclusive traffic sources, connecting offers with highly engaged audiences.
       </Text>
 
-      <div className=' mt-7'> 
+      <div className=' mt-7'>
         <Button text="BUY TOP TRAFFIC" className="mt-5 text-white bg-[#6C63FF] hover:bg-[#373435]" />
       </div>
     </div>
@@ -107,8 +107,8 @@ function page() {
       </div>
 </div>
 
-  
-  
+
+
   )
 }
 

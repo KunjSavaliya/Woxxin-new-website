@@ -1,105 +1,83 @@
 'use client';
-import WaveText from '@/app/Pages/BubbleText';
 import React, { useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
-import { motion } from "framer-motion";
-import itemVariants from '@/app/Pages/Animation';
 import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
-import { contentArray } from '@/app/Pages/HomePage/Data';
-import Advertisers from './Advertisers';
-import Publishers from './Publishers';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 function MainPage() {
-  const [active, setActive] = useState('Advertisers');
 
   return (
     <>
-      <div className="relative">
-        <div>
-          <img
-            src="/HomePages/Home.png"
-            alt="Main Background"
-            className="w-full h-[160vh] xsm:h-[120vh] sm:h-[150vh]  md:h-[128vh] lg:h-[1000px] xl:h-[1000px]"
-          />
-        </div>
-        <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left">
-          <div className="flex gap-80 lg:px-16 xl:px-32">
-            <div className="flex flex-col gap-12 p-3 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-16 xl:px-36">
+   <div className="relative bg-[#110f27] w-full h-full overflow-hidden">
+  <img
+    src="/HomePages/Homedesign.png"
+    alt="Main Background"
+    className="absolute inset-0 z-0 object-fill w-full h-[70%] "
+  />
+  <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
 
-              <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+    <div className="flex flex-col gap-12 p-6 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-20 xl:px-36 xl:pl-36">
+         <div>
+        <img
+          src="/HomePages/Google.png"
+          alt="Google"
+          className="w-40 md:w-56"
+        />
+      </div>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+        <Text className="text-4xl sm:text-5xl  md:text-6xl lg:text-[80px] xl:text-[100px] font-bold text-white text-start">
+          Accelerate Your App / H5 Game Growth
+        </Text>
+      </ScrollAnimation>
 
-                <Text className="text-[33px] md:text-5xl lg:text-5xl xl:text-[95px] font-bold text-white text-gradient text-start ">
-                  Accelerate Your App / H5 Game Growth
-                </Text>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+      <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+        <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start">
+          Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
+        </Text>
+      </ScrollAnimation>
+      <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+        <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[25px] text-white">
+          PUBLISHER
+        </Text>
 
-                <Text className="text-[20px] md:text-2xl lg:text-2xl xl:text-[30px] text-white font-medium text-start ">
-                  Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
-                </Text>
-              </ScrollAnimation>
-              <div>
-                <img
-                  src="/HomePages/Google.png"
-                  alt="Main Background"
-                  className="w-56"
-                />
-              </div>
-              <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+        <img
+          src="/HomePages/line.png"
+          alt="Line"
+          className="w-full mt-6"
+        />
 
-
-                <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[25px] text-[#ffffff]">
-                  PUBLISHER
-                </Text>
-
-                {/* Image with fadeInUp */}
-                <img
-                  src="/HomePages/line.png"
-                  alt="Advertisers Icon"
-                  className="w-full mt-10" />
-
-                {/* Stats Blocks with fadeInUp */}
-                <div className="flex flex-wrap md:flex-nowrap gap-4 md:mt-12 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-[100px]">
-  {/* Shared styling for all blocks */}
-  {[
-    {
-      title: "Top 20",
-      description: "Global Google Play Publisher in Non-Game",
-    },
-    {
-      title: "Top 03",
-      description: "In Southeast Asia Non-Game segment",
-    },
-    {
-      title: "2022",
-      description: "Outstanding Company in Business Development and Expansion by Google",
-    },
-  ].map((item, index) => (
-    <div
-      key={index}
-      className="flex flex-col w-full max-w-full px-4 py-4 space-y-2 sm:w-1/2 md:w-1/3 text-start"
-    >
-      <Text className="text-2xl md:text-3xl xl:text-[35px] text-white">
-        {item.title}
-      </Text>
-      <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
-        {item.description}
-      </Text>
-    </div>
-  ))}
-</div>
-
-              </ScrollAnimation>
-
+        <div className="flex flex-wrap md:flex-nowrap gap-4 mt-10 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
+          {[
+            {
+              title: "Top 20",
+              description: "Global Google Play Publisher in Non-Game",
+            },
+            {
+              title: "Top 03",
+              description: "In Southeast Asia Non-Game segment",
+            },
+            {
+              title: "2022",
+              description: "Outstanding Company in Business Development and Expansion by Google",
+            },
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col w-full max-w-full px-4 py-4 space-y-2 sm:w-1/2 md:w-1/3 text-start"
+            >
+              <Text className="text-2xl md:text-3xl xl:text-[35px] text-white">
+                {item.title}
+              </Text>
+              <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
+                {item.description}
+              </Text>
             </div>
-
-          </div>
+          ))}
         </div>
-
-
-      </div >
+      </ScrollAnimation>
+    </div>
+  </div>
+</div>
       <div className="relative">
         <div>
           <img
@@ -111,20 +89,16 @@ function MainPage() {
         <div className="absolute top-0 left-0 flex flex-col items-start justify-start w-full h-full mt-32 text-left p">
           <div className='flex flex-col gap-5 lg:gap-5 xl:gap-24 lg:px-12 xl:px-32'>
             <div className="flex flex-col text-white gap-7 ">
-
               <Text size="text-2xl mt-[-100px] font-bold text-white p-8 text-start md:text-4xl lg:text-4xl xl:text-5xl  md:mt-[-100px] xl:mt-0 lg:mt-0 ">
-
                 Woxxin’s ecosystem of quality products
                 has helped more than half a billion
                 people work and play effectively, aiming
                 to serve 1 billion users by 2025
               </Text>
             </div>
-
             <div className='mt-5 contents'>
               <div className='contents'>
                 <ScrollAnimation animateIn="animate__animated animate__bounceInUp">
-
                   <div className=''>
                     <Text size="text-[45px] md:text-[65px] lg:text-[65px] xl:text-[115px] font-bold text-white text-gradient text-center text2-gradient">
                       1 Bil
@@ -139,13 +113,9 @@ function MainPage() {
   alt="Advertisers Icon"
   className="w-[80%] mx-auto"
 />
-
               </div>
             </div>
             <ScrollAnimation animateIn="animate__animated animate__bounceInUp">
-
-
-
               <div className=''>
                 <Text size="text-center text-[45px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
                   50M+
@@ -156,9 +126,7 @@ function MainPage() {
               </div>
             </ScrollAnimation>
           </div>
-
         </div>
-
       </div>
       <div className="relative">
         <div>
@@ -169,18 +137,14 @@ function MainPage() {
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-left ">
-
           <div className='flex flex-col gap-5' >
-
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-
               <div className='mt-20'>
                 <Text className="text-center text-5xl mt-[-130px] font-extralight leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
                   Mobile Apps
                 </Text>
               </div>
             </ScrollAnimation>
-
             <div className='flex justify-center'>
               <img
                 src="/HomePages/Mobile.png"
@@ -196,12 +160,12 @@ function MainPage() {
           <img
             src="/HomePages/Home5.png"
             alt="Main Background"
-            className="w-full h-[50%] mt-[-4px]"
+            className="w-full h-auto lg:h-[900px] mt-[-4px]"
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left justify-strat ">
           <div className='lg:px-28 xl:px-32'>
-            <div className="flex flex-col text-white gap-7">
+            <div className="flex flex-col text-white ">
               <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
                 Mobile Games
               </Text>
@@ -219,11 +183,7 @@ function MainPage() {
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
           <div className='flex flex-col justify-around '>
-            {/* <ScrollAnimation animateIn="animate__animated animate__fadeInUp"> */}
-
             <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20">
-              {/* <ScrollAnimation animateIn="animate__animated animate__fadeInLeft"> */}
-
               <div className="flex w-full md:w-3/5 items-cente ">
                 <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                   <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
@@ -231,9 +191,6 @@ function MainPage() {
                   </Text>
                 </ScrollAnimation>
               </div>
-              {/* </ScrollAnimation> */}
-              {/* <ScrollAnimation animateIn="animate__animated animate__fadeInRight"> */}
-
               <div className="w-full mt-6 md:w-2/5 md:mt-0 ">
                 <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
@@ -252,9 +209,7 @@ function MainPage() {
                   </ul>
                 </ScrollAnimation>
               </div>
-              {/* </ScrollAnimation> */}
             </div>
-            {/* </ScrollAnimation> */}
             <div className="flex justify-center mt-12">
               <Button
                 text="Discover Ecosystem"
