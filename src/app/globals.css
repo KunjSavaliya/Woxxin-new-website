@@ -100,6 +100,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .text-gradient-lasttext {
+
+    background: linear-gradient(
+      to right,
+      #000000 20%,
+      #FF6A00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 }
 
