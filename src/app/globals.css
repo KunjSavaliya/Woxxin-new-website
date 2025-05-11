@@ -110,7 +110,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+.text-gradient-Mobetext {
 
+    background: linear-gradient(
+      to right,
+      #14D4FF 20%,
+      #FF6A00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 
