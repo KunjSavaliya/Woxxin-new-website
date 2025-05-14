@@ -24,6 +24,7 @@ function MobileGame() {
                     title1="Endless fun awaits you with engaging and easy-to-play games!"
                     description="An enthusiastic and innovative group delivers fresh and thrilling adventures to users every day."
                     bgImageClassNames="h-full"
+                    iconClassNames='w-32 sm:w-40 md:w-56 xl:w-80'
                 />
                 <div className=" bg-[#110f27]  ">
 
@@ -42,11 +43,20 @@ function MobileGame() {
                         </ScrollAnimation>
                         <div className='flex justify-center'>
                             <img
-                                src="/HomePages/Mobile.png"
+                                src="/HomePages/MobileGame/MobImg.png"
                                 alt="Main Background"
-                                className="w-auto mt-[-4px] h-[200px] sm:h-[300px] md:h-[300px] lg:h-[600px]"
+                                className="w-auto  h-auto xl:h-[900px]"
                             />
                         </div>
+
+
+
+
+
+
+
+
+
                     </div>
                     <div className=' sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64' >
                         <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
@@ -84,7 +94,35 @@ function MobileGame() {
 
 
                 </div>
-
+                <div className='mt-6'>
+                    <Text className="text-xl p-4 text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro  mb-6" >
+                        Outstanding products
+                    </Text>
+                    <div className='flex gap-5 justify-center flex-wrap'>
+                        <img
+                            src="/HomePages/MobileGame/MobApp1.png"
+                            alt="Line"
+                            className="w-auto"
+                        />
+                        <img
+                            src="/HomePages/MobileGame/MobApp2.png"
+                            alt="Line"
+                            className="w-auto"
+                        />
+                        <img
+                            src="/HomePages/MobileGame/MobApp3.png"
+                            alt="Line"
+                            className="w-auto"
+                        />
+                    </div>
+                    <div className='flex justify-center mb-12'>
+                        <img
+                            src="/HomePages/MobileGame/MobApp4.png"
+                            alt="Line"
+                            className="w-auto h-[500px]"
+                        />
+                    </div>
+                </div>
                 <HeroSection
                     imageSrc="/HomePages/MobileApp/MobileHand.png"
                     text="Creating World-Class Products Together"
