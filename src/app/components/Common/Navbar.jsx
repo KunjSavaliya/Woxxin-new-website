@@ -13,7 +13,7 @@ const Navbar = () => {
   const dropdownItems = [
     { title: 'Mobile Apps', navigate: '/components/Pages/EcoSystem/MobileApp' },
     { title: 'Mobile Games', navigate: '/components/Pages/EcoSystem/MobileGame' },
-    { title: 'H5 Games / Quiz' },
+    { title: 'H5 Games / Quiz', navigate:'/components/Pages/EcoSystem/H5Game' },
     { title: 'Video Ads' },
     { title: 'Google Ads' },
     { title: 'Investment' },

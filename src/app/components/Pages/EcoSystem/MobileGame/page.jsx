@@ -24,7 +24,7 @@ function MobileGame() {
                     title1="Endless fun awaits you with engaging and easy-to-play games!"
                     description="An enthusiastic and innovative group delivers fresh and thrilling adventures to users every day."
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 sm:w-40 md:w-56 xl:w-80'
+                    iconClassNames='w-32 sm:w-40 md:w-56 xl:w-80    '
                 />
                 <div className=" bg-[#110f27]  ">
 
