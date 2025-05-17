@@ -1,6 +1,7 @@
 // components/MobileAppSection.js
 import Image from 'next/image';
 import Text from './Text';
+import Button from './Button';
 
 const MobileAppSection = ({
   bgImageSrc,
@@ -14,6 +15,9 @@ const MobileAppSection = ({
   img1,
   iconClassNames = '',
   bgImageClassNames = '',
+  descriptionClassName ='',
+  buttonText='',
+  buttonText1=''
 }) => {
   return (
     <div className="relative bg-[#110f27] w-full h-full">
@@ -48,9 +52,30 @@ const MobileAppSection = ({
                 />
               </div>
             </div>
-            <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start mt-12">
+            <Text className={` text-white font-medium text-start mt-12 ${descriptionClassName}`}>
               {description}
             </Text>
+
+              {(buttonText || buttonText1) && (
+  <div className="flex justify-start gap-12 mt-12">
+    {buttonText && (
+      <Button
+        text={buttonText}
+        iconColor="#6C63FF"
+        className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
+      />
+    )}
+
+    {buttonText1 && (
+      <Button
+        text={buttonText1}
+        iconColor="#6C63FF"
+        className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
+      />
+    )}
+  </div>
+)}
+
           </div>
 
         </div>

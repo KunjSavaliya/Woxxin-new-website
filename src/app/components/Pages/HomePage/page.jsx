@@ -25,7 +25,7 @@ function MainPage() {
         />
       </div>
       <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-        <Text className="text-4xl sm:text-5xl  md:text-6xl lg:text-[80px] xl:text-[100px] font-bold text-white text-start">
+        <Text className="text-4xl sm:text-5xl  md:text-6xl lg:text-[80px] xl:text-[100px] font-bold text-white text-start ActiveUser-homePage">
           Accelerate Your App / H5 Game Growth
         </Text>
       </ScrollAnimation>
@@ -44,7 +44,7 @@ function MainPage() {
           src="/HomePages/line.png"
           alt="Line"
           className="w-full mt-6"
-        />
+        ></img>
 
         <div className="flex flex-wrap md:flex-nowrap gap-4 mt-10 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
           {[
@@ -78,12 +78,13 @@ function MainPage() {
     </div>
   </div>
 </div>
-      <div className="relative">
+      <div className="relative bg-[#110f27]">
         <div>
           <img
             src="/HomePages/Home2.png"
             alt="Main Background"
-            className="w-full mt-[-4px] xl:mt-0 h-[800px] sm:h-[750px] xl:h-full lg:h-[1200px] md:h-[1000px]"
+            className="w-full "
+
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-start justify-start w-full h-full mt-32 text-left p">
@@ -96,6 +97,9 @@ function MainPage() {
                 to serve 1 billion users by 2025
               </Text>
             </div>
+                 </div>
+        </div>
+
             <div className='mt-5 contents'>
               <div className='contents'>
                 <ScrollAnimation animateIn="animate__animated animate__bounceInUp">
@@ -109,12 +113,12 @@ function MainPage() {
                   </div>
                 </ScrollAnimation>
                 <img
-  src="/HomePages/Appimg.png"
-  alt="Advertisers Icon"
-  className="w-[80%] mx-auto"
+             src="/HomePages/Appimg.png"
+           alt="Advertisers Icon"
+            className="w-auto mx-auto "
 />
               </div>
-            </div>
+
             <ScrollAnimation animateIn="animate__animated animate__bounceInUp">
               <div className=''>
                 <Text size="text-center text-[45px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
@@ -126,8 +130,7 @@ function MainPage() {
               </div>
             </ScrollAnimation>
           </div>
-        </div>
-      </div>
+ </div>
       <div className="relative">
         <div>
           <img
