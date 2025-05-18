@@ -4,14 +4,14 @@ import Text from "./Text";
 import Button from "./Button";
 
 // onButtonClick
-const HeroSection = ({ imageSrc, text, buttonText ,textClassName}) => {
+const HeroSection = ({ imageSrc, text, buttonText, textClassName }) => {
     return (
         <div className="relative  bg-[#110f27]">
             <div>
                 <Image
                     src={imageSrc}
                     alt="Main Background"
-                    className="w-full mt-[-4px] h-[600px] xl:h-[700px]"
+                    className="w-full mt-[-4px] h-[500px] xl:h-[600px]"
                     width={1920}
                     height={700}
                 />
