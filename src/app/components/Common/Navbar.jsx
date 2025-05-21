@@ -79,7 +79,7 @@ const Navbar = () => {
             )}
           </div>
           <p>Advertisers</p>
-          <p>Publishing</p>
+          <p onClick={() => router.push('/components/Pages/Publishing')}>Publishing</p>
           <p>Career</p>
           <p>Contact Us</p>
         </div>

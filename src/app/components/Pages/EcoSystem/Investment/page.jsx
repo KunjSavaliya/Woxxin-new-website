@@ -19,7 +19,7 @@ function Investment() {
                 <MobileAppSection
                     bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
                     logoSrc="/HomePages/Google.png"
-                    iconSrc="/HomePages/MobileGame/MobGame.png"
+                    iconSrc="/HomePages/Investment/rocket.png"
                     title="Investment"
                     title1="With a huge resources and the most experience in
 the field of Product Development, Marketing,
@@ -30,7 +30,7 @@ companies make strong breakthroughs and achieve
 many great
 achievements."
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 sm:w-40 md:w-56 xl:w-80'
+                    iconClassNames='w-32 sm:w-40 md:w-56 xl:w-40'
                     descriptionClassName='text-2xl '
                 />
                 <div className="bg-[#110f27] mt-[-4px]">
@@ -129,7 +129,7 @@ achievements."
                         </div>
                         <div className="flex flex-col text-white  ">
                             <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  mb-12 ">
-                                Our promise: We'll get you a definite answer
+                                Our promise: We will get you a definite answer
                                 within 72 hours.
                             </Text>
                         </div>
@@ -163,10 +163,12 @@ achievements."
                 </div>
 
                 <HeroSection
-                    imageSrc="/HomePages/H5Game.png"
-                    text="Your Future Career Opportunities"
-                    buttonText="Discover Now"
-                    textClassName='text-white mt-[-100px] md:mt-[-150px] lg:mt-[-150px] xl:mt-[-150px]'
+                    imageSrc="/HomePages/Investment/footerbtn.png"
+                    text="Apply for Investment"
+                    buttonText="Let’s Talk"
+                    textClassName='text-white'
+                    text1ClassName='text-3xl text-white mt-[-5px]'
+                    text1='We would like to get to know you and your start-up'
                 // onButtonClick={() => alert("Button clicked!")}
                 />
 

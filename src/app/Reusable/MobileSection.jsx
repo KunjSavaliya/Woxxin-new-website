@@ -15,9 +15,11 @@ const MobileAppSection = ({
   img1,
   iconClassNames = '',
   bgImageClassNames = '',
-  descriptionClassName ='',
-  buttonText='',
-  buttonText1=''
+  descriptionClassName = '',
+  buttonText = '',
+  buttonText1 = '',
+  Mtext = '',
+  MTitle = ''
 }) => {
   return (
     <div className="relative bg-[#110f27] w-full h-full">
@@ -27,7 +29,7 @@ const MobileAppSection = ({
         className={`absolute w-full ${bgImageClassNames}`}
       />
       <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-        <div className="flex flex-col p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[300px] sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
+        <div className="flex flex-col p-6 mt-32 text-white sm:mt-40 gap-[100px] lg:gap-[150px] sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
           {/* Top Section */}
           <div>
             <div className="flex justify-start md:gap-10 lg:gap-32">
@@ -37,7 +39,7 @@ const MobileAppSection = ({
                   alt="Logo"
                   className="w-32 sm:w-40 md:w-64"
                 />
-                <Text className="text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-start mt-6 sm:mt-10">
+                <Text className=" leading-[1.2] md:leading-[1.2] text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-start mt-6 sm:mt-10">
                   {title}
                 </Text>
                 <Text className=" font-extralight text-2xl sm:text-3xl md:text-3xl lg:text-[30px] xl:text-[30px] text-white text-start mt-6 sm:mt-10">
@@ -56,28 +58,46 @@ const MobileAppSection = ({
               {description}
             </Text>
 
-              {(buttonText || buttonText1) && (
-  <div className="flex justify-start gap-12 mt-12">
-    {buttonText && (
-      <Button
-        text={buttonText}
-        iconColor="#6C63FF"
-        className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
-      />
-    )}
+            {(buttonText || buttonText1) && (
+              <div className="flex justify-start gap-12 mt-12">
+                {buttonText && (
+                  <Button
+                    text={buttonText}
+                    iconColor="#6C63FF"
+                    className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
+                  />
+                )}
 
-    {buttonText1 && (
-      <Button
-        text={buttonText1}
-        iconColor="#6C63FF"
-        className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
-      />
-    )}
-  </div>
-)}
+                {buttonText1 && (
+                  <Button
+                    text={buttonText1}
+                    iconColor="#6C63FF"
+                    className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
+                  />
+                )}
+              </div>
+            )}
 
           </div>
-
+          {(MTitle) && (
+            <div>
+              <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
+                {MTitle}
+              </Text>
+              <img
+                src="/HomePages/line.png"
+                alt="Line"
+                className="w-full mt-6"
+              />
+              <div className="flex flex-wrap md:flex-nowrap  mt-2 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
+              </div>
+              <div className="flex flex-col text-white gap-7 ">
+                <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  xl:mt-0 lg:mt-0 ">
+                  {Mtext}
+                </Text>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

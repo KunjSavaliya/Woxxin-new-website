@@ -81,6 +81,14 @@ function MobilePage() {
 
 
         <div className="flex flex-col p-6 mt-10 text-white gap-7 sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
+           <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
+                VISION
+              </Text>
+              <img
+                src="/HomePages/line.png"
+                alt="Line"
+                className="w-full mt-6"
+              />
           <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  xl:mt-0 lg:mt-0 ">
             A vibrant network of cutting-edge apps designed
             to enhance the lives of millions, paving the
