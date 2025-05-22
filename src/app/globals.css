@@ -122,6 +122,16 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+  .text-gradient-publish {
+
+    background: linear-gradient(
+      to right,
+      #FFFFFF 20%,
+      #FF6A00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 
