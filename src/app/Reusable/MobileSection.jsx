@@ -19,7 +19,9 @@ const MobileAppSection = ({
   buttonText = '',
   buttonText1 = '',
   Mtext = '',
-  MTitle = ''
+  MTitle = '',
+  EcoText1 = '',
+  EcoText = '',
 }) => {
   return (
     <div className="relative bg-[#110f27] w-full h-full">
@@ -57,7 +59,21 @@ const MobileAppSection = ({
             <Text className={` text-white font-medium text-start mt-12 ${descriptionClassName}`}>
               {description}
             </Text>
+            {(EcoText || EcoText1) && (
+              <div className=" mt-[-100px] pl-56 pr-56 mb-12">
+                {EcoText && (
+                  <Text className={` text-white text-4xl text-center  `}>
+                    {EcoText}
+                  </Text>
+                )}
 
+                {EcoText1 && (
+                  <Text className={` text-white text-4xl text-center mt-12 `}>
+                    {EcoText1}
+                  </Text>
+                )}
+              </div>
+            )}
             {(buttonText || buttonText1) && (
               <div className="flex justify-start gap-12 mt-12">
                 {buttonText && (

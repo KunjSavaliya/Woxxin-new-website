@@ -57,7 +57,7 @@ const Navbar = () => {
           <div className="relative" ref={dropdownRef}>
             <p
               className="flex items-center cursor-pointer"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              onClick={() => setIsDropdownOpen(!isDropdownOpen), router.push('/components/Pages/EcoSystem/Eco')}
             >
               Ecosystem
               {isDropdownOpen ? <HiChevronUp className="ml-1" /> : <HiChevronDown className="ml-1" />}
@@ -79,9 +79,9 @@ const Navbar = () => {
             )}
           </div>
           <p>Advertisers</p>
-          <p onClick={() => router.push('/components/Pages/Publishing')}>Publishing</p>
+          <p onClick={() => router.push('/components/Pages/Publishing')} className='cursor-pointer'>Publishing</p>
           <p>Career</p>
-          <p>Contact Us</p>
+          <p onClick={() => router.push('/components/Pages/ContactUs')} className='cursor-pointer'>Contact Us</p>
         </div>
 
         {/* Hamburger Icon */}
