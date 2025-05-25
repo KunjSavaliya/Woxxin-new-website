@@ -60,7 +60,7 @@ const MobileAppSection = ({
               {description}
             </Text>
             {(EcoText || EcoText1) && (
-              <div className=" mt-[-100px] pl-56 pr-56 mb-12">
+              <div className=" mt-[-100px] xl:pl-56 xl:pr-56 mb-12">
                 {EcoText && (
                   <Text className={` text-white text-4xl text-center  `}>
                     {EcoText}
