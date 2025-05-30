@@ -2,7 +2,8 @@
 import Image from "next/image";
 import Text from "./Text";
 import Button from "./Button";
-
+import 'animate.css';
+import ScrollAnimation from 'react-animate-on-scroll';
 // onButtonClick
 const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1ClassName }) => {
     return (
@@ -21,12 +22,16 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
                     <div className="flex justify-center mt-12"></div>
                     <div className="mt-10 sm:mt-12">
                         {/* text-gradient-lasttext */}
-                        <Text className={`md:leading-[1.2] mt-1 mb-12 text-4xl sm:text-5xl md:text-5xl lg:text-7xl lg:leading-[1.2] xl:text-8xl xl:leading-[1.2]  sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 ${textClassName}`}>
-                            {text}
-                        </Text>
-                        <Text className={` ${text1ClassName}`}>
-                            {text1}
-                        </Text>
+                        <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+
+                            <Text className={`text-gradient-Hero md:leading-[1.2] mt-1 mb-12 text-4xl sm:text-5xl md:text-5xl lg:text-7xl lg:leading-[1.2]  xl:leading-[1.2]  sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 ${textClassName}`}>
+                                {text}
+                            </Text>
+                            <Text className={`text-gradient-Hero ${text1ClassName}`}>
+                                {text1}
+                            </Text>
+                        </ScrollAnimation>
+
                         <div className="flex justify-center mt-12 ">
                             <Button
                                 text={buttonText}

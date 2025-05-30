@@ -77,7 +77,7 @@ function MainPage() {
           <img
             src="/HomePages/Home2.png"
             alt="Main Background"
-            className="w-full h-[400px]"
+            className="w-full h-[350px]"
 
           />
         </div>
@@ -187,14 +187,14 @@ function MainPage() {
           <div className='flex flex-col justify-around '>
             <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20">
               <div className="flex w-full md:w-3/5 items-cente ">
-                <ScrollAnimation animateIn="animate__animated animate__fadeInBottomLeft">
+                <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                   <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
                     Enhancing Personalized App Experiences for Billions
                   </Text>
                 </ScrollAnimation>
               </div>
               <div className="w-full mt-6 md:w-2/5 md:mt-0 ">
-                <ScrollAnimation animateIn="animate__animated animate__fadeInBottomRight">
+                <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
                   <ul className="space-y-4">
                     {[
@@ -212,27 +212,30 @@ function MainPage() {
                 </ScrollAnimation>
               </div>
             </div>
-            <div className="flex justify-center mt-12">
-              <Button
-                text="Discover Ecosystem"
-                iconColor="#6C63FF"
-                className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9]"
-              />
-            </div>
-            <div className="mt-10 sm:mt-12">
-              <div className="flex flex-col text-white gap-7 animate__animated animate__fadeInUp ">
-                <Text size='text-3xl xl:text-[55px] text-[#ffffff] '>
-                  Your Future Career Opportunities
-                </Text>
-              </div>
+            <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+
               <div className="flex justify-center mt-12">
                 <Button
                   text="Discover Ecosystem"
                   iconColor="#6C63FF"
-                  className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
+                  className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9]"
                 />
               </div>
-            </div>
+              <div className="mt-10 sm:mt-12">
+                <div className="flex flex-col text-white gap-7 animate__animated animate__fadeInUp ">
+                  <Text size='text-3xl xl:text-[55px] text-[#ffffff] '>
+                    Your Future Career Opportunities
+                  </Text>
+                </div>
+                <div className="flex justify-center mt-12">
+                  <Button
+                    text="Discover Ecosystem"
+                    iconColor="#6C63FF"
+                    className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
+                  />
+                </div>
+              </div>
+            </ScrollAnimation>
           </div>
         </div>
       </div>

@@ -105,8 +105,13 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-   .text-gradient-Home {
-    background: linear-gradient(to right, #ffffff 20%, #9387FF);
+  .text-gradient-Home {
+    background: linear-gradient(to right, #ffffff 20%, #9387ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-Hero {
+    background: linear-gradient(to right, #000000 20%, #ff6a00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
