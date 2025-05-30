@@ -31,7 +31,7 @@ const MobileAppSection = ({
         className={`absolute w-full ${bgImageClassNames}`}
       />
       <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-        <div className="flex flex-col p-6 mt-32 text-white sm:mt-40 gap-[100px] lg:gap-[150px] sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
+        <div className="flex flex-col p-6 mt-32 text-white sm:mt-40 gap-[100px] lg:gap-[150px] sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64">
           {/* Top Section */}
           <div>
             <div className="flex justify-start md:gap-10 lg:gap-32">
