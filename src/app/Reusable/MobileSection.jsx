@@ -52,8 +52,9 @@ const MobileAppSection = ({
                 <img
                   src={iconSrc}
                   alt="Icon"
-                  className={iconClassNames}
+                  className={`${iconClassNames} hidden md:block`}
                 />
+
               </div>
             </div>
             <Text className={` text-white font-medium text-start mt-12 ${descriptionClassName}`}>

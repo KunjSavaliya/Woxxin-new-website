@@ -67,16 +67,31 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <div className="hidden lg:flex items-center gap-8 text-xl font-light">
-          <p className={`cursor-pointer ${isActive('/about') ? 'text-red-500 underline' : ''}`}>About us</p>
+          <p
+            onClick={() => handleNavigation('/components/Pages/HomePage')}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/HomePage') ? 'text-white after:block' : 'after:hidden'
+              }`}
+          >
+            About Us
+          </p>
+
 
           <div className="relative" ref={dropdownRef}>
-            <p
-              className={`flex items-center cursor-pointer ${pathname.startsWith('/components/Pages/EcoSystem') ? 'text-red-500 underline' : ''}`}
+            <div
+              className="relative flex items-center cursor-pointer"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
-              Ecosystem
+              <span
+                className={`relative after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[7 0%] after:rounded-full after:bg-[#6960EB] ${pathname.startsWith('/components/Pages/EcoSystem') ? 'text-white after:block' : 'after:hidden'
+                  }`}
+              >
+                Ecosystem
+              </span>
               {isDropdownOpen ? <HiChevronUp className="ml-1" /> : <HiChevronDown className="ml-1" />}
-            </p>
+            </div>
+
+
+
             {isDropdownOpen && (
               <div className="absolute mt-4 bg-white text-black border border-[#6C63FF] shadow-xl rounded-2xl p-4 w-56 z-50">
 
@@ -95,23 +110,31 @@ const Navbar = () => {
             )}
           </div>
 
-          <p className={`cursor-pointer ${isActive('/advertisers') ? 'text-red-500 underline' : ''}`}>Advertisers</p>
+          <p className={`cursor-pointer ${isActive('/advertisers') ? 'text-[#6960EB] underline' : ''}`}>Advertisers</p>
 
           <p
             onClick={() => handleNavigation('/components/Pages/Publishing')}
-            className={`cursor-pointer ${isActive('/components/Pages/Publishing') ? 'text-red-500 underline' : ''}`}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/Publishing') ? 'text-white after:block' : 'after:hidden'
+              }`}
           >
             Publishing
           </p>
 
-          <p className={`cursor-pointer ${isActive('/career') ? 'text-red-500 underline' : ''}`}>Career</p>
+
+
+          <p className={`cursor-pointer ${isActive('/career') ? 'text-[#6960EB] underline' : ''}`}>Career</p>
+
 
           <p
             onClick={() => handleNavigation('/components/Pages/ContactUs')}
-            className={`cursor-pointer ${isActive('/components/Pages/ContactUs') ? 'text-red-500 underline' : ''}`}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/ContactUs') ? 'text-white after:block' : 'after:hidden'
+              }`}
           >
             Contact Us
           </p>
+
+
+
         </div>
 
         {/* Mobile Hamburger */}

@@ -21,7 +21,7 @@ function MobilePage() {
           className="absolute w-full h-[800px] md:h-[1000px] "
         />
         <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[300px]  sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
+          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[300px]  sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64">
             <div>
               <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
                 <div className="flex justify-start md:gap-10 lg:gap-32">
@@ -81,14 +81,14 @@ function MobilePage() {
 
 
         <div className="flex flex-col p-6 mt-10 text-white gap-7 sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
-           <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
-                VISION
-              </Text>
-              <img
-                src="/HomePages/line.png"
-                alt="Line"
-                className="w-full mt-6"
-              />
+          <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
+            VISION
+          </Text>
+          <img
+            src="/HomePages/line.png"
+            alt="Line"
+            className="w-full mt-6"
+          />
           <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  xl:mt-0 lg:mt-0 ">
             A vibrant network of cutting-edge apps designed
             to enhance the lives of millions, paving the

@@ -43,7 +43,7 @@ opportunities, or reach out to us directly!"
 
                 />
                 <div className='bg-[#110f27]'>
-                    <div className="min-h-screen flex items-center justify-center  p-4">
+                    <div className="min-h-screen flex items-center justify-center p-4  mt-[-1px]">
                         <form className="w-full max-w-4xl  p-6 rounded-lg space-y-6 text-white">
                             {/* Company Detail */}
                             <div>
