@@ -39,16 +39,16 @@ discuss about the project and collaboration
 opportunities, or reach out to us directly!"
 
                     bgImageClassNames="h-full"
-                    iconClassNames='auto'
+                    iconClassNames='w-32 w-auto'
 
                 />
                 <div className='bg-[#110f27]'>
                     <div className="min-h-screen flex items-center justify-center p-4  mt-[-1px]">
-                        <form className="w-full max-w-4xl  p-6 rounded-lg space-y-6 text-white">
+                        <form className="w-full p-6 space-y-6 text-white rounded-lg max-w-[92rem]">
                             {/* Company Detail */}
                             <div>
                                 <label className="block mb-2">Company Detail Company/Developer name</label>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                                     <input type="text" placeholder="Team size" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                     <input type="text" placeholder="Country" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                 </div>
@@ -57,7 +57,7 @@ opportunities, or reach out to us directly!"
                             {/* Point of Contact */}
                             <div>
                                 <label className="block mb-2">Company/Developer point of contact</label>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                                     <input type="text" placeholder="First Name" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                     <input type="text" placeholder="Last Name" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                 </div>
@@ -67,7 +67,7 @@ opportunities, or reach out to us directly!"
                             {/* Portfolio Link */}
                             <div>
                                 <label className="block mb-2">Portfolio link/Gameplay link</label>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                                     <input type="text" placeholder="Yes/No" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                     <input type="url" placeholder="Link URL" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                 </div>
@@ -76,7 +76,7 @@ opportunities, or reach out to us directly!"
                             {/* Publisher History */}
                             <div>
                                 <label className="block mb-2">Have you worked with other publishers</label>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
                                     <input type="text" placeholder="Yes/No" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                     <input type="text" placeholder="Yes: Link Publisher" className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm" />
                                 </div>
@@ -116,8 +116,8 @@ opportunities, or reach out to us directly!"
                             height={700}
                         />
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-full flex items-top justify-center">
-                        <div className="w-full max-w-4xl px-4">
+                    <div className="absolute top-0 left-0 flex justify-center w-full h-full p-6 items-top">
+                        <div className="w-full max-w-[92rem] px-4">
                             <button
                                 type="submit"
                                 className="w-full py-3 text-white border border-[#5961F9] rounded-md hover:bg-[#5961F9]/10 transition duration-300"

@@ -21,7 +21,7 @@ function MobilePage() {
           className="absolute w-full h-[800px] md:h-[1000px] "
         />
         <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[300px]  sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64">
+          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[200px]  sm:px-12 md:px-20 lg:px-20 xl:px-60 xl:pl-60">
             <div>
               <div className="flex justify-start md:gap-10 lg:gap-32">
                 {/* Left Content */}
@@ -31,19 +31,19 @@ function MobilePage() {
                     alt="Google"
                     className="w-32 sm:w-40 md:w-64"
                   />
-                  <Text className="text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px]  text-white text-start mt-6 sm:mt-10">
+                  <Text className="text-gradient-mobiletext font-extralight text-6xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[95px]  text-white text-start mt-6 sm:mt-10">
                     Woxxin Intelligent Mobile Apps
                   </Text>
                 </div>
-                <div className="flex justify-center w-full lg:w-auto lg:justify-end">
+                <div className="justify-center hidden w-full lg:flex lg:w-auto lg:justify-end md:block">
                   <img
                     src="/HomePages/MobileApp/MobileIcon.png"
                     alt="Mobile Icon"
-                    className="w-32 sm:w-40 md:w-56 xl:w-80"
+                    className="w-32 xl:w-auto"
                   />
                 </div>
               </div>
-              <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start mt-12">
+              <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start mt-12 ">
                 Creating a comprehensive mobile platform that enhances
                 daily living and fosters sustainable growth for millions
                 of users around the globe.
@@ -75,7 +75,7 @@ function MobilePage() {
         <img
           src="/HomePages/MobileApp/MobileMan.png"
           alt="Main Background"
-          className="w-full h-[400px] sm:h-[500px]"
+          className="w-full h-[400px] sm:h-[600px]"
         />
 
         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
@@ -129,7 +129,7 @@ function MobilePage() {
       </div>
       <div className=' bg-[#F4F4F4]'>
         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-          <Text className="text-xl p-10 text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
+          <Text className="p-10 text-xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
             Featured Products
           </Text>
         </ScrollAnimation>
@@ -142,6 +142,9 @@ function MobilePage() {
               className="w-[70%] mx-auto"
             />
           </div>
+        </ScrollAnimation>
+        <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+
           <div>
             <img
               src="/HomePages/MobileApp/MobileBanner2.png"
@@ -172,7 +175,7 @@ function MobilePage() {
       <HeroSection
         imageSrc="/HomePages/MobileApp/MobileHand.png"
         text="Creating World-Class Products Together"
-        textClassName='xl:text-[90px] mt-[-50px]'
+        textClassName='xl:text-[90px] mt-[-50px] text-gradient-Hero '
         buttonText="Apply here"
         onButtonClick={() => alert("Button clicked!")}
       />

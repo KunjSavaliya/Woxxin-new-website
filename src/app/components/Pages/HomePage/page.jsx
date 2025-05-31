@@ -15,9 +15,9 @@ function MainPage() {
           alt="Main Background"
           className="absolute inset-0 z-0 object-fill w-full h-[70%] "
         />
-        <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
+        <div className="relative z-10 flex flex-col items-center w-full h-full text-left">
 
-          <div className="flex flex-col gap-12 p-6 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-20 xl:px-36 xl:pl-36">
+          <div className="flex flex-col gap-12 p-6 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-20 xl:px-52 xl:pl-52">
             <div>
               <img
                 src="/HomePages/Google.png"
@@ -31,14 +31,14 @@ function MainPage() {
             <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start">
               Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
             </Text>
-            <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[25px] text-white">
+            <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[35px] text-[#FFFFFF80] font-extralight">
               PUBLISHER
             </Text>
 
             <img
               src="/HomePages/line.png"
               alt="Line"
-              className="w-full mt-6"
+              className="w-full"
             ></img>
 
             <div className="flex flex-wrap md:flex-nowrap gap-4 mt-10 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
@@ -81,12 +81,12 @@ function MainPage() {
 
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-start justify-start w-full h-full mt-32 text-left p">
-          <div className='flex flex-col gap-5 lg:gap-5 xl:gap-24 lg:px-12 xl:px-32'>
+        <div className="absolute top-0 left-0 flex flex-col items-center justify-start w-full h-full mt-32 text-left ">
+          <div className='flex flex-col gap-5 lg:gap-5 xl:gap-24 lg:px-12 xl:px-48'>
             <div className="flex flex-col text-white gap-7 ">
               <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-                <Text size="text-2xl mt-[-100px] font-bold text-white p-8 text-start md:text-4xl lg:text-4xl xl:text-5xl  md:mt-[-100px] xl:mt-0 lg:mt-0 ">
+                <Text size="text-2xl mt-[-100px] font-bold text-white p-8 text-center md:text-4xl lg:text-4xl xl:text-5xl  md:mt-[-100px] xl:mt-0 lg:mt-0 ">
                   Woxxin’s ecosystem of quality products
                   has helped more than half a billion
                   people work and play effectively, aiming
@@ -183,10 +183,10 @@ function MainPage() {
             className="w-full mt-[-4px] h-[1000px] xl:h-[800px]"
           />
         </div>
-        <div className="absolute top-0 left-0 flex flex-col items-start w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
+        <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
           <div className='flex flex-col justify-around '>
-            <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20">
-              <div className="flex w-full md:w-3/5 items-cente ">
+            <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20 xl:px-48">
+              <div className="flex items-center w-full md:w-3/5 ">
                 <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                   <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
                     Enhancing Personalized App Experiences for Billions
@@ -205,7 +205,7 @@ function MainPage() {
                     ].map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <span className="mt-2 h-2 w-2 rounded-full bg-[#AAB0C0] opacity-80"></span>
-                        <span className="text-xl  md:text-lg lg:text-[20px]">{item}</span>
+                        <span className="text-xl  md:text-lg lg:text-[27px]">{item}</span>
                       </li>
                     ))}
                   </ul>

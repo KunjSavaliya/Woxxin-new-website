@@ -24,10 +24,10 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
                         {/* text-gradient-lasttext */}
                         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-                            <Text className={`text-gradient-Hero md:leading-[1.2] mt-1 mb-12 text-4xl sm:text-5xl md:text-5xl lg:text-7xl lg:leading-[1.2]  xl:leading-[1.2]  sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 ${textClassName}`}>
+                            <Text className={` md:leading-[1.2] mt-1 mb-12 text-4xl sm:text-5xl md:text-5xl  lg:leading-[1.2]  xl:leading-[1.2]  sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 ${textClassName}`}>
                                 {text}
                             </Text>
-                            <Text className={`text-gradient-Hero ${text1ClassName}`}>
+                            <Text className={` ${text1ClassName}`}>
                                 {text1}
                             </Text>
                         </ScrollAnimation>

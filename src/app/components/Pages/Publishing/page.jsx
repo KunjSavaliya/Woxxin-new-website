@@ -62,23 +62,23 @@ function Publishing() {
                     title1="Empower developers to launch impactful mobile
 apps & H5 Games that thrive in the worldwide
 marketplace."
-                    bgImageClassNames="h-auto object-fill "
-                    iconClassNames='w-32 sm:w-40 md:w-56 xl:w-80'
+                    bgImageClassNames="absolute w-full h-[800px] md:h-[1000px] "
+                    // className=""
+                    iconClassNames='w-32 w-auto mt-[-25px]'
                     descriptionClassName='text-2xl '
-                    buttonText='Publishing'
                     MTitle='MISSION'
-
                     Mtext='Empower product creators to reach new heights
 and foster lasting growth.'
                 />
-                <div className="bg-[#110f27] ">
+                <div className="bg-[#110f27] mx-auto">
                     <img
                         src="/HomePages/Publishing/Publishingman.png"
                         alt="Main Background"
-                        className="w-full h-[400px] sm:h-[500px]"
+                        className="w-full h-[400px] sm:h-[600px]"
                     />
                 </div>
-                <div className="bg-[#110f27] flex flex-col p-6  text-white gap-7 sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
+                <div className="bg-[#110f27] flex flex-col p-6  text-white gap-7 sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64">
+                        <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
                     <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
                         VISION
@@ -88,13 +88,14 @@ and foster lasting growth.'
                         alt="Line"
                         className="w-full mt-6"
                     />
-                    <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  xl:mt-0 lg:mt-0 ">
+                    <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  xl:mt-0 lg:mt-0 pt-12 ">
                         Collaborating with over 200 international partners,
                         we create a vibrant technology ecosystem that serves
                         hundreds of millions of users each month.
                     </Text>
+                    </ScrollAnimation>
                 </div>
-                <div className='bg-[#110f27] px-5 sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-36'>
+                <div className='bg-[#110f27] px-5 sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-36 pt-12'>
                     <div className="flex pt-12 flex-wrap md:flex-nowrap gap-4 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] ">
                         {[
                             {
@@ -112,9 +113,9 @@ and foster lasting growth.'
                         ].map((item, index) => (
                             <div
                                 key={index}
-                                className="flex flex-col pt-12 w-full max-w-full px-4 py-4 space-y-2 sm:w-1/2 md:w-1/3 text-start"
+                                className="flex flex-col w-full max-w-full px-4 py-4 pt-12 space-y-2 sm:w-1/2 md:w-1/3 text-start"
                             >
-                                <Text className="text-2xl md:text-3xl xl:text-[70px] text-white text2-gradient font-bold xl:leading-[1]">
+                                <Text className="text-2xl md:text-3xl xl:text-[90px] text-white text2-gradient font-bold xl:leading-[1]">
                                     {item.title}
                                 </Text>
                                 <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
@@ -125,25 +126,27 @@ and foster lasting growth.'
                     </div>
 
 
-                    <div className="space-y-24 px-4 md:px-10 mt-12">
+                    <div className="px-4 space-y-24 mt-44 md:px-10">
 
                         {/* Section 1: Image-Text on desktop */}
-                        <div className="flex flex-col md:flex-row items-center justify-between ">
-                            <div className="w-full md:w-1/2 flex justify-center md:justify-center order-1 md:order-1">
+                                                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+
+                        <div className="flex flex-col items-center justify-between md:flex-row ">
+                            <div className="flex justify-center order-1 w-full md:w-1/2 md:justify-center md:order-1">
                                 <img
                                     src="/HomePages/Publishing/Publishing1.png"
                                     alt="Investment"
                                     className="w-full max-w-[450px] h-auto rounded"
                                 />
                             </div>
-                            <div className="w-full md:w-1/2 text-white  text-center md:text-left order-2 md:order-2">
+                            <div className="order-2 w-full text-center text-white md:w-1/2 md:text-left md:order-2">
                                 <p className="text-2xl sm:text-3xl lg:text-3xl xl:text-[35px]">
                                     <span className="text-[#5961F9]">Top</span> team of experts
                                 </p>
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mt-8 mb-8 mx-auto md:mx-0"
+                                    className="mx-auto mt-8 mb-8 md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     With 200+ experts bringing 5–10 years of experience, we craft exclusive
@@ -151,24 +154,26 @@ and foster lasting growth.'
                                 </p>
                             </div>
                         </div>
+</ScrollAnimation>
+                        <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
                         {/* Section 2: Text-Image on desktop */}
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-                            <div className="w-full md:w-1/2 flex justify-center md:justify-center order-1 md:order-2">
+                        <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
+                            <div className="flex justify-center order-1 w-full md:w-1/2 md:justify-center md:order-2">
                                 <img
                                     src="/HomePages/Publishing/Publishing2.png"
                                     alt="Investment"
                                     className="w-full max-w-[450px] h-auto rounded"
                                 />
                             </div>
-                            <div className="w-full md:w-1/2 text-white p-5 text-center md:text-left order-2 md:order-1">
+                            <div className="order-2 w-full p-5 text-center text-white md:w-1/2 md:text-left md:order-1">
                                 <p className="text-2xl sm:text-3xl lg:text-3xl xl:text-[35px]">
                                     <span className="text-[#5961F9]">Maximum</span> Transparency
                                 </p>
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mt-8 mb-8 mx-auto md:mx-0"
+                                    className="mx-auto mt-8 mb-8 md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     Regularly deliver detailed updates on all app activities, ensuring
@@ -176,24 +181,27 @@ and foster lasting growth.'
                                 </p>
                             </div>
                         </div>
+                        </ScrollAnimation>
+                                                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+
 
                         {/* Section 3: Image-Text on desktop */}
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-                            <div className="w-full md:w-1/2 flex justify-center md:justify-center order-1 md:order-1">
+                        <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
+                            <div className="flex justify-center order-1 w-full md:w-1/2 md:justify-center md:order-1">
                                 <img
                                     src="/HomePages/Publishing/Publishing3.png"
                                     alt="Investment"
                                     className="w-full max-w-[450px] h-auto rounded"
                                 />
                             </div>
-                            <div className="w-full md:w-1/2 text-white p-5 text-center md:text-left order-2 md:order-2">
+                            <div className="order-2 w-full p-5 text-center text-white md:w-1/2 md:text-left md:order-2">
                                 <p className="text-2xl sm:text-3xl lg:text-3xl xl:text-[35px]">
                                     The process from <span className="text-[#5961F9]">Marketing to scaling</span>
                                 </p>
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mt-8 mb-8 mx-auto md:mx-0"
+                                    className="mx-auto mt-8 mb-8 md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     Woxxin offers an all-encompassing approach that covers every aspect of
@@ -202,24 +210,26 @@ and foster lasting growth.'
                                 </p>
                             </div>
                         </div>
+</ScrollAnimation>
+                        <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
                         {/* Section 4: Text-Image on desktop */}
-                        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
-                            <div className="w-full md:w-1/2 flex justify-center md:justify-center order-1 md:order-2">
+                        <div className="flex flex-col items-center justify-between gap-10 md:flex-row">
+                            <div className="flex justify-center order-1 w-full md:w-1/2 md:justify-center md:order-2">
                                 <img
                                     src="/HomePages/Publishing/Publishing4.png"
                                     alt="Investment"
                                     className="w-full max-w-[450px] h-auto rounded"
                                 />
                             </div>
-                            <div className="w-full md:w-1/2 text-white p-5 text-center md:text-left order-2 md:order-1">
+                            <div className="order-2 w-full p-5 text-center text-white md:w-1/2 md:text-left md:order-1">
                                 <p className="text-2xl sm:text-3xl lg:text-3xl xl:text-[35px]">
                                     <span className="text-[#5961F9]">Revenue</span> Optimization
                                 </p>
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mt-8 mb-8 mx-auto md:mx-0"
+                                    className="mx-auto mt-8 mb-8 md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     Launch a comprehensive marketing strategy across platforms like Google,
@@ -228,9 +238,9 @@ and foster lasting growth.'
                                 </p>
                             </div>
                         </div>
-
+</ScrollAnimation>
                     </div>
-                    <div className='flex justify-center  xl:px-48 xl:pl-48 pt-12 '>
+                    <div className='flex justify-center pt-12 xl:px-48 xl:pl-48 '>
 
 
                         {/* Left Content */}
@@ -242,9 +252,9 @@ and foster lasting growth.'
 
 
                     </div>
-                    <div className=" pt-12 pb-12 flex justify-center items-center  text-white">
-                        <div className="w-full max-w-5xl relative">
-                            <div className="space-y-12 relative">
+                    <div className="flex items-center justify-center pt-12 pb-12 text-white ">
+                        <div className="relative w-full max-w-5xl">
+                            <div className="relative space-y-12">
 
                                 {/* Vertical line: only show on medium screens and up */}
                                 <div className="absolute left-[238px] top-[8px] bottom-[8px] w-[2px] bg-violet-500 z-0 hidden md:block" />
@@ -255,7 +265,7 @@ and foster lasting growth.'
                                         className="grid grid-cols-1 md:grid-cols-[200px_40px_1fr] items-start gap-4 relative"
                                     >
                                         {/* Title */}
-                                        <div className="font-bold text-xl md:text-2xl">{step.title}</div>
+                                        <div className="text-xl font-bold md:text-2xl">{step.title}</div>
 
                                         {/* Dot: only visible on medium screens and up */}
                                         <div className="hidden md:flex relative z-10 justify-center ml-[7px]">
@@ -263,7 +273,7 @@ and foster lasting growth.'
                                         </div>
 
                                         {/* Description */}
-                                        <div className="text-white font-extralight text-xl md:text-2xl leading-relaxed">{step.description}</div>
+                                        <div className="text-xl leading-relaxed text-white font-extralight md:text-2xl">{step.description}</div>
                                     </div>
                                 ))}
                             </div>
@@ -284,8 +294,7 @@ and foster lasting growth.'
                     text="Contact us for
 collaboration today"
                     buttonText="Contact Us"
-                    textClassName='text-white text-gradient-publish'
-                    text1ClassName='text-3xl text-white mt-[-5px] '
+                    textClassName='text-white text-gradient-publish lg:text-8xl'
                 // onButtonClick={() => alert("Button clicked!")}
                 />
 

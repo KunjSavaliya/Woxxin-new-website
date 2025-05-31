@@ -29,7 +29,7 @@ revenue while enhancing user engagement. Our easy-to-integrate,
 plug-and-play products are designed to elevate your platform's
 performance."
           bgImageClassNames="h-full"
-          iconClassNames='w-32 sm:w-40 md:w-56 xl:w-80'
+          iconClassNames='w-32 w-auto'
           descriptionClassName='text-2xl '
           buttonText='Quiz Platform'
           buttonText1='Game Platform'
@@ -40,7 +40,7 @@ performance."
           imageSrc="/HomePages/H5Game.png"
           text="Your Future Career Opportunities"
           buttonText="Discover Now"
-          textClassName='text-white mt-[-100px] md:mt-[-150px] lg:mt-[-150px] xl:mt-[-150px]'
+          textClassName='text-white mt-[-100px] md:mt-[-150px] lg:mt-[-150px] xl:mt-[-150px] lg:text-8xl text-white'
         // onButtonClick={() => alert("Button clicked!")}
         />
 

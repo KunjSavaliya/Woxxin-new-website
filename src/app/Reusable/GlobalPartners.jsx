@@ -17,15 +17,15 @@ const logos = [
 
 export default function GlobalPartners() {
     return (
-        <div className='bg-[#110f27] p-10 md:p-16'>
-            <Text className="text-4xl md:text-2xl lg:text-3xl xl:text-[45px] text-white">
+        <div className='bg-[#110f27] p-10 md:p-16 '>
+            <Text className="text-4xl md:text-2xl lg:text-3xl xl:text-[55px] text-white font-extralight">
                 Global Partners
             </Text>
 
             <img
                 src="/HomePages/line.png"
                 alt="Line"
-                className="w-full md:pl-5 md:pr-5 mt-6 rounded-[100%]"
+                className="w-full md:pl-5 md:pr-5 mt-14 rounded-[100%] "
             ></img>
 
             <div className="w-full py-6 mt-10">
@@ -39,7 +39,7 @@ export default function GlobalPartners() {
                         768: { slidesPerView: 4, spaceBetween: 40 },
                         1024: { slidesPerView: 5, spaceBetween: 50 },
                     }}
-                    className="w-full max-w-7xl mx-auto px-4"
+                    className="w-full px-4 mx-auto max-w-7xl"
                 >
                     {logos.map((src, index) => (
                         <SwiperSlide key={index}>
@@ -47,7 +47,7 @@ export default function GlobalPartners() {
                                 <img
                                     src={src}
                                     alt=""
-                                    className="h-20 w-28 object-contain"
+                                    className="object-contain h-20 w-28"
                                 />
                             </div>
                         </SwiperSlide>

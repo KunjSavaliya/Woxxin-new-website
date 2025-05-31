@@ -66,7 +66,7 @@ const Navbar = () => {
         />
 
         {/* Desktop Nav */}
-        <div className="hidden lg:flex items-center gap-8 text-xl font-light">
+        <div className="items-center hidden gap-8 text-xl font-light lg:flex">
           <p
             onClick={() => handleNavigation('/components/Pages/HomePage')}
             className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/HomePage') ? 'text-white after:block' : 'after:hidden'
@@ -82,7 +82,7 @@ const Navbar = () => {
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               <span
-                className={`relative after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[7 0%] after:rounded-full after:bg-[#6960EB] ${pathname.startsWith('/components/Pages/EcoSystem') ? 'text-white after:block' : 'after:hidden'
+                className={`relative after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${pathname.startsWith('/components/Pages/EcoSystem') ? 'text-white after:block' : 'after:hidden'
                   }`}
               >
                 Ecosystem
@@ -98,7 +98,7 @@ const Navbar = () => {
                 {dropdownItems.map((item, index) => (
                   <div key={index}>
                     <div
-                      className={`cursor-pointer hover:text-blue-500 ${!item.navigate ? 'opacity-50 cursor-not-allowed' : ''}`}
+                      className={`cursor-pointer hover:text-[#6C63FF] ${!item.navigate ? 'opacity-50 cursor-not-allowed' : ''}`}
                       onClick={() => item.navigate && handleNavigation(item.navigate)}
                     >
                       <p className="text-lg">{item.title}</p>
@@ -148,7 +148,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="fixed inset-0 bg-[#110f27] z-40 p-4 animate__animated animate__fadeInDown overflow-y-auto">
-          <div className="flex justify-between items-center mb-6">
+          <div className="flex items-center justify-between mb-6">
             <img src="/logo.png" alt="logo" className="w-28" onClick={() => handleNavigation('/')} />
             <button onClick={() => setIsOpen(false)}>
               <HiX size={30} />
@@ -160,7 +160,7 @@ const Navbar = () => {
 
             <div className="mb-2">
               <p
-                className="flex justify-between items-center text-xl font-semibold cursor-pointer"
+                className="flex items-center justify-between text-xl font-semibold cursor-pointer"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
               >
                 Ecosystem
@@ -168,7 +168,7 @@ const Navbar = () => {
               </p>
 
               {isDropdownOpen && (
-                <div className="ml-4 mt-2">
+                <div className="mt-2 ml-4">
 
                   {dropdownItems.map((item, index) => (
                     <div key={index} className="mb-3">
