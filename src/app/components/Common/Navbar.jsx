@@ -109,7 +109,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="lg:hidden">
+        <div className="lg:hidden ">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <HiX size={30} /> : <HiMenu size={30} />}
           </button>
@@ -122,6 +122,7 @@ const Navbar = () => {
           <div className="flex items-center justify-between mb-6">
             <img src="/logo.png" alt="logo" className="w-28" onClick={() => handleNavigation('/')} />
             <button onClick={() => setIsOpen(false)}>
+
               <HiX size={30} />
             </button>
           </div>

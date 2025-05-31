@@ -106,12 +106,17 @@ body {
     -webkit-text-fill-color: transparent;
   }
   .text-gradient-Home {
-    background: linear-gradient(to right, #ffffff 20%, #9387ff);
+    background: linear-gradient(to right, #ffffff 10%, #9387ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .text-gradient-Hero {
     background: linear-gradient(to right, #000000 20%, #ff6a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .text-gradient-EcoDrive {
+    background: linear-gradient(to right, #F7D5FF 20%, #E1FF00);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

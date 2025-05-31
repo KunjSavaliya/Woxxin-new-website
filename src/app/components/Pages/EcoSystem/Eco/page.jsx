@@ -60,17 +60,17 @@ strategies for success.'
         />
                 <div className='bg-[#F4F4F4] pt-10'>
                     <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-                    <Text className="p-4 text-xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
+                    <Text className="p-4 text-5xl text-white sm:text-7xl text-gradient-mobilePro" >
                         Discover Our
                         Top Picks
                     </Text>
 </ScrollAnimation>
 
-                    <div className='mt-24'>
+                    <div className='mt-10 xl:mt-24'>
                         <img
                             src="/HomePages/Eco/EcoMobileUp.png"
                             alt="Main Background"
-                            className="w-[60%] mx-auto"
+                            className="w-auto mx-auto"
                         />
                     </div>
                 </div>
@@ -87,7 +87,7 @@ strategies for success.'
                   <div className="absolute top-0 left-0 flex items-end justify-center w-full h-full">
   <div className="w-full lg:px-72 lg:pl-72">
        <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-    <Text className="p-4 text-4xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl">
+    <Text className="p-4 text-5xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl text-gradient-EcoDrive">
       Innovation Drives Our Success
     </Text>
     </ScrollAnimation>
@@ -124,7 +124,7 @@ strategies for success.'
                     <div className="absolute top-0 left-0 flex items-start justify-center w-full h-full pt-24">
                         <div className="w-full lg:px-72 lg:pl-72">
                              <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-    <Text className="p-4 text-4xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl">
+    <Text className="p-4 text-4xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl text-gradient-Home">
                                 Join Woxxin to open new
                                 pathways in the
                                 digital future
