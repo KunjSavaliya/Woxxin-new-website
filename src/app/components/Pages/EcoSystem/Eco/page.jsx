@@ -44,27 +44,27 @@ function Eco() {
         <>
             <div>
 
-                <MobileAppSection
-                    bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
-                    logoSrc="/HomePages/Google.png"
-                    iconSrc="/HomePages/Eco/EcoDim.png"
-                    title="Innovative
-Solutions for a
-Global Audience."
-                    EcoText1='Explore over 300+ innovative items in
+  <MobileAppSection
+          bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+          logoSrc="/HomePages/Google.png"
+          iconSrc="/HomePages/Eco/EcoDim.png"
+          title="Innovative Solutions for a Global Audience."
+            EcoText1='Explore over 300+ innovative items in
 3 popular sectors!'
+
                     EcoText='Innovative solutions paired with efficient
 strategies for success.'
-                    bgImageClassNames="h-full"
-                    iconClassNames='Auto'
-                />
-
+          bgImageClassNames="h-full"
+          iconClassNames='w-32 w-auto'
+          descriptionClassName='text-2xl '
+        />
                 <div className='bg-[#F4F4F4] pt-10'>
-                    <Text className="text-xl p-4 text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
+                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                    <Text className="p-4 text-xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
                         Discover Our
                         Top Picks
                     </Text>
-
+</ScrollAnimation>
 
                     <div className='mt-24'>
                         <img
@@ -79,32 +79,33 @@ strategies for success.'
                         <Image
                             src='/HomePages/Eco/EcoDrive.png'
                             alt="Main Background"
-                            className="w-full mt-[-4px] h-[250px] xl:h-[650px]"
+                            className="w-full mt-[-4px] h-[400px] xl:h-[650px]"
                             width={1920}
                             height={700}
                         />
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-full flex items-end justify-center">
-                        <div className="w-full max-w-4xl px-4">
+                  <div className="absolute top-0 left-0 flex items-end justify-center w-full h-full">
+  <div className="w-full lg:px-72 lg:pl-72">
+       <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+    <Text className="p-4 text-4xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl">
+      Innovation Drives Our Success
+    </Text>
+    </ScrollAnimation>
+  </div>
+</div>
 
-                            <Text className='text-white text-8xl text-start'>
-                                Innovation Drives
-                                Our Success
-                            </Text>
-                        </div>
-                    </div>
 
                 </div>
 
-                <div className="bg-[#110f27] py-12 px-4 pt-60">
-                    <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-white">
+                <div className="bg-[#110f27] py-12 px-4 pt-24">
+                    <div className="grid grid-cols-1 gap-6 mx-auto text-white max-w-7xl sm:grid-cols-2 md:grid-cols-4">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
                                 className="bg-[#100F23] border border-white/10 rounded-lg p-6 hover:shadow-lg transition"
                             >
                                 <div className="mb-4">{feature.icon}</div>
-                                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
+                                <h3 className="mb-2 text-lg font-semibold">{feature.title}</h3>
                                 <p className="text-sm text-gray-400">{feature.desc}</p>
                             </div>
                         ))}
@@ -115,19 +116,20 @@ strategies for success.'
                         <Image
                             src='/HomePages/Eco/EcoTouch.png'
                             alt="Main Background"
-                            className="w-full mt-[-4px] h-[250px] xl:h-[650px]"
+                           className="w-full mt-[-4px] h-[400px] xl:h-[650px]"
                             width={1920}
                             height={700}
                         />
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-full flex items-start justify-center pt-12">
-                        <div className="w-full max-w-4xl px-4">
-
-                            <Text className='text-white text-8xl text-center'>
+                    <div className="absolute top-0 left-0 flex items-start justify-center w-full h-full pt-24">
+                        <div className="w-full lg:px-72 lg:pl-72">
+                             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+    <Text className="p-4 text-4xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl">
                                 Join Woxxin to open new
                                 pathways in the
                                 digital future
                             </Text>
+                            </ScrollAnimation>
                         </div>
                     </div>
 
@@ -142,7 +144,7 @@ strategies for success.'
                             height={700}
                         />
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-full flex items-top justify-center">
+                    <div className="absolute top-0 left-0 flex justify-center w-full h-full items-top">
                         <div className="w-full max-w-sm px-4">
                             <button
                                 type="Apply here"

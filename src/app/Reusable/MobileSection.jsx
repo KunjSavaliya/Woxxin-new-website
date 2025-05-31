@@ -41,7 +41,7 @@ const MobileAppSection = ({
                   alt="Logo"
                   className="w-32 sm:w-40 md:w-64"
                 />
-                <Text className=" leading-[1.2] md:leading-[1.2] text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[95px] text-start mt-6 sm:mt-10">
+                <Text className=" leading-[1.2] md:leading-[1.2] text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[90px] text-start mt-6 sm:mt-10">
                   {title}
                 </Text>
                 <Text className=" font-extralight text-2xl sm:text-3xl md:text-3xl lg:text-[30px] xl:text-3xl text-white text-start mt-6 sm:mt-10">
@@ -64,19 +64,19 @@ const MobileAppSection = ({
                   />
                 </div>
             </div>
-            <Text className={` text-white font-medium text-start mt-12 ${descriptionClassName}`}>
+            <Text className={` text-white font-medium text-start mt-10 xl:mt-24 ${descriptionClassName}`}>
               {description}
             </Text>
             {(EcoText || EcoText1) && (
-              <div className=" mt-[-100px] xl:pl-56 xl:pr-56 mb-12">
+              <div className="mb-12 xl:pl-56 xl:pr-56">
                 {EcoText && (
-                  <Text className={` text-white text-4xl text-center  `}>
+                  <Text className={` text-white text-3xl xl:text-5xl text-center  `}>
                     {EcoText}
                   </Text>
                 )}
 
                 {EcoText1 && (
-                  <Text className={` text-white text-4xl text-center mt-12 `}>
+                  <Text className={` text-white text-3xl xl:text-5xl text-center mt-12 `}>
                     {EcoText1}
                   </Text>
                 )}

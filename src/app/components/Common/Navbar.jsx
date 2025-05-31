@@ -7,7 +7,7 @@ import 'animate.css';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
+  const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
   const dropdownRef = useRef(null);
@@ -18,16 +18,13 @@ const Navbar = () => {
     { title: 'H5 Games / Quiz', navigate: '/components/Pages/EcoSystem/H5Game' },
     { title: 'Video Ads', navigate: '/components/Pages/EcoSystem/VideoAds' },
     { title: 'Google Ads' },
-    { title: 'Investment', navigate: '/components/Pages/EcoSystem/Investment' },
-    { title: 'App Acquire' },
   ];
 
   const handleNavigation = (path) => {
     setIsDropdownOpen(false);
+    setMobileDropdownOpen(false);
     setIsOpen(false);
-    if (path) {
-      setTimeout(() => router.push(path), 100);
-    }
+    if (path) router.push(path);
   };
 
   useEffect(() => {
@@ -40,20 +37,7 @@ const Navbar = () => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
   const isActive = (path) => pathname === path;
-
-  if (loading) {
-    return (
-      <div className="fixed inset-0 flex items-center justify-center bg-[#110f27] z-50 text-white text-xl">
-        Loading...
-      </div>
-    );
-  }
 
   return (
     <div className="fixed top-0 left-0 w-full z-50 bg-[#110f27] shadow-md">
@@ -69,32 +53,34 @@ const Navbar = () => {
         <div className="items-center hidden gap-8 text-xl font-light lg:flex">
           <p
             onClick={() => handleNavigation('/components/Pages/HomePage')}
-            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/HomePage') ? 'text-white after:block' : 'after:hidden'
-              }`}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/HomePage') ? 'text-white after:block' : 'after:hidden'}`}
           >
             About Us
           </p>
 
-
           <div className="relative" ref={dropdownRef}>
             <div
               className="relative flex items-center cursor-pointer"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              onClick={() => handleNavigation('/components/Pages/EcoSystem/Eco')}
             >
               <span
-                className={`relative after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${pathname.startsWith('/components/Pages/EcoSystem') ? 'text-white after:block' : 'after:hidden'
-                  }`}
+                className={`relative after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${pathname.startsWith('/components/Pages/EcoSystem') ? 'text-white after:block' : 'after:hidden'}`}
               >
                 Ecosystem
               </span>
-              {isDropdownOpen ? <HiChevronUp className="ml-1" /> : <HiChevronDown className="ml-1" />}
+              <div
+                className="ml-1"
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setIsDropdownOpen(!isDropdownOpen);
+                }}
+              >
+                {isDropdownOpen ? <HiChevronUp /> : <HiChevronDown />}
+              </div>
             </div>
-
-
 
             {isDropdownOpen && (
               <div className="absolute mt-4 bg-white text-black border border-[#6C63FF] shadow-xl rounded-2xl p-4 w-56 z-50">
-
                 {dropdownItems.map((item, index) => (
                   <div key={index}>
                     <div
@@ -110,31 +96,16 @@ const Navbar = () => {
             )}
           </div>
 
-          <p className={`cursor-pointer ${isActive('/advertisers') ? 'text-[#6960EB] underline' : ''}`}>Advertisers</p>
-
-          <p
-            onClick={() => handleNavigation('/components/Pages/Publishing')}
-            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/Publishing') ? 'text-white after:block' : 'after:hidden'
-              }`}
-          >
+          <p onClick={() => handleNavigation('/components/Pages/Investment')} className="cursor-pointer">
+            Investment
+          </p>
+          <p onClick={() => handleNavigation('/components/Pages/Publishing')} className="cursor-pointer">
             Publishing
           </p>
-
-
-
-          <p className={`cursor-pointer ${isActive('/career') ? 'text-[#6960EB] underline' : ''}`}>Career</p>
-
-
-          <p
-            onClick={() => handleNavigation('/components/Pages/ContactUs')}
-            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/ContactUs') ? 'text-white after:block' : 'after:hidden'
-              }`}
-          >
+          <p className="cursor-pointer">Career</p>
+          <p onClick={() => handleNavigation('/components/Pages/ContactUs')} className="cursor-pointer">
             Contact Us
           </p>
-
-
-
         </div>
 
         {/* Mobile Hamburger */}
@@ -156,24 +127,27 @@ const Navbar = () => {
           </div>
 
           <div className="flex flex-col gap-5">
-            <p className="text-xl font-semibold cursor-pointer">About us</p>
+            <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/HomePage')}>About us</p>
 
             <div className="mb-2">
-              <p
-                className="flex items-center justify-between text-xl font-semibold cursor-pointer"
-                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              <p className="flex items-center justify-between text-xl font-semibold cursor-pointer"
+                onClick={() => handleNavigation('/components/Pages/EcoSystem/Eco')}
               >
                 Ecosystem
-                {isDropdownOpen ? <HiChevronUp /> : <HiChevronDown />}
+                <span onClick={(e) => {
+                  e.stopPropagation();
+                  setMobileDropdownOpen(!mobileDropdownOpen);
+                }}>
+                  {mobileDropdownOpen ? <HiChevronUp /> : <HiChevronDown />}
+                </span>
               </p>
 
-              {isDropdownOpen && (
+              {mobileDropdownOpen && (
                 <div className="mt-2 ml-4">
-
                   {dropdownItems.map((item, index) => (
                     <div key={index} className="mb-3">
                       <p
-                        className={`cursor-pointer hover:text-blue-500 ${!item.navigate ? 'opacity-50' : ''}`}
+                        className={`cursor-pointer hover:text-blue-500 ${!item.navigate ? 'opacity-50 cursor-not-allowed' : ''}`}
                         onClick={() => item.navigate && handleNavigation(item.navigate)}
                       >
                         {item.title}
@@ -184,20 +158,10 @@ const Navbar = () => {
               )}
             </div>
 
-            <p className="text-xl font-semibold cursor-pointer">Advertisers</p>
-            <p
-              className="text-xl font-semibold cursor-pointer"
-              onClick={() => handleNavigation('/components/Pages/Publishing')}
-            >
-              Publishing
-            </p>
+            <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/Investment')}>Investment</p>
+            <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/Publishing')}>Publishing</p>
             <p className="text-xl font-semibold cursor-pointer">Career</p>
-            <p
-              className="text-xl font-semibold cursor-pointer"
-              onClick={() => handleNavigation('/components/Pages/ContactUs')}
-            >
-              Contact Us
-            </p>
+            <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/ContactUs')}>Contact Us</p>
           </div>
         </div>
       )}
