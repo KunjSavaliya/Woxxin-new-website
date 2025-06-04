@@ -96,14 +96,29 @@ const Navbar = () => {
             )}
           </div>
 
-          <p onClick={() => handleNavigation('/components/Pages/Investment')} className="cursor-pointer">
+          <p
+            onClick={() => handleNavigation('/components/Pages/Investment')}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/Investment') ? 'text-white after:block' : 'after:hidden'}`}
+          >
             Investment
           </p>
-          <p onClick={() => handleNavigation('/components/Pages/Publishing')} className="cursor-pointer">
+          <p
+            onClick={() => handleNavigation('/components/Pages/Publishing')}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/Publishing') ? 'text-white after:block' : 'after:hidden'}`}
+          >
             Publishing
           </p>
-          <p className="cursor-pointer">Career</p>
-          <p onClick={() => handleNavigation('/components/Pages/ContactUs')} className="cursor-pointer">
+          <p
+            onClick={() => handleNavigation('/components/Pages/Career')}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/Career') ? 'text-white after:block' : 'after:hidden'}`}
+          >
+            Career
+          </p>
+
+          <p
+            onClick={() => handleNavigation('/components/Pages/ContactUs')}
+            className={`relative cursor-pointer after:content-[''] after:absolute after:left-1/2 after:translate-x-[-50%] after:bottom-[-6px] after:h-[3px] after:w-[70%] after:rounded-full after:bg-[#6960EB] ${isActive('/components/Pages/ContactUs') ? 'text-white after:block' : 'after:hidden'}`}
+          >
             Contact Us
           </p>
         </div>
