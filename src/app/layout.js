@@ -2,6 +2,7 @@
 import Footer from "./components/Common/Footer";
 import Navbar from "./components/Common/Navbar";
 import "./globals.css";
+import CustomCursor from "./Reusable/CustomCursor";
 
 
 
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
+        <CustomCursor/>
         <Navbar />
         {children}
         <Footer />
