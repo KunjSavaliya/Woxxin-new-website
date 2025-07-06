@@ -101,7 +101,7 @@ function MainPage() {
           <div className='contents'>
             <ScrollAnimation animateIn="animate__animated animate__zoomIn">
               <div className=''>
-                <Text size="text-[45px] md:text-[65px] lg:text-[65px] xl:text-[115px] font-bold text-white text-gradient text-center text2-gradient">
+                <Text size=" text-[45px] md:text-[65px] lg:text-[65px] xl:text-[115px] xl:mt-[50px] font-bold text-white text-gradient text-center text2-gradient">
                   1 Bil
                 </Text>
                 <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[45px] text-white'>
