@@ -21,7 +21,7 @@ function MobilePage() {
           className="absolute w-full h-[800px] md:h-[1000px] "
         />
         <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[200px]  sm:px-12 md:px-20 lg:px-20 xl:px-60 xl:pl-60">
+          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[200px]  sm:px-12 md:px-20 lg:px-20 xl:px-28 xl:pl-28 2xl:px-60 2xl:pl-60">
             <div>
               <div className="flex justify-start md:gap-10 lg:gap-32">
                 {/* Left Content */}
