@@ -134,7 +134,7 @@ function MainPage() {
 
 
             </div>
-            <div className="bg-[#110f27] relative z-10 flex flex-col  md:pl-80 md:pr-80">
+            <div className="bg-[#110f27] relative z-10 flex flex-col md:pl-32 md:pr-32 xl:pl-40 xl:pr-40">
 
                 <div className='flex justify-center mt-12 '>
                     <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
