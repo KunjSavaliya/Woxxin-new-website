@@ -4,14 +4,15 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Button = ({ text, onClick, className, type = 'button', disabled = false, iconColor = 'white' }) => {
   return (
-    <button
-      type={type}
-      onClick={onClick}
-      className={` items-center py-3 px-8 rounded font-bold ${className}`}
-      disabled={disabled}
-    >
-      {text}
-    </button>
+   <Button
+  text={
+    <span className="group inline-flex items-center gap-2">
+      Get Started
+      <FaArrowRight className="transform translate-x-0 group-hover:translate-x-1 transition duration-200" />
+    </span>
+  }
+  className="bg-blue-600 text-white hover:bg-blue-700 transition"
+/>
   );
 };
 

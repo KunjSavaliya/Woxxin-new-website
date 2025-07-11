@@ -17,7 +17,7 @@ const Navbar = () => {
     { title: 'Mobile Games', navigate: '/components/Pages/EcoSystem/MobileGame' },
     { title: 'H5 Games / Quiz', navigate: '/components/Pages/EcoSystem/H5Game' },
     { title: 'Video Ads', navigate: '/components/Pages/EcoSystem/VideoAds' },
-    { title: 'Google Ads' },
+    { title: 'Google Ads', navigate: '/components/Pages/EcoSystem/GoogleAds' },
   ];
 
   const handleNavigation = (path) => {
