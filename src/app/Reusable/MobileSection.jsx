@@ -48,14 +48,6 @@ const MobileAppSection = ({
                   {title1}
                 </Text>
               </div>
-              {/* <div className="flex justify-center w-full lg:w-auto lg:justify-end">
-                <img
-                  src={iconSrc}
-                  alt="Icon"
-                  className={`${iconClassNames} hidden md:block`}
-                />
-
-              </div> */}
               <div className="justify-center hidden w-full lg:flex lg:w-auto lg:justify-end md:block">
                 <img
                   src={iconSrc}
@@ -64,7 +56,7 @@ const MobileAppSection = ({
                 />
               </div>
             </div>
-            <Text className={` text-white font-medium text-start mt-10 xl:mt-24 ${descriptionClassName}`}>
+            <Text className={` text-white font-medium text-start  ${descriptionClassName}`}>
               {description}
             </Text>
             {(EcoText || EcoText1) && (

@@ -176,7 +176,7 @@ const Navbar = () => {
 
             <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/Investment')}>Investment</p>
             <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/Publishing')}>Publishing</p>
-            <p className="text-xl font-semibold cursor-pointer">Career</p>
+            <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/Career')}>Career</p>
             <p className="text-xl font-semibold cursor-pointer" onClick={() => handleNavigation('/components/Pages/ContactUs')}>Contact Us</p>
           </div>
         </div>
