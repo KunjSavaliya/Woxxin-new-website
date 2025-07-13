@@ -3,7 +3,7 @@ import Footer from "./components/Common/Footer";
 import Navbar from "./components/Common/Navbar";
 import "./globals.css";
 import CustomCursor from "./Reusable/CustomCursor";
-
+import RouterLoader from "./Reusable/RouteLoader";
 
 
 export const metadata = {
@@ -16,10 +16,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body
       >
-        <CustomCursor/>
-        <Navbar />
-        {children}
-        <Footer />
+        <CustomCursor />
+        <RouterLoader >
+          <Navbar />
+          {children}
+          <Footer />
+        </RouterLoader>
       </body>
     </html>
   );

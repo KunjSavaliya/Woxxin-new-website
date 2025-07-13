@@ -29,7 +29,7 @@ function VideoAds() {
             <div>
 
                 <MobileAppSection
-                    bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+                    bgImageSrc="/HomePages/Homedesign.png"
                     logoSrc="/HomePages/Google.png"
                     iconSrc="/HomePages/VideoAdsImg.png"
                     title="Video Player Ads"
@@ -52,7 +52,7 @@ CPMs and fill rates, making it the best choice in the market!"
                     imageSrc="/HomePages/H5Game.png"
                     text="Your Future Career Opportunities"
                     buttonText="Discover Now"
-                           textClassName='text-white mt-[-100px] md:mt-[-150px] lg:mt-[-150px] xl:mt-[-150px] lg:text-8xl text-white'
+                    textClassName='text-white mt-[-100px] md:mt-[-150px] lg:mt-[-150px] xl:mt-[-150px] lg:text-8xl text-white'
                 // onButtonClick={() => alert("Button clicked!")}
                 />
 

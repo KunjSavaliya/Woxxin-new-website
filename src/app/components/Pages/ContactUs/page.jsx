@@ -30,7 +30,7 @@ function ContactUs() {
             <div>
 
                 <MobileAppSection
-                    bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+                    bgImageSrc="/HomePages/Homedesign.png"
                     logoSrc="/HomePages/Google.png"
                     iconSrc="/HomePages/ContectRocket.png"
                     title="Our team is ready for anything"

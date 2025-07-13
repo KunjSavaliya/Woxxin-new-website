@@ -18,7 +18,7 @@ function H5Game() {
       <div>
 
         <MobileAppSection
-          bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+          bgImageSrc="/HomePages/Homedesign.png"
           logoSrc="/HomePages/Google.png"
           iconSrc="/HomePages/MobileGame/MobGame.png"
           title="H5 Games / Quiz"

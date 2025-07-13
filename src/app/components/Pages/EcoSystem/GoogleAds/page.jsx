@@ -69,7 +69,7 @@ function GoogleAds() {
             <div>
 
                 <MobileAppSection
-                    bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+                    bgImageSrc="/HomePages/Homedesign.png"
                     logoSrc="/HomePages/Google.png"
                     iconSrc="/HomePages/GoogleAds/Gads.png"
                     title="Transform Your Google
@@ -157,19 +157,10 @@ results for your business growth"
                         ))}
                     </div>
                 </div>
-                {/* <HeroSection
-                    imageSrc="/HomePages/GoogleAds/HandStack.png"
-                    text="Ready to Improve Your
-Google Ads Performance?"
-                    buttonText="Let’s Talk"
-                    textClassName='text-white text-gradient-publish lg:text-7xl'
-                    text1ClassName='text-3xl text-white mt-[-5px] '
-                    text1='Let’s  discuss how we can help you achieve your marketing goals'
-                // onButtonClick={() => alert("Button clicked!")}
-                /> */}
+
                 <HeroSection
                     imageSrc="/HomePages/Investment/footerbtn.png"
-                 text="Ready to Improve Your
+                    text="Ready to Improve Your
 Google Ads Performance?"
                     buttonText="Let’s Talk"
                     textClassName='text-white text-gradient-publish lg:text-7xl'

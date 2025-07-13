@@ -64,7 +64,7 @@ function Eco() {
       <CustomCursor />
       <div>
         <MobileAppSection
-          bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+          bgImageSrc="/HomePages/Homedesign.png"
           logoSrc="/HomePages/Google.png"
           iconSrc="/HomePages/Eco/EcoDim.png"
           title="Innovative Solutions for a Global Audience."
@@ -168,8 +168,8 @@ function Eco() {
           <div className="absolute top-0 left-0 flex justify-center w-full h-full items-top">
             <div className="w-full max-w-sm px-4">
               <Button
-              text="Apply here"
-              iconColor="#6C63FF"
+                text="Apply here"
+                iconColor="#6C63FF"
                 className="w-full py-3 text-white  rounded-md hover:bg-[#5961F9]/10 transition duration-300 mt-2 sm:mt-5  bg-transparent border border-[#5961F9] bg-[#110F27]"
               >
 
@@ -183,7 +183,7 @@ function Eco() {
 
 
 
-        </div>
+          </div>
         </div>
       </div>
     </>

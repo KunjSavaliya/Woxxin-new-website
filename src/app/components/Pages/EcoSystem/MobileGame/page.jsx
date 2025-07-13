@@ -17,7 +17,7 @@ function MobileGame() {
             <div>
 
                 <MobileAppSection
-                    bgImageSrc="/HomePages/MobileGame/MobGameVector.png"
+                    bgImageSrc="/HomePages/Homedesign.png"
                     logoSrc="/HomePages/Google.png"
                     iconSrc="/HomePages/MobileGame/MobGame.png"
                     title="Play. Connect. Innovate"
@@ -34,11 +34,11 @@ function MobileGame() {
                         alt="Main Background"
                         className="w-full h-[400px] sm:h-[650px]"
                     />
-                        <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-                    <Text size="md:leading-[1] mt-1  text-4xl sm:text-5xl md:text-5xl lg:text-7xl lg:leading-[1] xl:text-8xl xl:leading-[1] text-gradient-Mobetext sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64 p-4">
-                        Immerse yourself in the world of true
-                    </Text>
+                        <Text size="md:leading-[1] mt-1  text-4xl sm:text-5xl md:text-5xl lg:text-7xl lg:leading-[1] xl:text-8xl xl:leading-[1] text-gradient-Mobetext sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64 p-4">
+                            Immerse yourself in the world of true
+                        </Text>
                     </ScrollAnimation>
                     <div className='flex flex-col ' >
                         <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
@@ -60,39 +60,39 @@ function MobileGame() {
                     <div className=' sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64' >
                         <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-                        <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
-                            MISSION
-                        </Text>
-                        <img
-                            src="/HomePages/line.png"
-                            alt="Line"
-                            className="w-full mt-6"
-                        />
-                        <div className="flex flex-wrap md:flex-nowrap  mt-2 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-10">
-                        </div>
-                        <div className="flex flex-col text-white ">
-                            <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  mb-12 ">
-                                Our vision is to become a top-tier Game Studio,celebrated for crafting engaging, inventive,and beloved games that unite players globally.
+                            <Text className="text-xl md:text-2xl mt-1 lg:text-3xl xl:text-[35px] text-white">
+                                MISSION
                             </Text>
-                        </div>
-</ScrollAnimation>
+                            <img
+                                src="/HomePages/line.png"
+                                alt="Line"
+                                className="w-full mt-6"
+                            />
+                            <div className="flex flex-wrap md:flex-nowrap  mt-2 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-10">
+                            </div>
+                            <div className="flex flex-col text-white ">
+                                <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  mb-12 ">
+                                    Our vision is to become a top-tier Game Studio,celebrated for crafting engaging, inventive,and beloved games that unite players globally.
+                                </Text>
+                            </div>
+                        </ScrollAnimation>
                         <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-                        <Text className="text-xl md:text-2xl  lg:text-3xl xl:text-[35px] text-white mt-12">
-                            VISION
-                        </Text>
-                        <img
-                            src="/HomePages/line.png"
-                            alt="Line"
-                            className="w-full mt-6"
-                        />
-                        <div className="flex flex-wrap md:flex-nowrap  mt-2 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-10">
-                        </div>
-                        <div className="flex flex-col text-white ">
-                            <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl   mb-12">
-                                Our mission is to craft games that resonate with players around the world, sparking joy, creativity, and a sense of community. We aim to transform the mobile gaming landscape by focusing on simplicity and innovative design.
+                            <Text className="text-xl md:text-2xl  lg:text-3xl xl:text-[35px] text-white mt-12">
+                                VISION
                             </Text>
-                        </div>
+                            <img
+                                src="/HomePages/line.png"
+                                alt="Line"
+                                className="w-full mt-6"
+                            />
+                            <div className="flex flex-wrap md:flex-nowrap  mt-2 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-10">
+                            </div>
+                            <div className="flex flex-col text-white ">
+                                <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl   mb-12">
+                                    Our mission is to craft games that resonate with players around the world, sparking joy, creativity, and a sense of community. We aim to transform the mobile gaming landscape by focusing on simplicity and innovative design.
+                                </Text>
+                            </div>
                         </ScrollAnimation>
                     </div>
 
@@ -105,36 +105,36 @@ function MobileGame() {
                     <div className='flex flex-wrap justify-center gap-5'>
                         <ScrollAnimation animateIn="animate__animated animate__flipInY">
 
-                        <img
-                            src="/HomePages/MobileGame/MobApp1.png"
-                            alt="Line"
-                            className="w-auto"
-                        />
+                            <img
+                                src="/HomePages/MobileGame/MobApp1.png"
+                                alt="Line"
+                                className="w-auto"
+                            />
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="animate__animated animate__flipInY">
 
-                        <img
-                            src="/HomePages/MobileGame/MobApp2.png"
-                            alt="Line"
-                            className="w-auto"
-                        />
+                            <img
+                                src="/HomePages/MobileGame/MobApp2.png"
+                                alt="Line"
+                                className="w-auto"
+                            />
                         </ScrollAnimation>
                         <ScrollAnimation animateIn="animate__animated animate__flipInY">
 
-                        <img
-                            src="/HomePages/MobileGame/MobApp3.png"
-                            alt="Line"
-                            className="w-auto"
-                        />
+                            <img
+                                src="/HomePages/MobileGame/MobApp3.png"
+                                alt="Line"
+                                className="w-auto"
+                            />
                         </ScrollAnimation>
                     </div>
                     <div className='flex justify-center mb-12'>
                         <ScrollAnimation animateIn="animate__animated animate__flipInY">
-                        <img
-                            src="/HomePages/MobileGame/MobApp4.png"
-                            alt="Line"
-                            className="w-auto h-[500px]"
-                        />
+                            <img
+                                src="/HomePages/MobileGame/MobApp4.png"
+                                alt="Line"
+                                className="w-auto h-[500px]"
+                            />
                         </ScrollAnimation>
                     </div>
                 </div>
