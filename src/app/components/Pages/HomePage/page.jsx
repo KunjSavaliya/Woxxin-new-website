@@ -4,8 +4,15 @@ import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-function MainPage() {
 
+import { useRouter } from 'next/navigation';
+function MainPage() {
+  const router = useRouter();
+
+  const handleClick = () => {
+    console.log('✅ Button clicked!');
+    router.push('/');
+  };
   return (
     <>
 
@@ -219,6 +226,8 @@ function MainPage() {
                   text="Discover Ecosystem"
                   iconColor="#6C63FF"
                   className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9]"
+                  onClick={handleClick}
+
                 />
               </div>
               <div className="mt-10 sm:mt-12">
@@ -232,6 +241,7 @@ function MainPage() {
                     text="Discover Ecosystem"
                     iconColor="#6C63FF"
                     className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
+                    onClick={handleClick}
                   />
                 </div>
               </div>

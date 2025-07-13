@@ -17,7 +17,7 @@ import {
 } from 'react-icons/fa';
 import { MdCampaign } from 'react-icons/md';
 import Image from 'next/image';
-
+import { useRouter } from 'next/navigation';
 function MainPage() {
     /** ----------------------------------------------------------------
      *  1. DATA DEFINITIONS
@@ -39,13 +39,14 @@ function MainPage() {
         { text: 'Ready to change your habit, mindset, and adapt fast to new things', Icon: FaExchangeAlt },
         { text: 'If the company acknowledges your value, gives you a chance and is fair with you', Icon: FaHandshake },
     ];
+    const router = useRouter();
 
-    /** ----------------------------------------------------------------
-     *  2. RENDER
-     * ----------------------------------------------------------------*/
+    const handleClick = () => {
+        router.push('/Publishing/Form');
+    };
     return (
+
         <>
-            {/* ==== HERO ================================================== */}
             <div className="relative bg-[#110f27] w-full h-full overflow-hidden">
                 <img
                     src="/HomePages/Career.png"
@@ -76,7 +77,6 @@ function MainPage() {
                 </div>
             </div>
 
-            {/* ==== TOP POSITIONS ========================================= */}
             <div className="bg-[#110f27] pt-28 sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64">
                 <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
                     <Text className="text-xl md:text-2xl lg:text-3xl xl:text-[35px] text-[#FFFFFF80]">
@@ -101,7 +101,7 @@ function MainPage() {
                                     <br />
                                     <span className="text-white font-lighter">{experience}</span>
                                 </p>
-                                <button className="px-4 py-2 border border-[#5961F9] text-white font-bold rounded-md hover:bg-[#5961F9]/10 transition">
+                                <button onClick={handleClick} className="px-4 py-2 border border-[#5961F9] text-white font-bold rounded-md hover:bg-[#5961F9]/10 transition">
                                     Apply Now
                                 </button>
                             </div>
@@ -110,7 +110,6 @@ function MainPage() {
                 </div>
             </div>
 
-            {/* ==== PERKS ================================================= */}
             <div className="bg-[#110f27] relative z-10 flex flex-col md:px-32 xl:px-40">
                 <div className="flex justify-center mt-12">
                     <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
@@ -137,7 +136,6 @@ function MainPage() {
                     ))}
                 </div>
 
-                {/* ==== PERFECT FIT ======================================== */}
                 <div className="pt-[150px] sm:mt-10">
                     <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
                         <Text className="text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white">
@@ -161,7 +159,6 @@ function MainPage() {
                 </div>
             </div>
 
-            {/* ==== FOOTER CALL‑TO‑ACTION =============================== */}
             <div className="relative bg-[#110f27]">
                 <Image
                     src="/HomePages/Contfooter.png"

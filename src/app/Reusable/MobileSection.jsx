@@ -2,6 +2,7 @@
 import Image from 'next/image';
 import Text from './Text';
 import Button from './Button';
+import { useRouter } from 'next/navigation';
 
 const MobileAppSection = ({
   bgImageSrc,
@@ -22,7 +23,9 @@ const MobileAppSection = ({
   MTitle = '',
   EcoText1 = '',
   EcoText = '',
+  buttonClick
 }) => {
+  const router = useRouter();
   return (
     <div className="relative bg-[#110f27] w-full h-full">
       <img
@@ -80,6 +83,7 @@ const MobileAppSection = ({
                   <Button
                     text={buttonText}
                     iconColor="#6C63FF"
+                    onClick={() => router.push('/')}
                     className="mt-2 sm:mt-5 text-white border border-[#5961F9] bg-[#110F27] rounded-md"
                   />
                 )}
