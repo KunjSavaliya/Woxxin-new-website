@@ -4,20 +4,26 @@ import { FaArrowRight } from 'react-icons/fa';
 
 const Button = ({ text, onClick, className, type = 'button', disabled = false, iconColor = 'white' }) => {
   return (
-   <Button
-  text={
-    <span className="group inline-flex items-center gap-2">
-      Get Started
-      <FaArrowRight className="transform translate-x-0 group-hover:translate-x-1 transition duration-200" />
-    </span>
-  }
-  className="bg-blue-600 text-white hover:bg-blue-700 transition"
-/>
+    <button
+      type={type}
+      onClick={onClick}
+      className={`group inline-flex items-center gap-2 px-4 py-2 rounded ${className}`}
+      disabled={disabled}
+    >
+      {typeof text === 'string' ? (
+        <>
+          {text}
+          <FaArrowRight className="transform translate-x-0 group-hover:translate-x-1 transition duration-200" color={iconColor} />
+        </>
+      ) : (
+        text
+      )}
+    </button>
   );
 };
 
 Button.propTypes = {
-  text: PropTypes.string.isRequired,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   onClick: PropTypes.func,
   className: PropTypes.string,
   type: PropTypes.string,
@@ -26,47 +32,3 @@ Button.propTypes = {
 };
 
 export default Button;
-// import React from 'react';
-// import PropTypes from 'prop-types';
-// import { FaArrowRight } from 'react-icons/fa';
-
-// const Button = ({
-//   text,
-//   onClick,
-//   className,
-//   type = 'button',
-//   disabled = false,
-//   iconColor = 'white',
-// }) => {
-//   return (
-//     <button
-//       type={type}
-//       onClick={onClick}
-//       className={`relative inline-block py-3 px-8 rounded font-bold text-lg overflow-hidden transition duration-500 ${className}`}
-//       disabled={disabled}
-//     >
-//       {/* Neon Border Effect */}
-//       <span className="absolute top-0 left-0 w-full h-[3px] bg-gradient-to-r from-transparent to-[#5D65FF] animate-animate1"></span>
-//       <span className="absolute top-[-100%] right-0 w-[3px]  h-full bg-gradient-to-b from-transparent to-[#5D65FF] animate-animate2"></span>
-//       <span className="absolute bottom-0 right-0 w-full h-[3px]  bg-gradient-to-l from-transparent to-[#5D65FF] animate-animate3"></span>
-//       <span className="absolute bottom-[-100%] left-0 w-[3px]  h-full bg-gradient-to-t from-transparent to-[#5D65FF] animate-animate4"></span>
-
-//       {/* Button Text */}
-//       <span>{text}</span>
-
-//       {/* Icon (Arrow) */}
-//       <FaArrowRight color={iconColor} className="inline-block ml-3" />
-//     </button>
-//   );
-// };
-
-// Button.propTypes = {
-//   text: PropTypes.string.isRequired,
-//   onClick: PropTypes.func,
-//   className: PropTypes.string,
-//   type: PropTypes.string,
-//   disabled: PropTypes.bool,
-//   iconColor: PropTypes.string,
-// };
-
-// export default Button;
