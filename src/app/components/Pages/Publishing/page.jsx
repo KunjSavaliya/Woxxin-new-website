@@ -86,7 +86,7 @@ and foster lasting growth.'
                     <img
                         src="/HomePages/line.png"
                         alt="Line"
-                        className="w-full mt-6"
+                        className="w-full mt-6 rounded-[20%]"
                     />
                     <Text size="text-center text-xl font-bold text-white   md:text-4xl lg:text-4xl xl:text-4xl  xl:mt-0 lg:mt-0 pt-12 ">
                         Collaborating with over 200 international partners,
@@ -146,7 +146,7 @@ and foster lasting growth.'
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mx-auto mt-8 mb-8 md:mx-0"
+                                    className="mx-auto mt-8 mb-8 rounded md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     With 200+ experts bringing 5–10 years of experience, we craft exclusive
@@ -173,7 +173,7 @@ and foster lasting growth.'
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mx-auto mt-8 mb-8 md:mx-0"
+                                    className="mx-auto mt-8 mb-8 rounded md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     Regularly deliver detailed updates on all app activities, ensuring
@@ -201,7 +201,7 @@ and foster lasting growth.'
                                 <img
                                     src="/HomePages/line.png"
                                     alt="Line"
-                                    className="mx-auto mt-8 mb-8 md:mx-0"
+                                   className="mx-auto mt-8 mb-8 rounded md:mx-0"
                                 />
                                 <p className="text-xl sm:text-2xl lg:text-3xl xl:text-[25px] leading-relaxed">
                                     Woxxin offers an all-encompassing approach that covers every aspect of

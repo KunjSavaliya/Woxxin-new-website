@@ -6,6 +6,7 @@ import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 import { useRouter } from 'next/navigation';
+import GlobalPartners from '@/app/Reusable/GlobalPartners';
 function MainPage() {
   const router = useRouter();
 
@@ -32,13 +33,13 @@ function MainPage() {
                 className="w-40 md:w-56"
               />
             </div>
-            <Text className="text-gradient-Home text-4xl sm:text-5xl  md:text-6xl lg:text-[80px] xl:text-[100px] font-bold text-white text-start ActiveUser-homePage">
+            <Text className="text-gradient-Home text-5xl sm:text-5xl  md:text-6xl lg:text-[80px] xl:text-[100px] font-bold text-white text-start ActiveUser-homePage">
               Accelerate Your App / H5 Game Growth
             </Text>
             <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start">
               Woxxin Solutions is a dynamic company focused on creating innovative Mobile Applications and engaging Mobile games, boasting over 650 million downloads globally.
             </Text>
-            <Text className="text-xl md:text-2xl mt-10 lg:text-3xl xl:text-[35px] text-[#FFFFFF80] font-extralight">
+            <Text className="text-3xl md:text-2xl mt-10 lg:text-3xl xl:text-[35px] text-[#FFFFFF80] font-extralight">
               PUBLISHER
             </Text>
 
@@ -67,10 +68,10 @@ function MainPage() {
                   key={index}
                   className="flex flex-col w-full max-w-full px-4 py-4 space-y-2 sm:w-1/2 md:w-1/3 text-start"
                 >
-                  <Text className="text-2xl md:text-3xl xl:text-[35px] text-white">
+                  <Text className="text-2xl md:text-3xl xl:text-[35px] text-white text-bold font-bold">
                     {item.title}
                   </Text>
-                  <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
+                  <Text className="text-lg sm:text-lg md:text-xl xl:text-[20px] text-white break-words font-extralight">
                     {item.description}
                   </Text>
                 </div>
@@ -93,7 +94,7 @@ function MainPage() {
             <div className="flex flex-col text-white gap-7 ">
               <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-                <Text size="text-2xl mt-[-100px] font-bold text-white p-8 text-center md:text-4xl lg:text-4xl xl:text-5xl  md:mt-[-100px] xl:mt-0 lg:mt-0 ">
+                <Text size="text-2xl mt-[-50px] font-bold text-white p-8 text-center md:text-4xl lg:text-4xl xl:text-5xl  md:mt-[-100px] xl:mt-0 lg:mt-0 ">
                   Woxxin’s ecosystem of quality products
                   has helped more than half a billion
                   people work and play effectively, aiming
@@ -108,7 +109,7 @@ function MainPage() {
           <div className='contents'>
             <ScrollAnimation animateIn="animate__animated animate__zoomIn">
               <div className=''>
-                <Text size=" text-[45px] md:text-[65px] lg:text-[65px] xl:text-[115px] xl:mt-[50px] font-bold text-white text-gradient text-center text2-gradient">
+                <Text size=" text-[75px] md:text-[65px] lg:text-[65px] xl:text-[115px] xl:mt-[50px] font-extrabold text-white text-gradient text-center text2-gradient">
                   1 Bil
                 </Text>
                 <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[45px] text-white'>
@@ -125,7 +126,7 @@ function MainPage() {
 
           <ScrollAnimation animateIn="animate__animated animate__zoomIn">
             <div className=''>
-              <Text size="text-center text-[45px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
+              <Text size="text-center text-[75px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
                 50M+
               </Text>
               <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[26px] text-white '>
@@ -152,26 +153,17 @@ function MainPage() {
                 </Text>
               </div>
             </ScrollAnimation>
-            <div className='flex justify-center'>
+            <div className='flex justify-center p-4'>
               <img
                 src="/HomePages/Mobile.png"
                 alt="Main Background"
-                className="w-auto mt-[-4px] h-[200px] sm:h-[300px] md:h-[300px] lg:h-[600px]"
+                className="w-auto mt-[-4px] h-auto  sm:h-[300px] md:h-[300px] lg:h-[600px]"
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="relative">
-        <div>
-          <img
-            src="/HomePages/Home5.png"
-            alt="Main Background"
-            className="w-full h-auto lg:h-[900px] mt-[-4px]"
-          />
-        </div>
-        <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left justify-strat ">
-          <div className='lg:px-28 xl:px-32'>
+     <div className='lg:px-28 xl:px-32 bg-[#110f27] mt-[-3px]'>
             <div className="flex flex-col text-white ">
               <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                 <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
@@ -180,14 +172,61 @@ function MainPage() {
               </ScrollAnimation>
             </div>
           </div>
-        </div>
-      </div >
-      <div className="relative">
-        <div>
+      <div className='flex flex-wrap justify-center bg-[#110f27] xl:gap-24 lg:px-12 xl:px-48 p-16 '>
+<div>
+   <img
+            src="/HomePages/G1.png"
+            alt="Main Background"
+            className=" sm:w-72 sm:h-72"
+          />
+</div>
+<div>
+   <img
+            src="/HomePages/G2.png"
+            alt="Main Background"
+             className=" sm:w-72 sm:h-72"
+          />
+</div>
+<div>
+   <img
+            src="/HomePages/G3.png"
+            alt="Main Background"
+             className=" sm:w-72 sm:h-72"
+          />
+</div>
+<div>
+   <img
+            src="/HomePages/G4.png"
+            alt="Main Background"
+             className=" sm:w-72 sm:h-72"
+          />
+</div>
+<div>
+   <img
+            src="/HomePages/G5.png"
+            alt="Main Background"
+             className=" sm:w-72 sm:h-72"
+          />
+</div>
+<div>
+   <img
+            src="/HomePages/G6.png"
+            alt="Main Background"
+             className=" sm:w-72 sm:h-72"
+          />
+</div>
+
+      </div>
+      <div>
+        <GlobalPartners/>
+
+      </div>
+      <div className="relative bg-[#110f27] ">
+        <div >
           <img
             src="/HomePages/Home6.png"
             alt="Main Background"
-            className="w-full mt-[-4px] h-[1000px] xl:h-[800px]"
+            className="w-full h-auto "
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
@@ -221,21 +260,9 @@ function MainPage() {
             </div>
             <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-              <div className="flex justify-center mt-12">
-                <Button
-                  text="Discover Ecosystem"
-                  iconColor="#6C63FF"
-                  className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9]"
-                  onClick={handleClick}
 
-                />
-              </div>
               <div className="mt-10 sm:mt-12">
-                <div className="flex flex-col text-white gap-7 animate__animated animate__fadeInUp ">
-                  <Text size='text-3xl xl:text-[55px] text-[#ffffff] '>
-                    Your Future Career Opportunities
-                  </Text>
-                </div>
+
                 <div className="flex justify-center mt-12">
                   <Button
                     text="Discover Ecosystem"

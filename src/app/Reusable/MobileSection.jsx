@@ -107,7 +107,7 @@ const MobileAppSection = ({
               <img
                 src="/HomePages/line.png"
                 alt="Line"
-                className="w-full mt-6"
+                className="w-full mt-6 rounded-[30%]"
               />
               <div className="flex flex-wrap md:flex-nowrap  mt-2 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
               </div>

@@ -57,12 +57,11 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
     return (
         <div className="relative  bg-[#110f27]">
             <div>
-                <Image
+                <img
                     src={imageSrc}
                     alt="Main Background"
-                    className="w-full mt-[-4px] h-[500px] xl:h-[650px]"
-                    width={1920}
-                    height={700}
+                    className="w-full h-full "
+
                 />
             </div>
             <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left mt-36">

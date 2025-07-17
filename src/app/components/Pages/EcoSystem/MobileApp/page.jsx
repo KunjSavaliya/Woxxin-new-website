@@ -43,7 +43,7 @@ function MobilePage() {
                   />
                 </div>
               </div>
-              <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start mt-12 ">
+              <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start mt-16 ">
                 Creating a comprehensive mobile platform that enhances
                 daily living and fosters sustainable growth for millions
                 of users around the globe.
@@ -75,7 +75,7 @@ function MobilePage() {
         <img
           src="/HomePages/MobileApp/MobileMan.png"
           alt="Main Background"
-          className="w-full h-[400px] sm:h-[600px]"
+          className="w-auto w-full h-auto"
         />
 
         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
@@ -115,10 +115,10 @@ function MobilePage() {
                 key={index}
                 className="flex flex-col w-full max-w-full gap-2 px-4 py-4 mb-12 space-y-2 sm:w-1/2 md:w-1/3 text-start"
               >
-                <Text className="text-2xl md:text-3xl xl:text-[35px] text-white">
+                <Text className="text-3xl md:text-3xl xl:text-[35px] text-white font-bold">
                   {item.title}
                 </Text>
-                <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
+                <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words font-extralight">
                   {item.description}
                 </Text>
               </div>
@@ -129,42 +129,42 @@ function MobilePage() {
       </div>
       <div className=' bg-[#F4F4F4]'>
         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-          <Text className="p-10 text-xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
+          <Text className="p-10 text-5xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
             Featured Products
           </Text>
         </ScrollAnimation>
-        <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+             <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-          <div className='gap-3'>
+          <div className='p-4 md:px-20 lg:px-20 xl:px-36 xl:pl-64 '>
             <img
               src="/HomePages/MobileApp/MobileBanner1.png"
               alt="Main Background"
-              className="w-[70%] mx-auto"
+               className="w-[90%] mx-auto "
             />
           </div>
         </ScrollAnimation>
         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-          <div>
-            <img
-              src="/HomePages/MobileApp/MobileBanner2.png"
-              alt="Main Background"
-              className="w-[70%] mx-auto"
-            />
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-
-          <Text className="mt-1 mb-12 text-xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
-            Explore our products
-          </Text>
-
-          <div className='pb-14'>
+          <div className='p-4 md:px-20 lg:px-20 xl:px-36 xl:pl-64 '>
             <img
               src="/HomePages/MobileApp/MobileBanner3.png"
               alt="Main Background"
-              className="w-[70%] mx-auto"
+               className="w-[80%] mx-auto "
+            />
+          </div>
+        </ScrollAnimation>
+
+        <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+
+          <Text className="mt-1 mb-12 text-5xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
+            Explore our products
+          </Text>
+
+          <div className='p-4 md:px-20 lg:px-20 xl:px-36 xl:pl-64'>
+            <img
+              src="/HomePages/MobileApp/MobileBanner2.png"
+              alt="Main Background"
+                 className="w-auto mx-auto "
             />
           </div>
         </ScrollAnimation>
@@ -173,7 +173,7 @@ function MobilePage() {
 
 
       <HeroSection
-        imageSrc="/HomePages/MobileApp/MobileHand.png"
+        imageSrc="/HomePages/MobileApp/MobileHand2.png"
         text="Creating World-Class Products Together"
         textClassName='xl:text-[90px] mt-[-50px] text-gradient-Hero '
         buttonText="Apply here"
