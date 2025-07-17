@@ -226,7 +226,7 @@ function MainPage() {
           <img
             src="/HomePages/Home6.png"
             alt="Main Background"
-            className="w-full h-auto "
+            className=" h-[700px] xl:w-full xl:h-full "
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
