@@ -1,29 +1,16 @@
 'use client';
-import React, { useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
-import { motion } from "framer-motion";
-// import Text from '../../../Reusable/Text';
-import Button from '@/app/Reusable/Button';
-
+import React from 'react';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-import Text from '@/app/Reusable/Text';
-import HeroSection from '@/app/Reusable/HeroSection';
+
 import MobileAppSection from '@/app/Reusable/MobileSection';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // core styles
 import 'swiper/css/autoplay'; // autoplay module
-import { Autoplay } from 'swiper/modules';
 import GlobalPartners from '@/app/Reusable/GlobalPartners';
+import Button from '@/app/Reusable/Button';
+import Text from '@/app/Reusable/Text';
 function VideoAds() {
-    const logos = [
-        '/HomePages/Gp1.png',
-        '/HomePages/Gp2.png',
-        '/HomePages/Gp3.png',
-        '/HomePages/Gp4.png',
-        '/HomePages/Gp5.png',
-        '/HomePages/Gp6.png',
-    ];
+
     return (
         <>
             <div>
@@ -41,20 +28,39 @@ optimization technology and compliant video formats. With years
 of expertise in ad tech, our V-Stream player delivers outstanding
 CPMs and fill rates, making it the best choice in the market!"
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 w-auto '
+                  iconClassNames=" md:w-auto lg:w-full h-[400px]"
                     descriptionClassName='text-2xl '
                     buttonText='Quiz Demo'
                 />
 
                 <GlobalPartners />
+ <div className='sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 bg-[#110f27] '>
+  <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+                      <Text className="pt-24 text-5xl text-white sm:text-6xl md:text-6xl lg:text-8xl xl:text-8xl" >
+                       Your Future Career Opportunities
+                      </Text>
+                    </ScrollAnimation>
+</div>
+           <div className="relative bg-[#110f27] ">
+                 <div >
+                   <img
+                     src="/HomePages/VideoADS.png"
+                     alt="Main Background"
+                     className="h-[100px] w-full sm:w-full sm:h-full"
+                   />
+                 </div>
+                 <div className="absolute top-0 items-center w-full h-full ">
+                         <div className="flex justify-center mt-0 sm:mt-12 lg:mt-10 xl:mt-36">
+                           <Button
+                             text="Discover Now"
+                             iconColor="#6C63FF"
+                             className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110f24] "
+                            //  onClick={handleClick}
+                           />
+                   </div>
+                 </div>
+               </div>
 
-                <HeroSection
-                    imageSrc="/HomePages/H5Game.png"
-                    text="Your Future Career Opportunities"
-                    buttonText="Discover Now"
-                    textClassName='text-white mt-[-100px] md:mt-[-150px] lg:mt-[-150px] xl:mt-[-150px] lg:text-8xl text-white'
-                // onButtonClick={() => alert("Button clicked!")}
-                />
 
             </div>
         </>

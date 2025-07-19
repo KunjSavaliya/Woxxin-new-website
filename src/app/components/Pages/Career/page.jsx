@@ -19,11 +19,6 @@ import { MdCampaign } from 'react-icons/md';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 function MainPage() {
-    /** ----------------------------------------------------------------
-     *  1. DATA DEFINITIONS
-     * ----------------------------------------------------------------*/
-    // Store icon *components* – NOT instantiated JSX – to avoid
-    // hydration loops / “Maximum call stack size exceeded” in SSR.
     const jobs = [
         { title: 'Android Developer', experience: '2 to 5 year', Icon: FaAndroid },
         { title: 'Digital Marketing', experience: '1 to 3 year', Icon: MdCampaign },
@@ -85,8 +80,8 @@ function MainPage() {
                     <img src="/HomePages/line.png" alt="Line" className="w-full mt-6" />
                 </ScrollAnimation>
 
-                <div className="min-h-screen py-10 px-4 sm:px-6 lg:px-20">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-2 gap-6">
+                <div className="min-h-screen px-4 py-10 sm:px-6 lg:px-20">
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-2">
                         {jobs.map(({ title, experience, Icon }, idx) => (
                             <div
                                 key={idx}
@@ -95,8 +90,8 @@ function MainPage() {
                                 <div className="text-3xl mb-4 text-[#5961F9]">
                                     <Icon size={36} />
                                 </div>
-                                <h3 className="text-white text-lg font-extralight mb-4">{title}</h3>
-                                <p className="text-sm text-gray-400 mb-6">
+                                <h3 className="mb-4 text-lg text-white font-extralight">{title}</h3>
+                                <p className="mb-6 text-sm text-gray-400">
                                     Experience:
                                     <br />
                                     <span className="text-white font-lighter">{experience}</span>
@@ -110,54 +105,61 @@ function MainPage() {
                 </div>
             </div>
 
-            <div className="bg-[#110f27] relative z-10 flex flex-col md:px-32 xl:px-40">
-                <div className="flex justify-center mt-12">
-                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-                        <Text className="text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white mt-6">
-                            Our Perks Create a Difference
-                        </Text>
-                    </ScrollAnimation>
-                </div>
+       <div className="bg-[#110f27] relative z-10 px-4 sm:px-12 md:px-20 lg:px-20 xl:px-0">
+  <div className="flex flex-col w-full max-w-screen-xl mx-auto xl:px-20">
 
-                <div className="flex flex-col gap-10 mt-16">
-                    {[
-                        'Inspiring culture where ambition & creativity lead the way',
-                        'Chance to collaborate with exceptional individuals on globally recognised projects',
-                        'Continuous learning: we sponsor tuition fees up to 100 %',
-                        'Regular salary reviews & performance bonuses twice annually',
-                        'Monthly lunch allowance with generous benefits',
-                        'Regular team fun days, company events & holiday celebrations',
-                    ].map((line, i) => (
-                        <ScrollAnimation key={i} animateIn="animate__animated animate__fadeInUp">
-                            <Text className="text-start text-xl font-extralight text-white md:text-4xl lg:text-4xl xl:text-3xl">
-                                {line}
-                            </Text>
-                        </ScrollAnimation>
-                    ))}
-                </div>
+    {/* Section Title */}
+    <div className="">
+      <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+        <Text className="text-start text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white mt-6">
+          Our Perks Create a Difference
+        </Text>
+      </ScrollAnimation>
+    </div>
 
-                <div className="pt-[150px] sm:mt-10">
-                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-                        <Text className="text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white">
-                            Are you a perfect part of Woxxin Solution
-                        </Text>
-                    </ScrollAnimation>
+    {/* Perk List */}
+    <div className="flex flex-col gap-10 mt-16">
+      {[
+        'Inspiring culture where ambition & creativity lead the way',
+        'Chance to collaborate with exceptional individuals on globally recognised projects',
+        'Continuous learning: we sponsor tuition fees up to 100 %',
+        'Regular salary reviews & performance bonuses twice annually',
+        'Monthly lunch allowance with generous benefits',
+        'Regular team fun days, company events & holiday celebrations',
+      ].map((line, i) => (
+        <ScrollAnimation key={i} animateIn="animate__animated animate__fadeInUp">
+          <Text className="text-xl text-white text-start font-extralight md:text-4xl lg:text-4xl xl:text-3xl">
+            {line}
+          </Text>
+        </ScrollAnimation>
+      ))}
+    </div>
 
-                    <div className="py-10 px-4 sm:px-6 lg:px-20 pt-20">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                            {traits.map(({ text, Icon }, idx) => (
-                                <div
-                                    key={idx}
-                                    className="bg-[#141229] border border-[#2a2742] p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl"
-                                >
-                                    <Icon size={28} className="text-orange-400 mb-4" />
-                                    <p className="text-gray-300 text-sm leading-relaxed">{text}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
+    {/* Bottom Section */}
+    <div className="pt-[150px] sm:mt-10">
+      <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+        <Text className=" text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white">
+          Are you a perfect part of Woxxin Solution
+        </Text>
+      </ScrollAnimation>
+
+      <div className="px-4 py-10 pt-20 sm:px-6 lg:px-0">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {traits.map(({ text, Icon }, idx) => (
+            <div
+              key={idx}
+              className="bg-[#141229] border border-[#2a2742] p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-xl"
+            >
+              <Icon size={28} className="mb-4 text-orange-400" />
+              <p className="text-sm leading-relaxed text-gray-300 text-start">{text}</p>
             </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
             <div className="relative bg-[#110f27]">
                 <Image
@@ -168,7 +170,7 @@ function MainPage() {
                     height={700}
                 />
 
-                <div className="absolute top-0 left-0 flex justify-center w-full h-full p-6 items-start">
+                <div className="absolute top-0 left-0 flex items-start justify-center w-full h-full p-6">
                     <div className="w-full max-w-[92rem] px-4">
                         <div className="flex justify-center mt-12">
                             <Button

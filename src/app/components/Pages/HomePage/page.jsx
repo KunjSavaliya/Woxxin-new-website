@@ -107,34 +107,29 @@ function MainPage() {
 
         <div className='mt-5 contents'>
           <div className='contents'>
-            <ScrollAnimation animateIn="animate__animated animate__zoomIn">
               <div className=''>
                 <Text size=" text-[75px] md:text-[65px] lg:text-[65px] xl:text-[115px] xl:mt-[50px] font-extrabold text-white text-gradient text-center text2-gradient">
-               <CountUp end={100} duration={3} suffix="M+" />
+               <CountUp end={100} duration={7} suffix="M+" />
                 </Text>
                 <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[45px] text-white'>
                   Global Downloads
                 </Text>
               </div>
-            </ScrollAnimation>
             <img
               src="/HomePages/Appimg.png"
               alt="Advertisers Icon"
               className="w-auto mx-auto "
             />
           </div>
-
-          <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-            <div className=''>
+            <div className='mt-5'>
               <Text size="text-center text-[75px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
-                             <CountUp end={50} duration={3} suffix="M+" />
+                             <CountUp end={50} duration={6} suffix="M+" />
 
               </Text>
               <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[26px] text-white mt-5 '>
                 Monthly Active Users
               </Text>
             </div>
-          </ScrollAnimation>
         </div>
       </div>
       <div className="relative">
@@ -149,7 +144,7 @@ function MainPage() {
           <div className='flex flex-col gap-5' >
             <ScrollAnimation animateIn="animate__animated animate__zoomIn ">
               <div className='mt-44'>
-                <Text className="text-center text-5xl mt-[-130px] font-extralight leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
+                <Text className="text-center text-5xl mt-[-130px] font-bold leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
                   Mobile Apps
                 </Text>
               </div>
@@ -243,7 +238,7 @@ function MainPage() {
                     ].map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <span className="mt-2 h-2 w-2 rounded-full bg-[#AAB0C0] opacity-80"></span>
-                        <span className="text-xl  md:text-lg lg:text-[27px]">{item}</span>
+                        <span className="text-xl  md:text-lg lg:text-[27px] text-[#AAB0C0]">{item}</span>
                       </li>
                     ))}
                   </ul>
@@ -264,7 +259,7 @@ function MainPage() {
                   <Button
                     text="Discover Ecosystem"
                     iconColor="#6C63FF"
-                    className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
+                    className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110f24] "
                     onClick={handleClick}
                   />
           </div>

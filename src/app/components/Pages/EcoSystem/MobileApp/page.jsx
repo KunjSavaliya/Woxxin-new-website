@@ -23,23 +23,24 @@ function MobilePage() {
         <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
           <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[200px]  sm:px-12 md:px-20 lg:px-20 xl:px-28 xl:pl-28 2xl:px-60 2xl:pl-60">
             <div>
-              <div className="flex justify-start md:gap-10 lg:gap-32">
+              <div className="flex justify-around md:gap-10 lg:gap-5">
                 {/* Left Content */}
-                <div className="w-auto lg:w-1/2">
+              <div className=" w-auto md:w-[70%] lg:w-1/2">
                   <img
                     src="/HomePages/Google.png"
                     alt="Google"
                     className="w-32 sm:w-40 md:w-64"
                   />
-                  <Text className="text-gradient-mobiletext font-extralight text-6xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[95px]  text-white text-start mt-6 sm:mt-10">
+                  <Text className="text-gradient-mobiletext font-extralight text-6xl sm:text-5xl md:text-[75px]  lg:text-[70px] xl:text-[95px]  text-white text-start mt-6 sm:mt-10">
                     Woxxin Intelligent Mobile Apps
                   </Text>
                 </div>
-                <div className="justify-center hidden w-full lg:flex lg:w-auto lg:justify-end md:block">
+                 <div className="items-center justify-center hidden md:flex">
                   <img
                     src="/HomePages/MobileApp/MobileIcon.png"
                     alt="Mobile Icon"
-                    className="w-32 xl:w-auto"
+                    // className="w-32 xl:w-auto"
+                    className=" md:w-auto md:h-[250px] lg:w-full lg:h-[300px] xl:h-[400px]"
                   />
                 </div>
               </div>
@@ -156,7 +157,7 @@ function MobilePage() {
 
         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-          <Text className="mt-1 mb-12 text-5xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
+          <Text className="mt-16 mb-12 text-5xl text-white md:text-2xl lg:text-5xl xl:text-7xl text-gradient-mobilePro" >
             Explore our products
           </Text>
 
@@ -174,8 +175,8 @@ function MobilePage() {
 
       <HeroSection
         imageSrc="/HomePages/MobileApp/MobileHand2.png"
-        text="Creating World-Class Products Together"
-        textClassName='xl:text-[90px] mt-[-50px] text-gradient-Hero '
+        text="Let’s Build Awesome Products Together!"
+        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px]  text-gradient-Home'
         buttonText="Apply here"
         onButtonClick={() => alert("Button clicked!")}
       />

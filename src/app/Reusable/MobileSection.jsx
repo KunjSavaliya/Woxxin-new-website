@@ -34,44 +34,45 @@ const MobileAppSection = ({
         className={`absolute w-full ${bgImageClassNames}`}
       />
       <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-        <div className="flex flex-col p-6 mt-32 text-white sm:mt-40 gap-[100px] lg:gap-[150px] sm:px-12 md:px-20 lg:px-20 lg:pl-20 xl:px-28 xl:pl-28 2xl:px-64 2xl:pl-64">
+        <div className="flex flex-col p-6 mt-32 text-white sm:mt-40 gap-[100px] lg:gap-[150px] sm:px-20 md:px-16 lg:px-20 lg:pl-20 xl:px-28 xl:pl-28 2xl:px-64 2xl:pl-64">
           {/* Top Section */}
           <div>
-            <div className="flex justify-start md:gap-10 lg:gap-32">
-              <div className="w-auto lg:w-1/2">
+            <div className="flex items-center justify-around md:gap-10 lg:gap-32">
+              <div className=" w-auto md:w-[70%] lg:w-1/2">
                 <img
                   src={logoSrc}
                   alt="Logo"
                   className="w-32 sm:w-40 md:w-64"
                 />
-                <Text className=" leading-[1.2] md:leading-[1.2] text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px]  xl:text-[75px] 2xl:text-[90px] text-start mt-6 sm:mt-10">
+                <Text className=" leading-[1.2] md:leading-[1.2] text-gradient-mobiletext font-extralight text-5xl sm:text-7xl md:text-[65px] lg:text-[70px]  xl:text-[75px] 2xl:text-[87px] text-start mt-6 sm:mt-16">
                   {title}
                 </Text>
-                <Text className=" font-extralight text-2xl sm:text-3xl md:text-3xl lg:text-[30px] xl:text-3xl text-white text-start mt-6 sm:mt-10">
+                <Text className=" font-extralight text-2xl sm:text-3xl md:text-3xl lg:text-[30px] xl:text-3xl text-white text-start mt-10 sm:mt-16 ">
                   {title1}
                 </Text>
               </div>
-              <div className="justify-center hidden w-full lg:flex lg:w-auto lg:justify-end md:block">
-                <img
-                  src={iconSrc}
-                  alt="Mobile Icon"
-                  className={`${iconClassNames} `}
-                />
-              </div>
+            <div className="items-center justify-center hidden md:flex">
+  <img
+    src={iconSrc}
+    alt="Mobile Icon"
+    className={iconClassNames}
+  />
+</div>
+
             </div>
             <Text className={` text-white font-medium text-start  ${descriptionClassName}`}>
               {description}
             </Text>
             {(EcoText || EcoText1) && (
-              <div className="mb-12 xl:pl-56 xl:pr-56">
+              <div className="mt-5 mb-12 xl:pl-56 xl:pr-56">
                 {EcoText && (
-                  <Text className={` text-white text-3xl xl:text-5xl text-center  `}>
+                  <Text className={` text-white text-3xl xl:text-[40px] text-center  `}>
                     {EcoText}
                   </Text>
                 )}
 
                 {EcoText1 && (
-                  <Text className={` text-white text-3xl xl:text-5xl text-center mt-12 `}>
+                  <Text className={` text-white text-3xl xl:text-[40px] text-center mt-12 `}>
                     {EcoText1}
                   </Text>
                 )}

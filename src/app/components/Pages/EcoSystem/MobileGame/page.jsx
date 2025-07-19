@@ -10,6 +10,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Text from '@/app/Reusable/Text';
 import HeroSection from '@/app/Reusable/HeroSection';
 import MobileAppSection from '@/app/Reusable/MobileSection';
+import Image from 'next/image';
 function MobileGame() {
 
     return (
@@ -24,22 +25,28 @@ function MobileGame() {
                     title1="Endless fun awaits you with engaging and easy-to-play games!"
                     description="An enthusiastic and innovative group delivers fresh and thrilling adventures to users every day."
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 xl:w-auto'
+                     iconClassNames=" md:w-auto lg:w-full h-[400px]"
                     descriptionClassName='text-4xl'
                 />
                 <div className=" bg-[#110f27]  ">
-
-                    <img
-                        src="/HomePages/MobileGame/MobGameMan.png"
-                        alt="Main Background"
-                        className="w-full h-[400px] sm:h-[650px]"
-                    />
-                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
-
-                        <Text size="md:leading-[1] mt-1  text-4xl sm:text-5xl md:text-5xl lg:text-7xl lg:leading-[1] xl:text-8xl xl:leading-[1] text-gradient-Mobetext sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64 p-4">
-                            Immerse yourself in the world of true
-                        </Text>
-                    </ScrollAnimation>
+                       <div className="relative bg-[#110f27]">
+                              <Image
+                               src="/HomePages/MobileGame/MobGameMan.png"
+                                alt="EcoDrive Background"
+                                className="w-full mt-[-4px] h-[400px] xl:h-[650px]"
+                                width={1920}
+                                height={700}
+                              />
+                              <div className="absolute top-0 left-0 flex items-end justify-center w-full h-full">
+                                <div className="w-full lg:px-72 lg:pl-72">
+                                  <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                                    <Text className="p-4 text-5xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl text-gradient-mobiletext ">
+                                      Immerse yourself in the world of true
+                                    </Text>
+                                  </ScrollAnimation>
+                                </div>
+                              </div>
+                            </div>
                     <div className='flex flex-col ' >
                         <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
@@ -51,10 +58,6 @@ function MobileGame() {
                                 className="w-auto  h-auto xl:h-[900px]"
                             />
                         </div>
-
-
-
-
                     </div>
 
                     <div className=' sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64' >
@@ -139,15 +142,13 @@ function MobileGame() {
                     </div>
                 </div>
 
-
-                <HeroSection
-                    imageSrc="/HomePages/MobileApp/MobileHand.png"
-                    text="Creating World-Class Products Together"
-                    textClassName='lg:text-8xl text-gradient-Hero'
-                    buttonText="Apply here"
-                    onButtonClick={() => alert("Button clicked!")}
-                />
-
+      <HeroSection
+        imageSrc="/HomePages/MobileGame/MobileGF.png"
+        text="Creating World-Class Products Together"
+        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] mt-[-50px] text-gradient-Home'
+        buttonText="Apply here"
+        onButtonClick={() => alert("Button clicked!")}
+      />
 
             </div>
         </>

@@ -39,7 +39,8 @@ discuss about the project and collaboration
 opportunities, or reach out to us directly!"
 
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 w-auto'
+                        iconClassNames=" md:w-auto lg:w-full h-[400px]"
+
 
                 />
                 <div className='bg-[#110f27]'>
