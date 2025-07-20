@@ -4,7 +4,7 @@ import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-
+import CountUp from 'react-countup';
 import { useRouter } from 'next/navigation';
 import GlobalPartners from '@/app/Reusable/GlobalPartners';
 function MainPage() {
@@ -25,7 +25,7 @@ function MainPage() {
         />
         <div className="relative z-10 flex flex-col items-center w-full h-full text-left">
 
-          <div className="flex flex-col gap-12 p-6 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-20 xl:px-52 xl:pl-52">
+          <div className="flex flex-col p-6 mt-32 text-white gap-7 sm:mt-40 sm:gap-7 xl:gap-12 sm:px-12 md:px-24 lg:px-20 xl:px-52 xl:pl-52">
             <div>
               <img
                 src="/HomePages/Google.png"
@@ -49,7 +49,7 @@ function MainPage() {
               className="w-full"
             ></img>
 
-            <div className="flex flex-wrap md:flex-nowrap gap-4 mt-10 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
+            <div className="flex flex-wrap md:flex-nowrap gap-4 mt-0 xl:mt-10 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] mb-16">
               {[
                 {
                   title: "Top 20",
@@ -107,33 +107,29 @@ function MainPage() {
 
         <div className='mt-5 contents'>
           <div className='contents'>
-            <ScrollAnimation animateIn="animate__animated animate__zoomIn">
               <div className=''>
                 <Text size=" text-[75px] md:text-[65px] lg:text-[65px] xl:text-[115px] xl:mt-[50px] font-extrabold text-white text-gradient text-center text2-gradient">
-                  1 Bil
+               <CountUp end={100} duration={7} suffix="M+" />
                 </Text>
                 <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[45px] text-white'>
                   Global Downloads
                 </Text>
               </div>
-            </ScrollAnimation>
             <img
               src="/HomePages/Appimg.png"
               alt="Advertisers Icon"
               className="w-auto mx-auto "
             />
           </div>
-
-          <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-            <div className=''>
+            <div className='mt-5'>
               <Text size="text-center text-[75px] md:text-[65px] lg:text-[[65px] xl:text-[115px] font-bold text-white ActiveUser-gradient text-center text2-gradient">
-                50M+
+                             <CountUp end={50} duration={6} suffix="M+" />
+
               </Text>
-              <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[26px] text-white '>
+              <Text size='text-xl md:text-2xl lg:text-3xl xl:text-[26px] text-white mt-5 '>
                 Monthly Active Users
               </Text>
             </div>
-          </ScrollAnimation>
         </div>
       </div>
       <div className="relative">
@@ -146,9 +142,9 @@ function MainPage() {
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full text-left ">
           <div className='flex flex-col gap-5' >
-            <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-              <div className='mt-20'>
-                <Text className="text-center text-5xl mt-[-130px] font-extralight leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
+            <ScrollAnimation animateIn="animate__animated animate__zoomIn ">
+              <div className='mt-44'>
+                <Text className="text-center text-5xl mt-[-130px] font-bold leading-relaxed text-white text-[50px]  sm:text-[60px]  md:text-[50px] lg:text-[70px] xl:text-[90px] text-gradient-mobileApp">
                   Mobile Apps
                 </Text>
               </div>
@@ -163,75 +159,66 @@ function MainPage() {
           </div>
         </div>
       </div>
-      <div className='lg:px-28 xl:px-32 bg-[#110f27] mt-[-3px]'>
-        <div className="flex flex-col text-white ">
-          <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-            <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
-              Mobile Games
-            </Text>
-          </ScrollAnimation>
-        </div>
-      </div>
-      <div className='flex flex-wrap justify-center bg-[#110f27] xl:gap-24 lg:px-12 xl:px-48 p-16 '>
-        <div>
-          <img
+     <div className='lg:px-28 xl:px-32 bg-[#110f27] mt-[-3px]'>
+            <div className="flex flex-col text-white ">
+              <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+                <Text className="text-center  font-lighter leading-relaxed text-white text-5xl md:text-[65px] lg:text-[65px] xl:text-[90px] text-gradient-mobileGames">
+                  Mobile Games
+                </Text>
+              </ScrollAnimation>
+            </div>
+          </div>
+      <div className='flex flex-wrap justify-center bg-[#110f27] xl:gap-24 lg:px-12 xl:px-48 p-4 sm:p-16 mt-[-2px]'>
+<div>
+   <img
             src="/HomePages/G1.png"
             alt="Main Background"
-            className=" sm:w-72 sm:h-72"
+            className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72"
           />
-        </div>
-        <div>
-          <img
+</div>
+<div>
+   <img
             src="/HomePages/G2.png"
             alt="Main Background"
-            className=" sm:w-72 sm:h-72"
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72"
           />
-        </div>
-        <div>
-          <img
+</div>
+<div>
+   <img
             src="/HomePages/G3.png"
             alt="Main Background"
-            className=" sm:w-72 sm:h-72"
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72"
           />
-        </div>
-        <div>
-          <img
+</div>
+<div>
+   <img
             src="/HomePages/G4.png"
             alt="Main Background"
-            className=" sm:w-72 sm:h-72"
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72"
           />
-        </div>
-        <div>
-          <img
+</div>
+<div>
+   <img
             src="/HomePages/G5.png"
             alt="Main Background"
-            className=" sm:w-72 sm:h-72"
+              className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72"
           />
-        </div>
-        <div>
-          <img
+</div>
+<div>
+   <img
             src="/HomePages/G6.png"
             alt="Main Background"
-            className=" sm:w-72 sm:h-72"
+               className="w-32 h-32 sm:w-40 sm:h-40 md:w-72 md:h-72"
           />
-        </div>
+</div>
 
       </div>
       <div>
-        <GlobalPartners />
+        <GlobalPartners/>
 
       </div>
-      <div className="relative bg-[#110f27] ">
-        <div >
-          <img
-            src="/HomePages/Home6.png"
-            alt="Main Background"
-            className=" h-[800px] xl:w-full xl:h-full "
-          />
-        </div>
-        <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
-          <div className='flex flex-col justify-around '>
-            <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20 xl:px-48">
+      <div className='bg-[#110f27]'>
+        <div className="flex flex-col justify-between gap-8 px-4 py-8 text-white md:flex-row sm:px-6 md:px-12 lg:px-20 xl:px-48">
               <div className="flex items-center w-full md:w-3/5 ">
                 <ScrollAnimation animateIn="animate__animated animate__zoomIn">
                   <Text className="text-4xl md:text-4xl lg:text-5xl xl:text-[55px] text-white font-light text-start break-words">
@@ -251,28 +238,30 @@ function MainPage() {
                     ].map((item, index) => (
                       <li key={index} className="flex items-start space-x-3">
                         <span className="mt-2 h-2 w-2 rounded-full bg-[#AAB0C0] opacity-80"></span>
-                        <span className="text-xl  md:text-lg lg:text-[27px]">{item}</span>
+                        <span className="text-xl  md:text-lg lg:text-[27px] text-[#AAB0C0]">{item}</span>
                       </li>
                     ))}
                   </ul>
                 </ScrollAnimation>
               </div>
             </div>
-            <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-
-
-              <div className="mt-10 sm:mt-12">
-
-                <div className="flex justify-center mt-12">
+      </div>
+      <div className="relative bg-[#110f27] ">
+        <div >
+          <img
+            src="/HomePages/Home6.png"
+            alt="Main Background"
+            className="h-[100px] w-full sm:w-full sm:h-full"
+          />
+        </div>
+        <div className="absolute top-0 items-center w-full h-full ">
+                <div className="flex justify-center mt-0 sm:mt-12 lg:mt-10 xl:mt-36">
                   <Button
                     text="Discover Ecosystem"
                     iconColor="#6C63FF"
-                    className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110F27] "
+                    className="mt-2 sm:mt-5 text-white bg-transparent border border-[#5961F9] bg-[#110f24] "
                     onClick={handleClick}
                   />
-                </div>
-              </div>
-            </ScrollAnimation>
           </div>
         </div>
       </div>

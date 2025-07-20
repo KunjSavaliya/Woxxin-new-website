@@ -30,11 +30,11 @@ companies make strong breakthroughs and achieve
 many great
 achievements."
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 w-auto'
+                    iconClassNames=" md:w-auto lg:w-full h-[400px]"
                     descriptionClassName='text-2xl '
                 />
                 <div className="bg-[#110f27] mt-[-4px]">
-                    <ScrollAnimation animateIn="animate__animated animate__backInDown">
+                   <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
                         <div className="flex flex-col justify-between gap-10 px-5 pt-24 md:flex-row sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
                             <div className="flex justify-center w-full md:justify-end md:w-1/2">
@@ -67,7 +67,7 @@ achievements."
 
                         </div>
                     </ScrollAnimation>
-                    <ScrollAnimation animateIn="animate__animated animate__backInDown">
+                  <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
                         <div className="flex flex-col gap-5 pt-24 md:flex-row justify-betweensm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
                             <div className="p-5 text-white ">
@@ -98,7 +98,7 @@ achievements."
                     </ScrollAnimation>
                 </div>
 
-                <div className="relative bg-[#110f27] w-full h-full ">
+                <div className="relative bg-[#110f27] w-full h-full mb-28">
                     <img
                         src="/HomePages/Investment/SellApp.png"
                         alt="Main Background"
@@ -165,16 +165,17 @@ achievements."
                     </div>
                 </div>
 
-                <HeroSection
-                    imageSrc="/HomePages/Investment/footerbtn.png"
-                    text="Apply for Investment"
-                    buttonText="Let’s Talk"
-                    text1ClassName='text-3xl text-white mt-[-5px] '
-                    text1='We would like to get to know you and your start-up'
-                    textClassName='text-white  lg:text-8xl text-gradient-publish'
-                // onButtonClick={() => alert("Button clicked!")}
-                />
 
+<HeroSection
+                    imageSrc="/HomePages/Investment/footerbtn.png"
+         text="Apply for Investment"
+        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] text-gradient-Home'
+
+                    text1='We would like to get to know you and your start-up'
+        buttonText="Let`s Talk"
+        text1ClassName='text-white text-2xl'
+        onButtonClick={() => alert("Button clicked!")}
+      />
             </div >
         </>
     );

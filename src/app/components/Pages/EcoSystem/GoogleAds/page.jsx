@@ -1,20 +1,14 @@
 'use client';
-import React, { useState } from 'react';
-import { FaArrowRight } from 'react-icons/fa';
-import { motion } from "framer-motion";
-// import Text from '../../../Reusable/Text';
-import Button from '@/app/Reusable/Button';
+import React from 'react';
 
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Text from '@/app/Reusable/Text';
 import HeroSection from '@/app/Reusable/HeroSection';
 import MobileAppSection from '@/app/Reusable/MobileSection';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css'; // core styles
-import 'swiper/css/autoplay'; // autoplay module
-import { Autoplay } from 'swiper/modules';
-import GlobalPartners from '@/app/Reusable/GlobalPartners';
+import 'swiper/css/autoplay';
+import CountUp from 'react-countup';
 import { FaChartLine, FaChartBar, FaDollarSign, FaUsers } from 'react-icons/fa';
 
 function GoogleAds() {
@@ -77,7 +71,8 @@ Ads Performance"
                     title1="Data-driven strategies that deliver measurable
 results for your business growth"
                     bgImageClassNames="h-full"
-                    iconClassNames='w-32 w-auto '
+
+         iconClassNames=" md:w-auto lg:w-full h-[400px]"
                     buttonText='Contact Us'
                 />
                 <div className='bg-[#110f27] pt-28  sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64'>
@@ -95,8 +90,8 @@ results for your business growth"
                     </ScrollAnimation>
 
 
-                    <section className=" text-white py-12 px-4 md:px-12 mt-5">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-7xl mx-auto">
+                    <section className="px-4 py-12 mt-5 text-white md:px-12">
+                        <div className="grid grid-cols-1 gap-8 mx-auto md:grid-cols-2 max-w-7xl">
                             {services.map((service, index) => (
                                 <div
                                     key={index}
@@ -107,7 +102,7 @@ results for your business growth"
                                     </div>
                                     <h3 className="text-lg font-semibold">{service.title}</h3>
 
-                                    <ul className="list-disc list-inside text-sm space-y-2 text-gray-300 mt-5">
+                                    <ul className="mt-5 space-y-2 text-sm text-gray-300 list-disc list-inside">
                                         {service.items.map((item, i) => (
                                             <li key={i}>{item}</li>
                                         ))}
@@ -128,47 +123,56 @@ results for your business growth"
                             className="w-full mt-6"
                         />
                     </ScrollAnimation>
-                    <div className="mt-5 flex pt-12 flex-wrap md:flex-nowrap gap-4 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] ">
-                        {[
-                            {
-                                title: "250%",
-                                description: "Average ROAS Improvement",
-                            },
-                            {
-                                title: "$10M+",
-                                description: "Ad Spend Managed",
-                            },
-                            {
-                                title: "98%",
-                                description: "Client Retention Rate",
-                            },
-                        ].map((item, index) => (
-                            <div
-                                key={index}
-                                className="flex flex-col w-full max-w-full px-4 py-4 pt-12 space-y-2 sm:w-1/2 md:w-1/3 text-start"
-                            >
-                                <Text className="text-2xl md:text-3xl xl:text-[90px] text-white text2-gradient font-bold xl:leading-[1]">
-                                    {item.title}
-                                </Text>
-                                <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
-                                    {item.description}
-                                </Text>
-                            </div>
-                        ))}
-                    </div>
+                   <div className="mt-5 flex pt-12 flex-wrap md:flex-nowrap gap-4 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] pb-16">
+  {[
+    {
+      title: "250%",
+      description: "Average ROAS Improvement",
+    },
+    {
+      title: "$10M+",
+      description: "Ad Spend Managed",
+    },
+    {
+      title: "98%",
+      description: "Client Retention Rate",
+    },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="flex flex-col w-full max-w-full px-4 py-4 pt-12 space-y-2 sm:w-1/2 md:w-1/3 text-start"
+    >
+      <Text className="text-2xl md:text-3xl xl:text-[90px] text-white text2-gradient font-bold xl:leading-[1]">
+        <CountUp
+          end={parseFloat(item.title.replace(/[^0-9.]/g, ''))}
+          duration={8}
+          suffix={
+            item.title.includes('%')
+              ? '%'
+              : item.title.includes('M')
+              ? 'M+'
+              : ''
+          }
+          decimals={item.title.includes('.') ? 1 : 0}
+        />
+      </Text>
+      <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
+        {item.description}
+      </Text>
+    </div>
+  ))}
+</div>
                 </div>
 
-                <HeroSection
-                    imageSrc="/HomePages/Investment/footerbtn.png"
-                    text="Ready to Improve Your
-Google Ads Performance?"
-                    buttonText="Let’s Talk"
-                    textClassName='text-white text-gradient-publish lg:text-7xl'
-                    text1ClassName='text-3xl text-white mt-[-5px] '
-                    text1='Let’s  discuss how we can help you achieve your marketing goals'
-                // onButtonClick={() => alert("Button clicked!")}
-                />
-
+ <HeroSection
+        imageSrc="/HomePages/GoogleAds/HandStack.png"
+        text="Ready to Improve Your Google Ads Performance?"
+        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] text-gradient-Home'
+        text1='Let`s discuss how we can help you achieve your marketing goals'
+        buttonText="Let`s Talk"
+        text1ClassName='text-white text-2xl'
+        onButtonClick={() => alert("Button clicked!")}
+      />
             </div>
         </>
     );

@@ -25,10 +25,10 @@ export default function GlobalPartners() {
             <img
                 src="/HomePages/line.png"
                 alt="Line"
-                className="w-full md:pl-5 md:pr-5 mt-14 rounded-[100%] "
+                className="w-full mt-5 md:pl-5 md:pr-5 sm:mt-14 rounded-none sm:rounded-[100%] "
             ></img>
 
-            <div className="w-full py-6 mt-10">
+            <div className="w-full py-6 mt-4 sm:mt-10">
                 <Swiper
                     modules={[Autoplay]}
                     autoplay={{ delay: 2500, disableOnInteraction: false }}

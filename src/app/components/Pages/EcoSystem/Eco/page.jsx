@@ -6,13 +6,9 @@ import { FaArrowRight, FaChartLine, FaBullseye, FaCoins, FaCogs } from 'react-ic
 import { motion } from 'framer-motion';
 import ScrollAnimation from 'react-animate-on-scroll';
 import Text from '@/app/Reusable/Text';
-import HeroSection from '@/app/Reusable/HeroSection';
 import MobileAppSection from '@/app/Reusable/MobileSection';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import { Autoplay } from 'swiper/modules';
-import GlobalPartners from '@/app/Reusable/GlobalPartners';
 import Image from 'next/image';
 import CustomCursor from '@/app/Reusable/CustomCursor';
 import 'animate.css';
@@ -71,7 +67,7 @@ function Eco() {
           EcoText1="Explore over 300+ innovative items in 3 popular sectors!"
           EcoText="Innovative solutions paired with efficient strategies for success."
           bgImageClassNames="h-full"
-          iconClassNames="w-32 w-auto"
+          iconClassNames=" md:w-auto lg:w-full h-[400px]"
           descriptionClassName="text-2xl"
         />
 
