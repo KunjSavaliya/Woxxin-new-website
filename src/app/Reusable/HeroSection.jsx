@@ -53,7 +53,7 @@ import Button from "./Button";
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 // onButtonClick
-const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1ClassName ,btnClassName }) => {
+const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1ClassName, btnClassName }) => {
     return (
         <div className="relative  bg-[#110f27]">
             <div>
@@ -70,7 +70,7 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
                         {/* text-gradient-lasttext */}
                         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
-                            <Text className={` md:leading-[1.2] mt-1 mb-12 text-5xl sm:text-5xl md:text-5xl  lg:leading-[1.2]  xl:leading-[1.2]  sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 ${textClassName}`}>
+                            <Text className={` md:leading-[1.2] mt-1  text-[35px] sm:text-5xl md:text-5xl  lg:leading-[1.2]  xl:leading-[1.2]  sm:px-12 md:px-20 lg:px-20 xl:px-80 xl:pl-80 ${textClassName}`}>
                                 {text}
                             </Text>
                             <Text className={` ${text1ClassName}`}>
@@ -78,7 +78,7 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
                             </Text>
                         </ScrollAnimation>
 
-                        <div className="flex justify-center mt-12 ">
+                        <div className="flex justify-center mt-5 sm:mt-12 ">
                             <Button
                                 text={buttonText}
                                 iconColor="#6C63FF"

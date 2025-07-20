@@ -21,32 +21,32 @@ function MobileGame() {
                     bgImageSrc="/HomePages/Homedesign.png"
                     logoSrc="/HomePages/Google.png"
                     iconSrc="/HomePages/MobileGame/MobGame.png"
-                    title="Play. Connect. Innovate"
+                    title="Play Connect Innovate"
                     title1="Endless fun awaits you with engaging and easy-to-play games!"
                     description="An enthusiastic and innovative group delivers fresh and thrilling adventures to users every day."
                     bgImageClassNames="h-full"
-                     iconClassNames=" md:w-auto lg:w-full h-[400px]"
-                    descriptionClassName='text-4xl'
+                    iconClassNames=" md:w-auto lg:w-full h-[400px]"
+                    descriptionClassName=' text-2xl md:text-4xl mt-5 text-center lg :p-7'
                 />
                 <div className=" bg-[#110f27]  ">
-                       <div className="relative bg-[#110f27]">
-                              <Image
-                               src="/HomePages/MobileGame/MobGameMan.png"
-                                alt="EcoDrive Background"
-                                className="w-full mt-[-4px] h-[400px] xl:h-[650px]"
-                                width={1920}
-                                height={700}
-                              />
-                              <div className="absolute top-0 left-0 flex items-end justify-center w-full h-full">
-                                <div className="w-full lg:px-72 lg:pl-72">
-                                  <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                    <div className="relative bg-[#110f27]">
+                        <Image
+                            src="/HomePages/MobileGame/MobGameMan.png"
+                            alt="EcoDrive Background"
+                            className="w-full mt-[-4px] h-[400px] xl:h-[650px]"
+                            width={1920}
+                            height={700}
+                        />
+                        <div className="absolute top-0 left-0 flex items-end justify-center w-full h-full">
+                            <div className="w-full lg:px-72 lg:pl-72">
+                                <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
                                     <Text className="p-4 text-5xl font-bold leading-tight text-center text-white sm:text-6xl xl:text-7xl 2xl:text-8xl text-gradient-mobiletext ">
-                                      Immerse yourself in the world of true
+                                        Immerse yourself in the world of true
                                     </Text>
-                                  </ScrollAnimation>
-                                </div>
-                              </div>
+                                </ScrollAnimation>
                             </div>
+                        </div>
+                    </div>
                     <div className='flex flex-col ' >
                         <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
@@ -142,13 +142,13 @@ function MobileGame() {
                     </div>
                 </div>
 
-      <HeroSection
-        imageSrc="/HomePages/MobileGame/MobileGF.png"
-        text="Creating World-Class Products Together"
-        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] mt-[-50px] text-gradient-Home'
-        buttonText="Apply here"
-        onButtonClick={() => alert("Button clicked!")}
-      />
+                <HeroSection
+                    imageSrc="/HomePages/MobileGame/MobileGF.png"
+                    text="Creating World-Class Products Together"
+                    textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] mt-[-50px] text-gradient-Home'
+                    buttonText="Apply here"
+                    onButtonClick={() => alert("Button clicked!")}
+                />
 
             </div>
         </>

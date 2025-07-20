@@ -72,7 +72,7 @@ Ads Performance"
 results for your business growth"
                     bgImageClassNames="h-full"
 
-         iconClassNames=" md:w-auto lg:w-full h-[400px]"
+                    iconClassNames=" md:w-auto lg:w-full h-[400px]"
                     buttonText='Contact Us'
                 />
                 <div className='bg-[#110f27] pt-28  sm:px-12 md:px-20 lg:px-20 xl:px-64 xl:pl-64'>
@@ -123,56 +123,56 @@ results for your business growth"
                             className="w-full mt-6"
                         />
                     </ScrollAnimation>
-                   <div className="mt-5 flex pt-12 flex-wrap md:flex-nowrap gap-4 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] pb-16">
-  {[
-    {
-      title: "250%",
-      description: "Average ROAS Improvement",
-    },
-    {
-      title: "$10M+",
-      description: "Ad Spend Managed",
-    },
-    {
-      title: "98%",
-      description: "Client Retention Rate",
-    },
-  ].map((item, index) => (
-    <div
-      key={index}
-      className="flex flex-col w-full max-w-full px-4 py-4 pt-12 space-y-2 sm:w-1/2 md:w-1/3 text-start"
-    >
-      <Text className="text-2xl md:text-3xl xl:text-[90px] text-white text2-gradient font-bold xl:leading-[1]">
-        <CountUp
-          end={parseFloat(item.title.replace(/[^0-9.]/g, ''))}
-          duration={8}
-          suffix={
-            item.title.includes('%')
-              ? '%'
-              : item.title.includes('M')
-              ? 'M+'
-              : ''
-          }
-          decimals={item.title.includes('.') ? 1 : 0}
-        />
-      </Text>
-      <Text className="text-md sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
-        {item.description}
-      </Text>
-    </div>
-  ))}
-</div>
+                    <div className=" p-4 mt-5 flex pt-12 flex-wrap md:flex-nowrap gap-4 justify-center divide-y md:divide-y-0 md:divide-x divide-[#9387FF] pb-16">
+                        {[
+                            {
+                                title: "250%",
+                                description: "Average ROAS Improvement",
+                            },
+                            {
+                                title: "$10M+",
+                                description: "Ad Spend Managed",
+                            },
+                            {
+                                title: "98%",
+                                description: "Client Retention Rate",
+                            },
+                        ].map((item, index) => (
+                            <div
+                                key={index}
+                                className="flex flex-col w-full max-w-full px-4 py-4 pt-12 space-y-2 sm:w-1/2 md:w-1/3 text-start"
+                            >
+                                <Text className="text-3xl md:text-3xl xl:text-[90px] text-white text2-gradient font-bold xl:leading-[1]">
+                                    <CountUp
+                                        end={parseFloat(item.title.replace(/[^0-9.]/g, ''))}
+                                        duration={8}
+                                        suffix={
+                                            item.title.includes('%')
+                                                ? '%'
+                                                : item.title.includes('M')
+                                                    ? 'M+'
+                                                    : ''
+                                        }
+                                        decimals={item.title.includes('.') ? 1 : 0}
+                                    />
+                                </Text>
+                                <Text className="text-xl sm:text-lg md:text-xl xl:text-[20px] text-white font-medium break-words">
+                                    {item.description}
+                                </Text>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
- <HeroSection
-        imageSrc="/HomePages/GoogleAds/HandStack.png"
-        text="Ready to Improve Your Google Ads Performance?"
-        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] text-gradient-Home'
-        text1='Let`s discuss how we can help you achieve your marketing goals'
-        buttonText="Let`s Talk"
-        text1ClassName='text-white text-2xl'
-        onButtonClick={() => alert("Button clicked!")}
-      />
+                <HeroSection
+                    imageSrc="/HomePages/GoogleAds/HandStack.png"
+                    text="Ready to Improve Your Google Ads Performance?"
+                    textClassName='text-[28px] lg:text-[69px] xl:text-[70px] 2xl:text-[90px] mt-[-50px] sm:mt-0 text-gradient-Home'
+                    text1='Let`s discuss how we can help you achieve your marketing goals'
+                    buttonText="Let`s Talk"
+                    text1ClassName='text-white text-lg  sm:text-2xl mt-5'
+                    onButtonClick={() => alert("Button clicked!")}
+                />
             </div>
         </>
     );

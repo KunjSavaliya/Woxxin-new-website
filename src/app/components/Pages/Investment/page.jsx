@@ -34,7 +34,7 @@ achievements."
                     descriptionClassName='text-2xl '
                 />
                 <div className="bg-[#110f27] mt-[-4px]">
-                   <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
                         <div className="flex flex-col justify-between gap-10 px-5 pt-24 md:flex-row sm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
                             <div className="flex justify-center w-full md:justify-end md:w-1/2">
@@ -67,9 +67,9 @@ achievements."
 
                         </div>
                     </ScrollAnimation>
-                  <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
+                    <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
 
-                        <div className="flex flex-col gap-5 pt-24 md:flex-row justify-betweensm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
+                        <div className="flex flex-col gap-5 pt-5 sm:pt-24 md:flex-row justify-betweensm:px-12 md:px-20 lg:px-20 xl:px-36 xl:pl-64">
                             <div className="p-5 text-white ">
                                 <p className="text-2xl sm:text-3xl md:text-2xl lg:text-3xl xl:text-[25px]  text-center lg:text-start">
                                     <span className="text-[#5961F9]">OUR</span> VISION
@@ -98,7 +98,7 @@ achievements."
                     </ScrollAnimation>
                 </div>
 
-                <div className="relative bg-[#110f27] w-full h-full mb-28">
+                <div className="relative bg-[#110f27] w-full h-full pb-28">
                     <img
                         src="/HomePages/Investment/SellApp.png"
                         alt="Main Background"
@@ -166,16 +166,15 @@ achievements."
                 </div>
 
 
-<HeroSection
+                <HeroSection
                     imageSrc="/HomePages/Investment/footerbtn.png"
-         text="Apply for Investment"
-        textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] text-gradient-Home'
-
+                    text="Apply for Investment"
+                    textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] text-gradient-Home'
                     text1='We would like to get to know you and your start-up'
-        buttonText="Let`s Talk"
-        text1ClassName='text-white text-2xl'
-        onButtonClick={() => alert("Button clicked!")}
-      />
+                    buttonText="Let`s Talk"
+                    text1ClassName='text-white text-xl sm:text-2xl mt-5'
+                    onButtonClick={() => alert("Button clicked!")}
+                />
             </div >
         </>
     );
