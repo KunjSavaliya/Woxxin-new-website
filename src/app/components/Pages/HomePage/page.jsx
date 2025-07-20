@@ -163,62 +163,62 @@ function MainPage() {
           </div>
         </div>
       </div>
-     <div className='lg:px-28 xl:px-32 bg-[#110f27] mt-[-3px]'>
-            <div className="flex flex-col text-white ">
-              <ScrollAnimation animateIn="animate__animated animate__zoomIn">
-                <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
-                  Mobile Games
-                </Text>
-              </ScrollAnimation>
-            </div>
-          </div>
+      <div className='lg:px-28 xl:px-32 bg-[#110f27] mt-[-3px]'>
+        <div className="flex flex-col text-white ">
+          <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+            <Text className="text-center  font-lighter leading-relaxed text-white text-[35px] md:text-[65px] lg:text-[[65px] xl:text-[90px] text-gradient-mobileGames">
+              Mobile Games
+            </Text>
+          </ScrollAnimation>
+        </div>
+      </div>
       <div className='flex flex-wrap justify-center bg-[#110f27] xl:gap-24 lg:px-12 xl:px-48 p-16 '>
-<div>
-   <img
+        <div>
+          <img
             src="/HomePages/G1.png"
             alt="Main Background"
             className=" sm:w-72 sm:h-72"
           />
-</div>
-<div>
-   <img
+        </div>
+        <div>
+          <img
             src="/HomePages/G2.png"
             alt="Main Background"
-             className=" sm:w-72 sm:h-72"
+            className=" sm:w-72 sm:h-72"
           />
-</div>
-<div>
-   <img
+        </div>
+        <div>
+          <img
             src="/HomePages/G3.png"
             alt="Main Background"
-             className=" sm:w-72 sm:h-72"
+            className=" sm:w-72 sm:h-72"
           />
-</div>
-<div>
-   <img
+        </div>
+        <div>
+          <img
             src="/HomePages/G4.png"
             alt="Main Background"
-             className=" sm:w-72 sm:h-72"
+            className=" sm:w-72 sm:h-72"
           />
-</div>
-<div>
-   <img
+        </div>
+        <div>
+          <img
             src="/HomePages/G5.png"
             alt="Main Background"
-             className=" sm:w-72 sm:h-72"
+            className=" sm:w-72 sm:h-72"
           />
-</div>
-<div>
-   <img
+        </div>
+        <div>
+          <img
             src="/HomePages/G6.png"
             alt="Main Background"
-             className=" sm:w-72 sm:h-72"
+            className=" sm:w-72 sm:h-72"
           />
-</div>
+        </div>
 
       </div>
       <div>
-        <GlobalPartners/>
+        <GlobalPartners />
 
       </div>
       <div className="relative bg-[#110f27] ">
@@ -226,7 +226,7 @@ function MainPage() {
           <img
             src="/HomePages/Home6.png"
             alt="Main Background"
-            className=" h-[700px] xl:w-full xl:h-full "
+            className=" h-[800px] xl:w-full xl:h-full "
           />
         </div>
         <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full text-left mt-36 animate__animated animate__fadeInLeft">
