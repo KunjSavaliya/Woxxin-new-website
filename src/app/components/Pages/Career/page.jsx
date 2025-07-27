@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
 import 'animate.css';
@@ -17,8 +17,12 @@ import {
 } from 'react-icons/fa';
 import { MdCampaign } from 'react-icons/md';
 import Image from 'next/image';
-import { useRouter } from 'next/navigation';
+import Form from '../../../Reusable/Form/page';
+// import Form from '../Career/Form'
+
 function MainPage() {
+  const [showForm, setShowForm] = useState(false);
+
   const jobs = [
     { title: 'Android Developer', experience: '2 to 5 year', Icon: FaAndroid },
     { title: 'Digital Marketing', experience: '1 to 3 year', Icon: MdCampaign },
@@ -34,13 +38,11 @@ function MainPage() {
     { text: 'Ready to change your habit, mindset, and adapt fast to new things', Icon: FaExchangeAlt },
     { text: 'If the company acknowledges your value, gives you a chance and is fair with you', Icon: FaHandshake },
   ];
-  const router = useRouter();
 
-  const handleClick = () => {
-    router.push('/Publishing/Form');
-  };
+  const handleClick = () => setShowForm(true);
+  const closeForm = () => setShowForm(false);
+
   return (
-
     <>
       <div className="relative bg-[#110f27] w-full h-full overflow-hidden">
         <img
@@ -51,16 +53,13 @@ function MainPage() {
         <div className="relative z-10 flex flex-col items-center w-full h-full text-left">
           <div className="flex flex-col gap-12 p-6 mt-32 text-white sm:mt-40 sm:gap-7 xl:gap-16 sm:px-12 md:px-24 lg:px-20 xl:px-52 xl:pl-52">
             <img src="/HomePages/Google.png" alt="Google" className="w-40 md:w-56" />
-
             <Text className="text-gradient-mobiletext text-4xl sm:text-5xl md:text-6xl lg:text-[80px] xl:text-[100px] font-bold text-white text-start">
               Career
             </Text>
-
             <Text className="text-[18px] md:text-2xl xl:text-4xl text-white font-medium text-start">
               Exciting Prospects: Become part of a thriving industry worth over
               $120 billion, expanding at a remarkable 20–35 % each year.
             </Text>
-
             <div className="mb-10 md:mb-40">
               <Button
                 text="See jobs & apply"
@@ -96,7 +95,10 @@ function MainPage() {
                   <br />
                   <span className="text-white font-lighter">{experience}</span>
                 </p>
-                <button onClick={handleClick} className="px-4 py-2 border border-[#5961F9] text-white font-bold rounded-md hover:bg-[#5961F9]/10 transition">
+                <button
+                  onClick={handleClick}
+                  className="px-4 py-2 border border-[#5961F9] text-white font-bold rounded-md hover:bg-[#5961F9]/10 transition"
+                >
                   Apply Now
                 </button>
               </div>
@@ -107,8 +109,6 @@ function MainPage() {
 
       <div className="bg-[#110f27] relative z-10 px-4 sm:px-12 md:px-20 lg:px-20 xl:px-0">
         <div className="flex flex-col w-full max-w-screen-xl mx-auto xl:px-20">
-
-          {/* Section Title */}
           <div className="">
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
               <Text className="text-start text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white mt-6">
@@ -117,7 +117,6 @@ function MainPage() {
             </ScrollAnimation>
           </div>
 
-          {/* Perk List */}
           <div className="flex flex-col gap-10 mt-16">
             {[
               'Inspiring culture where ambition & creativity lead the way',
@@ -135,7 +134,6 @@ function MainPage() {
             ))}
           </div>
 
-          {/* Bottom Section */}
           <div className="pt-[150px] sm:mt-10">
             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
               <Text className=" text-gradient-mobiletext font-extralight text-4xl sm:text-5xl md:text-5xl lg:text-[70px] xl:text-[80px] text-white">
@@ -160,7 +158,6 @@ function MainPage() {
         </div>
       </div>
 
-
       <div className="relative bg-[#110f27]">
         <Image
           src="/HomePages/Contfooter.png"
@@ -169,7 +166,6 @@ function MainPage() {
           width={1920}
           height={700}
         />
-
         <div className="absolute top-0 left-0 flex items-start justify-center w-full h-full p-6">
           <div className="w-full max-w-[92rem] px-4">
             <div className="flex justify-center mt-12">
@@ -182,6 +178,21 @@ function MainPage() {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+      {showForm && (
+        <div className="fixed inset-0 z-[999] flex items-center justify-center bg-black bg-opacity-70">
+          <div className="relative bg-[#0c0b20] rounded-xl w-full max-w-2xl p-6 shadow-lg">
+            <button
+              onClick={closeForm}
+              className="absolute top-4 right-4 text-white text-2xl hover:text-red-500"
+            >
+              &times;
+            </button>
+            <Form />
+          </div>
+        </div>
+      )}
     </>
   );
 }
