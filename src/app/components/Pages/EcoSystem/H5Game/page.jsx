@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
 // import Text from '../../../Reusable/Text';
@@ -11,7 +11,13 @@ import Text from '@/app/Reusable/Text';
 import HeroSection from '@/app/Reusable/HeroSection';
 import MobileAppSection from '@/app/Reusable/MobileSection';
 import GlobalPartners from '@/app/Reusable/GlobalPartners';
+
+
+
 function H5Game() {
+  useEffect(() => {
+    document.title = 'H5 Games / Quiz - Woxxin Solution';
+  }, []);
 
   return (
     <>

@@ -167,7 +167,7 @@ results for your business growth"
                 <HeroSection
                     imageSrc="/HomePages/GoogleAds/HandStack.png"
                     text="Ready to Improve Your Google Ads Performance?"
-                    textClassName='text-[28px] lg:text-[69px] xl:text-[70px] 2xl:text-[90px] mt-[-50px] sm:mt-0 text-gradient-Home'
+                    textClassName='text-[28px]  2xl:text-[50px] mt-[-50px] sm:mt-0 text-gradient-Home'
                     text1='Let`s discuss how we can help you achieve your marketing goals'
                     buttonText="Let`s Talk"
                     text1ClassName='text-white text-lg  sm:text-2xl mt-5'

@@ -66,7 +66,7 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
             </div>
             <div className="absolute top-0 left-0 flex flex-col items-center w-full h-full mt-16 text-left sm:mt-28 lg:mt-16 2xl:mt-40">
                 <div className="flex flex-col justify-around">
-                    <div className="mt-10 sm:mt-12">
+                    <div className=" sm:mt-12 md:mt-0">
                         {/* text-gradient-lasttext */}
                         <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
@@ -78,7 +78,7 @@ const HeroSection = ({ imageSrc, text, buttonText, textClassName, text1, text1Cl
                             </Text>
                         </ScrollAnimation>
 
-                        <div className="flex justify-center mt-5 sm:mt-12 ">
+                        <div className="flex justify-center mt-5 sm:mt-12 md:mt-0 ">
                             <Button
                                 text={buttonText}
                                 iconColor="#6C63FF"

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
 import 'animate.css';
@@ -7,8 +7,13 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import CountUp from 'react-countup';
 import { useRouter } from 'next/navigation';
 import GlobalPartners from '@/app/Reusable/GlobalPartners';
+
+
 function MainPage() {
   const router = useRouter();
+  useEffect(() => {
+    document.title = 'About Us - Woxxin Solution';
+  }, []);
 
   const handleClick = () => {
     console.log('✅ Button clicked!');

@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
 // import Text from '../../../Reusable/Text';
@@ -10,8 +10,55 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import Text from '@/app/Reusable/Text';
 import HeroSection from '@/app/Reusable/HeroSection';
 import MobileAppSection from '@/app/Reusable/MobileSection';
+import Swal from 'sweetalert2';
 function Investment() {
+    useEffect(() => {
+        document.title = 'Investment - Woxxin Solution';
+    }, []);
+    const [loading, setLoading] = useState(false);
 
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        const formData = new FormData(e.target);
+
+        try {
+            const res = await fetch('/api/send-invest', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const data = await res.json();
+            if (data.success) {
+                e.target.reset();
+
+
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: 'Submitted!',
+                    text: 'Your application has been submitted successfully.',
+                    showConfirmButton: false,
+                    timer: 2500
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: data.message || 'Something went wrong!',
+                });
+            }
+        } catch (err) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Error',
+                text: 'Something went wrong while submitting the form.',
+            });
+        }
+
+        setLoading(false);
+    };
     return (
         <>
             <div>
@@ -104,7 +151,7 @@ achievements."
                         alt="Main Background"
                         className="absolute w-full h-[800px] md:h-[1000px] "
                     />
-                    <div className="relative z-10 flex flex-col gap-16 md:pl-80 md:pr-80">
+                    <div className="relative z-10 flex flex-col gap-16 p-4 xl:pl-80 xl:pr-80 mt-[-1px]">
 
                         <div className='flex justify-center mt-12 '>
                             <ScrollAnimation animateIn="animate__animated animate__fadeInUp">
@@ -136,29 +183,62 @@ achievements."
                                 </Text>
                             </div>
                         </ScrollAnimation>
-                        <div className="flex justify-center px-4 ">
-                            <form className="w-full max-w-lg space-y-4">
+                        <div className="flex justify-center px-4">
+                            <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4">
                                 <input
                                     type="text"
+                                    name="fullName"
+                                    required
                                     placeholder="Your Name"
                                     className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm"
                                 />
                                 <input
                                     type="email"
+                                    name="email"
+                                    required
                                     placeholder="Your Email"
                                     className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm"
                                 />
                                 <input
                                     type="url"
+                                    name="appUrl"
+                                    required
                                     placeholder="Google Play App URL"
                                     className="w-full px-5 py-5 rounded-md bg-white/10 text-white placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#5961F9] backdrop-blur-sm"
                                 />
+
                                 <button
                                     type="submit"
-                                    className="w-full py-3 text-white border border-[#5961F9] rounded-md hover:bg-[#5961F9]/10 transition duration-300"
+                                    disabled={loading}
+                                    className="w-full py-3 flex justify-center items-center gap-2 text-white border border-[#5961F9] rounded-md hover:bg-[#5961F9]/10 transition duration-300"
                                 >
-                                    Submit
+                                    {loading && (
+                                        <svg
+                                            className="animate-spin h-5 w-5 text-white"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            fill="none"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <circle
+                                                className="opacity-25"
+                                                cx="12"
+                                                cy="12"
+                                                r="10"
+                                                stroke="currentColor"
+                                                strokeWidth="4"
+                                            />
+                                            <path
+                                                className="opacity-75"
+                                                fill="currentColor"
+                                                d="M4 12a8 8 0 018-8v8z"
+                                            />
+                                        </svg>
+                                    )}
+                                    {loading ? 'Submitting...' : 'Submit Application'}
                                 </button>
+
+
+
                             </form>
                         </div>
 
@@ -172,7 +252,7 @@ achievements."
                     textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] text-gradient-Home'
                     text1='We would like to get to know you and your start-up'
                     buttonText="Let`s Talk"
-                    text1ClassName='text-white text-xl sm:text-2xl mt-5'
+                    text1ClassName='text-white text-xl sm:text-2xl mt-5 p-2'
                     onButtonClick={() => alert("Button clicked!")}
                 />
             </div >

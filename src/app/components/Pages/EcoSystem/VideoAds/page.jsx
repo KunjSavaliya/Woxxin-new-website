@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'animate.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -10,7 +10,9 @@ import GlobalPartners from '@/app/Reusable/GlobalPartners';
 import Button from '@/app/Reusable/Button';
 import Text from '@/app/Reusable/Text';
 function VideoAds() {
-
+  useEffect(() => {
+    document.title = 'Video Ads - Woxxin Solution';
+  }, []);
   return (
     <>
       <div>

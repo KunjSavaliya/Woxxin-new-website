@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 import { FaArrowRight, FaChartLine, FaBullseye, FaCoins, FaCogs } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -15,6 +15,9 @@ import 'animate.css';
 import Button from '@/app/Reusable/Button';
 
 function Eco() {
+  useEffect(() => {
+    document.title = 'Ecosystem - Woxxin Solution';
+  }, []);
   const features = [
     {
       icon: <FaChartLine size={40} className="text-blue-500" />,

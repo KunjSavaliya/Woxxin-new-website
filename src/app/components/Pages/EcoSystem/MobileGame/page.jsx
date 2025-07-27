@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
 // import Text from '../../../Reusable/Text';
@@ -12,7 +12,9 @@ import HeroSection from '@/app/Reusable/HeroSection';
 import MobileAppSection from '@/app/Reusable/MobileSection';
 import Image from 'next/image';
 function MobileGame() {
-
+    useEffect(() => {
+        document.title = 'Mobile Game- Woxxin Solution';
+    }, []);
     return (
         <>
             <div>
@@ -142,10 +144,11 @@ function MobileGame() {
                     </div>
                 </div>
 
+
                 <HeroSection
                     imageSrc="/HomePages/MobileGame/MobileGF.png"
                     text="Creating World-Class Products Together"
-                    textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px] mt-[-50px] text-gradient-Home'
+                    textClassName='lg:text-[69px] xl:text-[70px] 2xl:text-[90px]  text-gradient-Home'
                     buttonText="Apply here"
                     onButtonClick={() => alert("Button clicked!")}
                 />

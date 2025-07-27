@@ -24,11 +24,10 @@ const ApplicationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('');
     setLoading(true); // Start loading
 
     if (!formData.fullName || !formData.email || !formData.position || !formData.resume) {
-      setStatus('Please fill in all required fields.');
+
       setLoading(false);
       return;
     }
@@ -48,7 +47,14 @@ const ApplicationForm = () => {
 
       const result = await res.json();
       if (result.success) {
-        setStatus('✅ Application submitted successfully!');
+        Swal.fire({
+          position: "center",
+          icon: "success",
+          title: 'Submitted!',
+          text: 'Your application has been submitted successfully.',
+          showConfirmButton: false,
+          timer: 2500
+        });
         setFormData({
           fullName: '',
           email: '',
@@ -57,10 +63,18 @@ const ApplicationForm = () => {
           additionalInfo: '',
         });
       } else {
-        setStatus(`❌ Error: ${result.message}`);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: result.message || 'Something went wrong!',
+        });
       }
     } catch (err) {
-      setStatus('❌ Something went wrong. Please try again.');
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: 'Something went wrong while submitting the form.',
+      });
     } finally {
       setLoading(false); // Stop loading
     }
@@ -68,7 +82,7 @@ const ApplicationForm = () => {
 
   return (
     <div className="max-w-xl mx-auto rounded-2xl text-white mt-10 px-4 sm:px-6 md:px-8 lg:px-0">
-      {status && <p className="mt-4 text-sm text-red-400">{status}</p>}
+
 
       <form onSubmit={handleSubmit} encType="multipart/form-data" className="mt-5 space-y-4">
         <div>

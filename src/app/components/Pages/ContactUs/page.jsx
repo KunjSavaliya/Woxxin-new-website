@@ -16,7 +16,11 @@ import 'swiper/css'; // core styles
 import 'swiper/css/autoplay'; // autoplay module
 import { Autoplay } from 'swiper/modules';
 import GlobalPartners from '@/app/Reusable/GlobalPartners';
+import { useEffect } from 'react';
 function ContactUs() {
+    useEffect(() => {
+        document.title = 'Contact Us - Woxxin Solution';
+    }, []);
     const logos = [
         '/HomePages/Gp1.png',
         '/HomePages/Gp2.png',
@@ -39,7 +43,7 @@ discuss about the project and collaboration
 opportunities, or reach out to us directly!"
 
                     bgImageClassNames="h-full"
-                        iconClassNames=" md:w-auto lg:w-full h-[400px]"
+                    iconClassNames=" md:w-auto lg:w-full h-[400px]"
 
 
                 />

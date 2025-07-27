@@ -27,7 +27,7 @@ function Page404() {
                     iconSrc="/HomePages/404.png"
                     title="404 - error"
                     title1="PAGE NOT FOUND"
-                    description="Your search has ventured beyond the known universe."
+                    // description="Your search has ventured beyond the known universe."
                     bgImageClassNames="h-full"
                     iconClassNames='w-32 w-auto '
                     descriptionClassName='text-2xl '

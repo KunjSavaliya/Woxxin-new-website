@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Text from '../../../Reusable/Text';
 import Button from '@/app/Reusable/Button';
 import 'animate.css';
@@ -21,6 +21,9 @@ import Form from '../../../Reusable/Form/page';
 // import Form from '../Career/Form'
 
 function MainPage() {
+  useEffect(() => {
+    document.title = 'Career - Woxxin Solution';
+  }, []);
   const [showForm, setShowForm] = useState(false);
 
   const jobs = [

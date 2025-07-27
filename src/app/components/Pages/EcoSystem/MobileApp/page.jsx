@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from "framer-motion";
 // import Text from '../../../Reusable/Text';
@@ -11,8 +11,11 @@ import Text from '@/app/Reusable/Text';
 import HeroSection from '@/app/Reusable/HeroSection';
 function MobilePage() {
   const [active, setActive] = useState('Advertisers');
-
+  useEffect(() => {
+    document.title = 'Mobile App - Woxxin Solution';
+  }, []);
   return (
+
     <>
       <div className="relative bg-[#110f27] w-full h-full  shadow-[0_8px_10px_-6px_rgba(255,255,255,0.3)]">
         <img
@@ -21,11 +24,11 @@ function MobilePage() {
           className="absolute w-full h-[800px] md:h-[1000px] "
         />
         <div className="relative z-10 flex flex-col items-start w-full h-full text-left">
-          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[200px]  sm:px-12 md:px-20 lg:px-20 xl:px-28 xl:pl-28 2xl:px-60 2xl:pl-60">
+          <div className="flex flex-col  p-6 mt-32 text-white sm:mt-40 gap-[200px] lg:gap-[200px]  sm:px-20 md:px-16 lg:px-20 lg:pl-20 xl:px-28 xl:pl-28">
             <div>
-              <div className="flex justify-around md:gap-10 lg:gap-5">
+              <div className="flex justify-between md:gap-10 lg:gap-5">
                 {/* Left Content */}
-              <div className=" w-auto md:w-[70%] lg:w-1/2">
+                <div className=" w-auto md:w-[70%] lg:w-1/2">
                   <img
                     src="/HomePages/Google.png"
                     alt="Google"
@@ -35,7 +38,7 @@ function MobilePage() {
                     Woxxin Intelligent Mobile Apps
                   </Text>
                 </div>
-                 <div className="items-center justify-center hidden md:flex">
+                <div className="items-center justify-center hidden md:flex">
                   <img
                     src="/HomePages/MobileApp/MobileIcon.png"
                     alt="Mobile Icon"
@@ -134,13 +137,13 @@ function MobilePage() {
             Featured Products
           </Text>
         </ScrollAnimation>
-             <ScrollAnimation animateIn="animate__animated animate__zoomIn">
+        <ScrollAnimation animateIn="animate__animated animate__zoomIn">
 
           <div className='p-4 md:px-20 lg:px-20 xl:px-36 xl:pl-64 '>
             <img
               src="/HomePages/MobileApp/MobileBanner1.png"
               alt="Main Background"
-               className="w-[90%] mx-auto "
+              className="w-[90%] mx-auto "
             />
           </div>
         </ScrollAnimation>
@@ -150,7 +153,7 @@ function MobilePage() {
             <img
               src="/HomePages/MobileApp/MobileBanner3.png"
               alt="Main Background"
-               className="w-[80%] mx-auto "
+              className="w-[80%] mx-auto "
             />
           </div>
         </ScrollAnimation>
@@ -165,7 +168,7 @@ function MobilePage() {
             <img
               src="/HomePages/MobileApp/MobileBanner2.png"
               alt="Main Background"
-                 className="w-auto mx-auto "
+              className="w-auto mx-auto "
             />
           </div>
         </ScrollAnimation>
